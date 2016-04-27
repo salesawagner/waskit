@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
                           :tag => "v0.0.1"
                        }
   s.source_files     = "Sources/**/*.{swift}"
-  #s.resources        = "Source/Languages/**"
+  #s.resources       = "Source/Languages/**"
   s.requires_arc     = true
 end
