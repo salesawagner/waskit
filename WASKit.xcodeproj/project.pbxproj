@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7AFDB1F1CD03A5900178425 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7AFDB1B1CD03A5900178425 /* Info.plist */; };
 		A7AFDB231CD03B9400178425 /* WASColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AFDB221CD03B9400178425 /* WASColor.swift */; };
 		A7BB04721CD04BAD00194A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB04711CD04BAD00194A53 /* AppDelegate.swift */; };
 		A7BB04741CD04BAD00194A53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB04731CD04BAD00194A53 /* ViewController.swift */; };
@@ -219,7 +218,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7AFDB1F1CD03A5900178425 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +451,7 @@
 				A7BB04801CD04BAD00194A53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
