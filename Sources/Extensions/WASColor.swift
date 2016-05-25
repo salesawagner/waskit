@@ -104,19 +104,22 @@ extension UIColor {
 	
 	- returns: UInt number.
 	*/
-	public func WASColorToUInt() -> UInt32? {
+	public func WASColorToUInt() -> UInt? {
 		
-		var uInt: UInt32 = 0
+		var intColor: UInt?
 		
-		var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
-		if self.getRed(&red, green: &green, blue: &blue, alpha: &alpha) {
+		var fRed : CGFloat = 0, fGreen : CGFloat = 0, fBlue : CGFloat = 0, fAlpha: CGFloat = 0
+		if self.getRed(&fRed, green: &fGreen, blue: &fBlue, alpha: &fAlpha) {
+			let iRed	= UInt(fRed * 255.0)
+			let iGreen	= UInt(fGreen * 255.0)
+			let iBlue	= UInt(fBlue * 255.0)
+			let iAlpha	= UInt(fAlpha * 255.0)
 			
-			uInt += UInt32(red * 255.0) << 16 +
-				UInt32(green * 255.0) << 8 +
-				UInt32(blue * 255.0)
+			//  (Bits 24-31 are alpha, 16-23 are red, 8-15 are green, 0-7 are blue).
+			intColor = (iAlpha << 24) + (iRed << 16) + (iGreen << 8) + iBlue
 		}
 		
-		return uInt
+		return intColor
 	}
 	
 	//*************************
