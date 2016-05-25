@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7AFDB231CD03B9400178425 /* WASColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AFDB221CD03B9400178425 /* WASColor.swift */; };
 		A7BB04721CD04BAD00194A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB04711CD04BAD00194A53 /* AppDelegate.swift */; };
 		A7BB04741CD04BAD00194A53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB04731CD04BAD00194A53 /* ViewController.swift */; };
 		A7BB04771CD04BAD00194A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BB04751CD04BAD00194A53 /* Main.storyboard */; };
 		A7BB04791CD04BAD00194A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7BB04781CD04BAD00194A53 /* Assets.xcassets */; };
 		A7BB047C1CD04BAD00194A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BB047A1CD04BAD00194A53 /* LaunchScreen.storyboard */; };
 		A7BB04811CD051AD00194A53 /* WASKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AFDB0E1CD0390800178425 /* WASKit.framework */; };
+		A7BE76E51CD06AAD000D61BA /* WASImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BE76E41CD06AAD000D61BA /* WASImage.swift */; };
+		A7BE76E71CD06FE0000D61BA /* foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7BE76E61CD06FE0000D61BA /* foto.jpg */; };
+		A7BE76E81CD06FF7000D61BA /* foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7BE76E61CD06FE0000D61BA /* foto.jpg */; };
+		A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BE76E91CD08326000D61BA /* WASColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A7AFDB0E1CD0390800178425 /* WASKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WASKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AFDB1B1CD03A5900178425 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7AFDB221CD03B9400178425 /* WASColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASColor.swift; path = Extensions/WASColor.swift; sourceTree = "<group>"; };
 		A7BB046F1CD04BAD00194A53 /* WASKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WASKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BB04711CD04BAD00194A53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7BB04731CD04BAD00194A53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +29,9 @@
 		A7BB04781CD04BAD00194A53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7BB047B1CD04BAD00194A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7BB047D1CD04BAD00194A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7BE76E41CD06AAD000D61BA /* WASImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASImage.swift; sourceTree = "<group>"; };
+		A7BE76E61CD06FE0000D61BA /* foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = foto.jpg; path = "../ListMyPeople_Resources/Women Photos/foto.jpg"; sourceTree = "<group>"; };
+		A7BE76E91CD08326000D61BA /* WASColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 		A7AFDB041CD0390800178425 = {
 			isa = PBXGroup;
 			children = (
+				A7BE76E61CD06FE0000D61BA /* foto.jpg */,
 				A7AFDB101CD0390800178425 /* WASKit */,
 				A7BB04701CD04BAD00194A53 /* WASKitDemo */,
 				A7AFDB0F1CD0390800178425 /* Products */,
@@ -94,26 +100,10 @@
 		A7AFDB1C1CD03A5900178425 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A7AFDB1D1CD03A5900178425 /* Core */,
+				A7BE76E11CD06A7F000D61BA /* Extensions */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
-		};
-		A7AFDB1D1CD03A5900178425 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				A7AFDB211CD03B5C00178425 /* Extensions */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		A7AFDB211CD03B5C00178425 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A7AFDB221CD03B9400178425 /* WASColor.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
 		};
 		A7BB04701CD04BAD00194A53 /* WASKitDemo */ = {
 			isa = PBXGroup;
@@ -126,6 +116,15 @@
 				A7BB047D1CD04BAD00194A53 /* Info.plist */,
 			);
 			path = WASKitDemo;
+			sourceTree = "<group>";
+		};
+		A7BE76E11CD06A7F000D61BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7BE76E91CD08326000D61BA /* WASColor.swift */,
+				A7BE76E41CD06AAD000D61BA /* WASImage.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7BE76E71CD06FE0000D61BA /* foto.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +228,7 @@
 				A7BB047C1CD04BAD00194A53 /* LaunchScreen.storyboard in Resources */,
 				A7BB04791CD04BAD00194A53 /* Assets.xcassets in Resources */,
 				A7BB04771CD04BAD00194A53 /* Main.storyboard in Resources */,
+				A7BE76E81CD06FF7000D61BA /* foto.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7AFDB231CD03B9400178425 /* WASColor.swift in Sources */,
+				A7BE76E51CD06AAD000D61BA /* WASImage.swift in Sources */,
+				A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

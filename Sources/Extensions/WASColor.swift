@@ -95,10 +95,14 @@ extension UIColor {
 // MARK: - Public Methods
 //**************************************************
 
+	//*************************
+	// MARK: Brightness
+	//*************************
+	
 	/**
 	Return a lighter color using the brightness.
 	
-	- returns: Modified color.
+	- returns: Lighter color.
 	*/
 	public func WASLighterColor() -> UIColor {
 		return self.brightness(.WASbrightnessLighter)
@@ -107,9 +111,30 @@ extension UIColor {
 	/**
 	Return a darker color using the brightness.
 	
-	- returns: Modified color.
+	- returns: Darker color.
 	*/
 	public func WASDarkerColorColor() -> UIColor {
 		return self.brightness(.WASbrightnessDarker)
 	}
+	
+	//*************************
+	// MARK: Colors
+	//*************************
+	
+	class func WASPinkColor() -> UIColor {
+		return UIColor(r: 80, g: 210, b: 194, a: 1)!
+	}
+	
+	class func WASPurpleColor() -> UIColor {
+		return UIColor(r: 140, g: 136, b: 255, a: 1)!
+	}
+	
+	class func WASOrangeColor() -> UIColor {
+		return UIColor(r: 238, g: 143, b: 110, a: 1)!
+	}
+
+	class func WASYellowColor() -> UIColor {
+		return UIColor(r: 255, g: 255, b: 208, a: 1)!
+	}
+
 }
