@@ -121,19 +121,47 @@ extension UIColor {
 	// MARK: Colors
 	//*************************
 	
-	class func WASPinkColor() -> UIColor {
+	/**
+	Return a custom color using r: 80, g: 210, b: 194
+	
+	- parameter a: Alpha value.
+	
+	- returns: Custom pink color.
+	*/
+	public class func WASPinkColor() -> UIColor {
 		return UIColor(r: 80, g: 210, b: 194, a: 1)!
 	}
 	
-	class func WASPurpleColor() -> UIColor {
+	/**
+	Return a custom color using r: 140, g: 136, b: 255
+	
+	- parameter a: Alpha value.
+	
+	- returns: Custom purple color.
+	*/
+	public class func WASPurpleColor(alpha: CGFloat = 1) -> UIColor {
 		return UIColor(r: 140, g: 136, b: 255, a: 1)!
 	}
 	
-	class func WASOrangeColor() -> UIColor {
+	/**
+	Return a custom color using r: 238, g: 143, b: 110
+	
+	- parameter a: Alpha value.
+	
+	- returns: Custom orange color.
+	*/
+	public class func WASOrangeColor() -> UIColor {
 		return UIColor(r: 238, g: 143, b: 110, a: 1)!
 	}
 
-	class func WASYellowColor() -> UIColor {
+	/**
+	Return a custom color using r: 255, g: 255, b: 208
+	
+	- parameter a: Alpha value.
+	
+	- returns: Custom yellow color.
+	*/
+	public class func WASYellowColor() -> UIColor {
 		return UIColor(r: 255, g: 255, b: 208, a: 1)!
 	}
 
