@@ -96,6 +96,30 @@ extension UIColor {
 //**************************************************
 
 	//*************************
+	// MARK: Helpers
+	//*************************
+	
+	/**
+	Convert color to UInt
+	
+	- returns: UInt number.
+	*/
+	public func WASColorToUInt() -> UInt32? {
+		
+		var uInt: UInt32 = 0
+		
+		var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
+		if self.getRed(&red, green: &green, blue: &blue, alpha: &alpha) {
+			
+			uInt += UInt32(red * 255.0) << 16 +
+				UInt32(green * 255.0) << 8 +
+				UInt32(blue * 255.0)
+		}
+		
+		return uInt
+	}
+	
+	//*************************
 	// MARK: Brightness
 	//*************************
 	
