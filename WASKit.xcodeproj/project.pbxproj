@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A795E9B21CFCEDA900B3E08C /* WASButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A795E9B11CFCEDA900B3E08C /* WASButton.swift */; };
+		A795E9B41CFCEE5B00B3E08C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A795E9B31CFCEE5B00B3E08C /* Media.xcassets */; };
 		A7BB04721CD04BAD00194A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB04711CD04BAD00194A53 /* AppDelegate.swift */; };
 		A7BB04741CD04BAD00194A53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB04731CD04BAD00194A53 /* ViewController.swift */; };
 		A7BB04771CD04BAD00194A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BB04751CD04BAD00194A53 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A795E9B11CFCEDA900B3E08C /* WASButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASButton.swift; sourceTree = "<group>"; };
+		A795E9B31CFCEE5B00B3E08C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A7AFDB0E1CD0390800178425 /* WASKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WASKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AFDB1B1CD03A5900178425 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7BB046F1CD04BAD00194A53 /* WASKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WASKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				A7AFDB1A1CD03A5900178425 /* Supporting Files */,
+				A795E9B31CFCEE5B00B3E08C /* Media.xcassets */,
 			);
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
@@ -123,6 +128,7 @@
 			children = (
 				A7BE76E91CD08326000D61BA /* WASColor.swift */,
 				A7BE76E41CD06AAD000D61BA /* WASImage.swift */,
+				A795E9B11CFCEDA900B3E08C /* WASButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -217,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A795E9B41CFCEE5B00B3E08C /* Media.xcassets in Resources */,
 				A7BE76E71CD06FE0000D61BA /* foto.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7BE76E51CD06AAD000D61BA /* WASImage.swift in Sources */,
+				A795E9B21CFCEDA900B3E08C /* WASButton.swift in Sources */,
 				A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
