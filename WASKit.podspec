@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                           :git => "https://github.com/salesawagner/WASKit.git",
                           :tag => "v0.0.1"
                        }
-  s.source_files     = "Sources/**/*.{swift}"
-  #s.resources       = "Source/Languages/**"
-  s.requires_arc     = true
+  s.source_files      = "Sources/**/*.{swift}"
+  s.resource          = "Resources/Assets.xcassets"
+  s.requires_arc      = true
 end
