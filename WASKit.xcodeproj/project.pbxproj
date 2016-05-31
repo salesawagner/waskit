@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A795E9B21CFCEDA900B3E08C /* WASButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A795E9B11CFCEDA900B3E08C /* WASButton.swift */; };
 		A795E9B41CFCEE5B00B3E08C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A795E9B31CFCEE5B00B3E08C /* Media.xcassets */; };
 		A7BB04721CD04BAD00194A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB04711CD04BAD00194A53 /* AppDelegate.swift */; };
 		A7BB04741CD04BAD00194A53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB04731CD04BAD00194A53 /* ViewController.swift */; };
@@ -19,10 +18,15 @@
 		A7BE76E71CD06FE0000D61BA /* foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7BE76E61CD06FE0000D61BA /* foto.jpg */; };
 		A7BE76E81CD06FF7000D61BA /* foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7BE76E61CD06FE0000D61BA /* foto.jpg */; };
 		A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BE76E91CD08326000D61BA /* WASColor.swift */; };
+		A7E76AE01CFD0F64005F93E1 /* WASButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76ADF1CFD0F64005F93E1 /* WASButton.swift */; };
+		A7E76AE21CFD1013005F93E1 /* WASLikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE11CFD1013005F93E1 /* WASLikeButton.swift */; };
+		A7E76AE41CFD103C005F93E1 /* WASDisLikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE31CFD103C005F93E1 /* WASDisLikeButton.swift */; };
+		A7E76AE61CFD105B005F93E1 /* WASPeopleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE51CFD105B005F93E1 /* WASPeopleButton.swift */; };
+		A7E76AE81CFD107C005F93E1 /* WASStarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE71CFD107C005F93E1 /* WASStarButton.swift */; };
+		A7E76AEA1CFD109F005F93E1 /* WASCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE91CFD109F005F93E1 /* WASCheckButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A795E9B11CFCEDA900B3E08C /* WASButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASButton.swift; sourceTree = "<group>"; };
 		A795E9B31CFCEE5B00B3E08C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A7AFDB0E1CD0390800178425 /* WASKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WASKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AFDB1B1CD03A5900178425 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +40,12 @@
 		A7BE76E41CD06AAD000D61BA /* WASImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASImage.swift; sourceTree = "<group>"; };
 		A7BE76E61CD06FE0000D61BA /* foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = foto.jpg; path = "../ListMyPeople_Resources/Women Photos/foto.jpg"; sourceTree = "<group>"; };
 		A7BE76E91CD08326000D61BA /* WASColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASColor.swift; sourceTree = "<group>"; };
+		A7E76ADF1CFD0F64005F93E1 /* WASButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASButton.swift; path = Classes/Buttons/WASButton.swift; sourceTree = "<group>"; };
+		A7E76AE11CFD1013005F93E1 /* WASLikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASLikeButton.swift; path = Classes/Buttons/WASLikeButton.swift; sourceTree = "<group>"; };
+		A7E76AE31CFD103C005F93E1 /* WASDisLikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASDisLikeButton.swift; path = Classes/Buttons/WASDisLikeButton.swift; sourceTree = "<group>"; };
+		A7E76AE51CFD105B005F93E1 /* WASPeopleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASPeopleButton.swift; path = Classes/Buttons/WASPeopleButton.swift; sourceTree = "<group>"; };
+		A7E76AE71CFD107C005F93E1 /* WASStarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASStarButton.swift; path = Classes/Buttons/WASStarButton.swift; sourceTree = "<group>"; };
+		A7E76AE91CFD109F005F93E1 /* WASCheckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASCheckButton.swift; path = Classes/Buttons/WASCheckButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7A7CA181CFD0CEF00974339 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A7A7CA191CFD0CF500974339 /* Buttons */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A7A7CA191CFD0CF500974339 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A7E76ADF1CFD0F64005F93E1 /* WASButton.swift */,
+				A7E76AE91CFD109F005F93E1 /* WASCheckButton.swift */,
+				A7E76AE11CFD1013005F93E1 /* WASLikeButton.swift */,
+				A7E76AE31CFD103C005F93E1 /* WASDisLikeButton.swift */,
+				A7E76AE51CFD105B005F93E1 /* WASPeopleButton.swift */,
+				A7E76AE71CFD107C005F93E1 /* WASStarButton.swift */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
 		A7AFDB041CD0390800178425 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +136,7 @@
 		A7AFDB1C1CD03A5900178425 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A7A7CA181CFD0CEF00974339 /* Classes */,
 				A7BE76E11CD06A7F000D61BA /* Extensions */,
 			);
 			path = Sources;
@@ -128,7 +160,6 @@
 			children = (
 				A7BE76E91CD08326000D61BA /* WASColor.swift */,
 				A7BE76E41CD06AAD000D61BA /* WASImage.swift */,
-				A795E9B11CFCEDA900B3E08C /* WASButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -247,7 +278,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7BE76E51CD06AAD000D61BA /* WASImage.swift in Sources */,
-				A795E9B21CFCEDA900B3E08C /* WASButton.swift in Sources */,
+				A7E76AE01CFD0F64005F93E1 /* WASButton.swift in Sources */,
+				A7E76AE61CFD105B005F93E1 /* WASPeopleButton.swift in Sources */,
+				A7E76AE21CFD1013005F93E1 /* WASLikeButton.swift in Sources */,
+				A7E76AEA1CFD109F005F93E1 /* WASCheckButton.swift in Sources */,
+				A7E76AE81CFD107C005F93E1 /* WASStarButton.swift in Sources */,
+				A7E76AE41CFD103C005F93E1 /* WASDisLikeButton.swift in Sources */,
 				A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

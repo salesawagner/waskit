@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 		self.photoImageView.clipsToBounds = true
 		let image = self.photoImageView.image
 		
-		self.photoImageView.image = image?.crop(CGRectMake(500, 0, CGRectGetWidth(self.photoImageView.frame), CGRectGetHeight(self.photoImageView.frame)))
+		self.photoImageView.image = UIImage(named: WASButtonType.Like.imageName())
 	}
 }
 
