@@ -116,11 +116,12 @@ public enum WASButtonType: Int {
 	
 	func setup() {
 		#if !TARGET_INTERFACE_BUILDER
-			print(self.type.imageName())
-			
 			let image = UIImage(named: self.type.imageName(), inBundle: NSBundle(forClass: WASButton.self), compatibleWithTraitCollection: nil)
 			self.setImage(image, forState: .Normal)
-			self.setTitle("", forState: .Normal)
+
+			self.setTitle("", forState: .Highlighted)
+			self.setTitle("", forState: .Disabled)
+			self.setTitle("", forState: .Selected)			
 		#else
 			self.setTitle(self.type.emoji(), forState: .Normal)
 		#endif
