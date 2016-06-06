@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
                         :file => "LICENSE"
                       }
   s.author           = { "Wagner Sales" => "salesawagner@gmail.com" }
-  s.platform         = :ios, "9.0"
+  s.platform         = :ios, "8.0"
   s.source           = {
                           :git => "https://github.com/salesawagner/WASKit.git",
                           :tag => "v0.0.1"
