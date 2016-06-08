@@ -191,5 +191,16 @@ extension UIColor {
 	public class func WASYellowColor() -> UIColor {
 		return UIColor(r: 255, g: 255, b: 208, a: 1)!
 	}
+	
+	/**
+	Return a custom color using r: 255, g: 255, b: 208
+	
+	- parameter a: Alpha value.
+	
+	- returns: Custom red color.
+	*/
+	public class func WASRedColor() -> UIColor {
+		return UIColor(r: 242, g: 89, b: 75, a: 1)!
+	}
 
 }
