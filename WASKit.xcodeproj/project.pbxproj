@@ -24,6 +24,7 @@
 		A7E76AE61CFD105B005F93E1 /* WASPeopleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE51CFD105B005F93E1 /* WASPeopleButton.swift */; };
 		A7E76AE81CFD107C005F93E1 /* WASStarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE71CFD107C005F93E1 /* WASStarButton.swift */; };
 		A7E76AEA1CFD109F005F93E1 /* WASCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE91CFD109F005F93E1 /* WASCheckButton.swift */; };
+		A7EC86361D08CF4F007F5010 /* WASRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EC86351D08CF4F007F5010 /* WASRoundedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		A7E76AE51CFD105B005F93E1 /* WASPeopleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASPeopleButton.swift; path = Classes/Buttons/WASPeopleButton.swift; sourceTree = "<group>"; };
 		A7E76AE71CFD107C005F93E1 /* WASStarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASStarButton.swift; path = Classes/Buttons/WASStarButton.swift; sourceTree = "<group>"; };
 		A7E76AE91CFD109F005F93E1 /* WASCheckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASCheckButton.swift; path = Classes/Buttons/WASCheckButton.swift; sourceTree = "<group>"; };
+		A7EC86351D08CF4F007F5010 /* WASRoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASRoundedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		A7A7CA181CFD0CEF00974339 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A7EC86341D08CF4F007F5010 /* Views */,
 				A7A7CA191CFD0CF500974339 /* Buttons */,
 			);
 			name = Classes;
@@ -162,6 +165,15 @@
 				A7BE76E41CD06AAD000D61BA /* WASImage.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7EC86341D08CF4F007F5010 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7EC86351D08CF4F007F5010 /* WASRoundedView.swift */,
+			);
+			name = Views;
+			path = Classes/Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7BE76E51CD06AAD000D61BA /* WASImage.swift in Sources */,
+				A7EC86361D08CF4F007F5010 /* WASRoundedView.swift in Sources */,
 				A7E76AE01CFD0F64005F93E1 /* WASButton.swift in Sources */,
 				A7E76AE61CFD105B005F93E1 /* WASPeopleButton.swift in Sources */,
 				A7E76AE21CFD1013005F93E1 /* WASLikeButton.swift in Sources */,
