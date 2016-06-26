@@ -69,10 +69,28 @@ extension NSDate {
 	// MARK: Format
 	//*************************
 	
-	func toString() -> String {
+	struct Formatter {
+		static let shortDate = NSDateFormatter(dateFormat: "dd-MM-yyyy")
+		static let shortDateTime = NSDateFormatter(dateFormat: "dd-MM-yyyy HH:mm")
+		static let longDateTime = NSDateFormatter(dateFormat: "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
+	}
+	
+	var shortDate: String {
+		return Formatter.shortDate.stringFromDate(self)
+	}
+	
+	var shortDateTime: String {
+		return Formatter.shortDateTime.stringFromDate(self)
+	}
+	
+	var longDateTime: String {
+		return Formatter.longDateTime.stringFromDate(self)
+	}
+	
+	func toString(style: NSDateFormatterStyle = .MediumStyle) -> String {
 		let dateFormatter = NSDateFormatter()
 		dateFormatter.locale = NSLocale.currentLocale()
-		dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+		dateFormatter.dateStyle = style
 		return dateFormatter.stringFromDate(self)
 	}
 	
@@ -113,5 +131,12 @@ extension NSDate {
 		if minutesFrom(date) > 0 { return "\(minutesFrom(date))m" }
 		if secondsFrom(date) > 0 { return "\(secondsFrom(date))s" }
 		return ""
+	}
+}
+
+extension NSDateFormatter {
+	convenience init(dateFormat: String) {
+		self.init()
+		self.dateFormat = dateFormat
 	}
 }

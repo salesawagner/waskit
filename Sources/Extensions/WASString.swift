@@ -6,6 +6,8 @@
 //  Copyright © 2016 Wagner Sales. All rights reserved.
 //
 
+import UIKit
+
 extension String {
 	
 	/**
