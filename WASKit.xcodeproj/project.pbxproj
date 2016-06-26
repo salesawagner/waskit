@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A72A48D71D206950000715B1 /* WASDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72A48D61D206950000715B1 /* WASDate.swift */; };
+		A72A48D91D20698D000715B1 /* WASString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72A48D81D20698D000715B1 /* WASString.swift */; };
 		A795E9B41CFCEE5B00B3E08C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A795E9B31CFCEE5B00B3E08C /* Assets.xcassets */; };
 		A7BB04721CD04BAD00194A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB04711CD04BAD00194A53 /* AppDelegate.swift */; };
 		A7BB04741CD04BAD00194A53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB04731CD04BAD00194A53 /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A72A48D61D206950000715B1 /* WASDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASDate.swift; sourceTree = "<group>"; };
+		A72A48D81D20698D000715B1 /* WASString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASString.swift; sourceTree = "<group>"; };
 		A795E9B31CFCEE5B00B3E08C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7AFDB0E1CD0390800178425 /* WASKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WASKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AFDB1B1CD03A5900178425 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,8 +165,10 @@
 		A7BE76E11CD06A7F000D61BA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A72A48D61D206950000715B1 /* WASDate.swift */,
 				A7BE76E91CD08326000D61BA /* WASColor.swift */,
 				A7BE76E41CD06AAD000D61BA /* WASImage.swift */,
+				A72A48D81D20698D000715B1 /* WASString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -290,7 +296,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7BE76E51CD06AAD000D61BA /* WASImage.swift in Sources */,
+				A72A48D71D206950000715B1 /* WASDate.swift in Sources */,
 				A7EC86361D08CF4F007F5010 /* WASRoundedView.swift in Sources */,
+				A72A48D91D20698D000715B1 /* WASString.swift in Sources */,
 				A7E76AE01CFD0F64005F93E1 /* WASButton.swift in Sources */,
 				A7E76AE61CFD105B005F93E1 /* WASPeopleButton.swift in Sources */,
 				A7E76AE21CFD1013005F93E1 /* WASLikeButton.swift in Sources */,
