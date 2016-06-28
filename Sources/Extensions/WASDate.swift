@@ -70,9 +70,24 @@ extension NSDate {
 	//*************************
 	
 	struct Formatter {
+		static let day = NSDateFormatter(dateFormat: "dd")
+		static let month = NSDateFormatter(dateFormat: "MM")
+		static let year = NSDateFormatter(dateFormat: "yyyy")
 		static let shortDate = NSDateFormatter(dateFormat: "dd-MM-yyyy")
 		static let shortDateTime = NSDateFormatter(dateFormat: "dd-MM-yyyy HH:mm")
 		static let longDateTime = NSDateFormatter(dateFormat: "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
+	}
+	
+	var day: Int {
+		return Int(Formatter.day.stringFromDate(self))!
+	}
+	
+	var month: Int {
+		return Int(Formatter.month.stringFromDate(self))!
+	}
+	
+	var year: Int {
+		return Int(Formatter.year.stringFromDate(self))!
 	}
 	
 	var shortDate: String {
