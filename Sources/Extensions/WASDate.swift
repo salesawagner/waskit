@@ -14,7 +14,7 @@ extension NSDate {
 	// MARK: Comparassion
 	//*************************
 	
-	func isGreaterThan(date: NSDate) -> Bool {
+	public func isGreaterThan(date: NSDate) -> Bool {
 
 		var isGreater = false
 		
@@ -25,7 +25,7 @@ extension NSDate {
 		return isGreater
 	}
 	
-	func isLessThan(date: NSDate) -> Bool {
+	public func isLessThan(date: NSDate) -> Bool {
 
 		var isLess = false
 		
@@ -36,7 +36,7 @@ extension NSDate {
 		return isLess
 	}
 	
-	func equalTo(date: NSDate) -> Bool {
+	public func equalTo(date: NSDate) -> Bool {
 
 		var isEqualTo = false
 		
@@ -51,15 +51,15 @@ extension NSDate {
 	// MARK: Time manager
 	//*************************
 	
-	func addSeconds(value: Int) -> NSDate {
+	public func addSeconds(value: Int) -> NSDate {
 		return self.future(value, calendarUnit: NSCalendarUnit.Second)
 	}
 	
-	func addMinutes(value: Int) -> NSDate {
+	public func addMinutes(value: Int) -> NSDate {
 		return self.future(value, calendarUnit: NSCalendarUnit.Minute)
 	}
 	
-	func future(value: Int, calendarUnit: NSCalendarUnit) -> NSDate {
+	public func future(value: Int, calendarUnit: NSCalendarUnit) -> NSDate {
 		let components: NSDateComponents = NSDateComponents()
 		components.setValue(value, forComponent: calendarUnit);
 		return NSCalendar.currentCalendar().dateByAddingComponents(components, toDate: self, options: NSCalendarOptions(rawValue: 0))!
@@ -87,42 +87,42 @@ extension NSDate {
 		return Formatter.longDateTime.stringFromDate(self)
 	}
 	
-	func toString(style: NSDateFormatterStyle = .MediumStyle) -> String {
+	public func toString(style: NSDateFormatterStyle = .MediumStyle) -> String {
 		let dateFormatter = NSDateFormatter()
 		dateFormatter.locale = NSLocale.currentLocale()
 		dateFormatter.dateStyle = style
 		return dateFormatter.stringFromDate(self)
 	}
 	
-	func yearsFrom(date:NSDate) -> Int {
+	public func yearsFrom(date:NSDate) -> Int {
 		return NSCalendar.currentCalendar().components(.Year, fromDate: date, toDate: self, options: []).year
 	}
 	
-	func monthsFrom(date:NSDate) -> Int {
+	public func monthsFrom(date:NSDate) -> Int {
 		return NSCalendar.currentCalendar().components(.Month, fromDate: date, toDate: self, options: []).month
 	}
 	
-	func weeksFrom(date:NSDate) -> Int {
+	public func weeksFrom(date:NSDate) -> Int {
 		return NSCalendar.currentCalendar().components(.WeekOfYear, fromDate: date, toDate: self, options: []).weekOfYear
 	}
 	
-	func daysFrom(date:NSDate) -> Int {
+	public func daysFrom(date:NSDate) -> Int {
 		return NSCalendar.currentCalendar().components(.Day, fromDate: date, toDate: self, options: []).day
 	}
 	
-	func hoursFrom(date:NSDate) -> Int {
+	public func hoursFrom(date:NSDate) -> Int {
 		return NSCalendar.currentCalendar().components(.Hour, fromDate: date, toDate: self, options: []).hour
 	}
 	
-	func minutesFrom(date:NSDate) -> Int{
+	public func minutesFrom(date:NSDate) -> Int {
 		return NSCalendar.currentCalendar().components(.Minute, fromDate: date, toDate: self, options: []).minute
 	}
 	
-	func secondsFrom(date:NSDate) -> Int {
+	public func secondsFrom(date:NSDate) -> Int {
 		return NSCalendar.currentCalendar().components(.Second, fromDate: date, toDate: self, options: []).second
 	}
 	
-	func offsetFrom(date:NSDate) -> String {
+	public func offsetFrom(date:NSDate) -> String {
 		if yearsFrom(date)   > 0 { return "\(yearsFrom(date))y"   }
 		if monthsFrom(date)  > 0 { return "\(monthsFrom(date))M"  }
 		if weeksFrom(date)   > 0 { return "\(weeksFrom(date))w"   }

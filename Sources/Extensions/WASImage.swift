@@ -92,7 +92,6 @@ extension UIImage {
 	
 	- returns: Cropped image.
 	*/
-	
 	public func crop(rect: CGRect) -> UIImage {
 		
 		var finishImage = self

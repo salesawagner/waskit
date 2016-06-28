@@ -17,7 +17,7 @@ extension String {
 	
 	- returns: NSDate.
 	*/
-	func toDate(format: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") -> NSDate? {
+	public func toDate(format: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") -> NSDate? {
 		
 		var dateFormatted: NSDate?
 		
