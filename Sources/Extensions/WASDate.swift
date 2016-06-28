@@ -8,6 +8,14 @@
 
 import UIKit
 
+//**********************************************************************************************************
+//
+// MARK: - Constants -
+//
+//**********************************************************************************************************
+
+let kComponentFlags: NSCalendarUnit = [.Year, .Month, .Day, .Hour, .Minute, .Second, .Weekday, .WeekdayOrdinal, .WeekOfYear]
+
 extension NSDate {
 	
 	//*************************
@@ -69,72 +77,182 @@ extension NSDate {
 	// MARK: Format
 	//*************************
 	
-	struct Formatter {
-		static let day = NSDateFormatter(dateFormat: "dd")
-		static let month = NSDateFormatter(dateFormat: "MM")
-		static let year = NSDateFormatter(dateFormat: "yyyy")
-		static let shortDate = NSDateFormatter(dateFormat: "dd-MM-yyyy")
-		static let shortDateTime = NSDateFormatter(dateFormat: "dd-MM-yyyy HH:mm")
-		static let longDateTime = NSDateFormatter(dateFormat: "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
+	var components: NSDateComponents {
+		return NSCalendar.currentCalendar().components(kComponentFlags, fromDate: self)
 	}
 	
-	var day: Int {
-		return Int(Formatter.day.stringFromDate(self))!
+	func componentsFrom(date: NSDate) -> NSDateComponents {
+		let current = NSCalendar.currentCalendar()
+		return current.components(kComponentFlags, fromDate: date, toDate: self, options: [])
 	}
 	
-	var month: Int {
-		return Int(Formatter.month.stringFromDate(self))!
-	}
+	/**
+	Return a date formated
 	
-	var year: Int {
-		return Int(Formatter.year.stringFromDate(self))!
-	}
+	- parameter style: Style to formmater the date. By default .ShortStyle
 	
-	var shortDate: String {
-		return Formatter.shortDate.stringFromDate(self)
-	}
-	
-	var shortDateTime: String {
-		return Formatter.shortDateTime.stringFromDate(self)
-	}
-	
-	var longDateTime: String {
-		return Formatter.longDateTime.stringFromDate(self)
-	}
-	
-	public func toString(style: NSDateFormatterStyle = .MediumStyle) -> String {
+	- returns: Date string formatted. Ex. default: 6/28/16
+	*/
+	public func toString(style: NSDateFormatterStyle = .ShortStyle) -> String {
 		let dateFormatter = NSDateFormatter()
 		dateFormatter.locale = NSLocale.currentLocale()
 		dateFormatter.dateStyle = style
 		return dateFormatter.stringFromDate(self)
 	}
 	
+	/**
+	- returns: Int date second.
+	*/
+	public var second: Int {
+		return self.components.second
+	}
+
+	/**
+	- returns: Int date minute.
+	*/
+	public var minute: Int {
+		return self.components.minute
+	}
+	
+	/**
+	- returns: Int date hour.
+	*/
+	public var hour: Int {
+		return self.components.hour
+	}
+	
+	/**
+	- returns: Int date day.
+	*/
+	public var day: Int {
+		return self.components.day
+	}
+	
+	/**
+	- returns: Int date month.
+	*/
+	public var month: Int {
+		return self.components.month
+	}
+	
+	/**
+	- returns: Int date year.
+	*/
+	public var year: Int {
+		return self.components.year
+	}
+	
+	/**
+	- returns: "HH:mm"
+	*/
+	public var time: String {
+		return String(format: "%d:%d", self.hour, self.minute)
+	}
+	
+	/**
+	- returns: string "dd/MM/yyyy"
+	*/
+	public var shortDate: String {
+		return String(format: "%d/%d/%d", self.day, self.month, self.year)
+	}
+	
+	/**
+	- returns: string "dd/MM/yyyy HH:mm"
+	*/
+	public var shortDateTime: String {
+		return String(format: "%d %d", self.shortDate, self.time)
+	}
+	
+	/**
+	- returns: string "Monday June 30, 2014 10:42:21am PST"
+	*/
+	public var longDateTime: String {
+		let formatter = NSDateFormatter()
+		formatter.locale = .currentLocale()
+		formatter.dateStyle = .FullStyle
+		formatter.timeStyle = .FullStyle
+		return formatter.stringFromDate(self)
+	}
+	
+	//*************************
+	// MARK: Offset
+	//*************************
+	
+	/**
+	Return year(s) offset from date
+	
+	- parameter date: Date from be calculated.
+	
+	- returns: Int Year(s) offset
+	*/
 	public func yearsFrom(date:NSDate) -> Int {
-		return NSCalendar.currentCalendar().components(.Year, fromDate: date, toDate: self, options: []).year
+		return self.componentsFrom(date).year
 	}
 	
+	/**
+	Return month(s) offset from date
+	
+	- parameter date: Date from be calculated.
+	
+	- returns: Int Month(s) offset
+	*/
 	public func monthsFrom(date:NSDate) -> Int {
-		return NSCalendar.currentCalendar().components(.Month, fromDate: date, toDate: self, options: []).month
+		return self.componentsFrom(date).month
 	}
 	
+	/**
+	Return week(s) offset from date
+	
+	- parameter date: Date from be calculated.
+	
+	- returns: Int Week(s) offset
+	*/
 	public func weeksFrom(date:NSDate) -> Int {
-		return NSCalendar.currentCalendar().components(.WeekOfYear, fromDate: date, toDate: self, options: []).weekOfYear
+		return self.componentsFrom(date).weekOfYear
 	}
 	
+	/**
+	Return day(s) offset from date
+	
+	- parameter date: Date from be calculated.
+	
+	- returns: Int Day(s) offset
+	*/
 	public func daysFrom(date:NSDate) -> Int {
-		return NSCalendar.currentCalendar().components(.Day, fromDate: date, toDate: self, options: []).day
+		return self.componentsFrom(date).day
 	}
 	
+	/**
+	Return hour(s) offset from date
+	
+	- parameter date: Date from be calculated.
+	
+	- returns: Int Hour(s) offset
+	*/
 	public func hoursFrom(date:NSDate) -> Int {
-		return NSCalendar.currentCalendar().components(.Hour, fromDate: date, toDate: self, options: []).hour
+		return self.componentsFrom(date).hour
 	}
 	
+	/**
+	Return minute(s) offset from date
+	
+	- parameter date: Date from be calculated.
+	
+	- returns: Int Minute(s) offset
+	*/
 	public func minutesFrom(date:NSDate) -> Int {
-		return NSCalendar.currentCalendar().components(.Minute, fromDate: date, toDate: self, options: []).minute
+		return self.componentsFrom(date).minute
 	}
 	
+	/**
+	Return second(s) offset from date
+	
+	- parameter date: Date from be calculated.
+	
+	- returns: Int Second(s) offset
+	*/
 	public func secondsFrom(date:NSDate) -> Int {
-		return NSCalendar.currentCalendar().components(.Second, fromDate: date, toDate: self, options: []).second
+		return self.componentsFrom(date).second
 	}
 	
 	public func offsetFrom(date:NSDate) -> String {
@@ -146,12 +264,5 @@ extension NSDate {
 		if minutesFrom(date) > 0 { return "\(minutesFrom(date))m" }
 		if secondsFrom(date) > 0 { return "\(secondsFrom(date))s" }
 		return ""
-	}
-}
-
-extension NSDateFormatter {
-	convenience init(dateFormat: String) {
-		self.init()
-		self.dateFormat = dateFormat
 	}
 }
