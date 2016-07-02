@@ -110,7 +110,7 @@ import UIKit
 		let width = self.frame.size.width
 		self.percentLabel = UILabel(frame: CGRectMake(0, 0, width, width))
 		self.percentLabel.textAlignment = .Center
-		self.percentLabel.font = UIFont.boldSystemFontOfSize(width/3)
+		self.percentLabel.font = UIFont.boldSystemFontOfSize(width/2.5)
 		self.percentLabel.minimumScaleFactor = 0.2
 		self.percentLabel.adjustsFontSizeToFitWidth = true
 		self.percentLabel.textColor = self.textColor
