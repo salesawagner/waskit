@@ -89,8 +89,8 @@ import UIKit
 		}
 		
 		self.backgroundColor	= UIColor.clearColor()
-		self.layer.cornerRadius = self.frame.width/2
-		self.clipsToBounds		= true
+//		self.layer.cornerRadius = self.frame.width/2
+//		self.clipsToBounds		= true
 		
 		self.drawPie()
 	}
