@@ -26,7 +26,7 @@ import UIKit
 //
 //**********************************************************************************************************
 
-public class WASPie: UIView {
+@IBDesignable public class WASPie: UIView {
 
 //**************************************************
 // MARK: - Properties
@@ -81,6 +81,17 @@ public class WASPie: UIView {
 		self.circleShape.fillColor = UIColor.clearColor().CGColor
 		self.circleShape.strokeColor = self.color.CGColor
 		self.layer.addSublayer(self.circleShape)
+		
+		if self.backgroundColor != UIColor.clearColor() {
+			if let color = self.backgroundColor {
+				self.color = color
+			}
+		}
+		
+		self.backgroundColor	= UIColor.clearColor()
+		self.layer.cornerRadius = self.frame.width/2
+		self.clipsToBounds		= true
+		
 		self.drawPie()
 	}
 	
