@@ -50,6 +50,11 @@ import UIKit
 			self.drawPie()
 		}
 	}
+	public var title: String? {
+		didSet {
+			self.drawPie()
+		}
+	}
 	
 //**************************************************
 // MARK: - Constructors
@@ -104,12 +109,18 @@ import UIKit
 		
 		let width = self.frame.size.width
 		self.percentLabel = UILabel(frame: CGRectMake(0, 0, width, width))
-		self.percentLabel.text = String(format: "%.0f", self.percent)
 		self.percentLabel.textAlignment = .Center
-		self.percentLabel.font = UIFont.boldSystemFontOfSize(width/2)
-		self.percentLabel.textColor = self.textColor
+		self.percentLabel.font = UIFont.boldSystemFontOfSize(width/3)
 		self.percentLabel.minimumScaleFactor = 0.2
 		self.percentLabel.adjustsFontSizeToFitWidth = true
+		self.percentLabel.textColor = self.textColor
+		
+		var pieTitle = String(format: "%.0f", self.percent)
+		if let title = self.title {
+			pieTitle = title
+		}
+		self.percentLabel.text = pieTitle
+		
 		self.addSubview(self.percentLabel)
 	}
 	
