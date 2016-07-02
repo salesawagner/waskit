@@ -26,7 +26,7 @@ import UIKit
 //
 //**********************************************************************************************************
 
-@IBDesignable class WASRoundedView: UIView {
+@IBDesignable public class WASRoundedView: UIView {
 	
 //**************************************************
 // MARK: - Properties
@@ -74,21 +74,16 @@ import UIKit
 		self.setup()
 	}
 	
-	required init?(coder aDecoder: NSCoder) {
+	required public init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		self.setup()
 	}
-	
-//**************************************************
-// MARK: - Internal Methods
-//**************************************************
 
 //**************************************************
 // MARK: - Private Methods
 //**************************************************
-
+	
 	private func setup() {
-		
 		self.cornerRadius = 4
 		self.borderWidth = 1
 		self.borderColor = UIColor.WASLineColor()
@@ -96,16 +91,20 @@ import UIKit
 	}
 	
 //**************************************************
+// MARK: - Internal Methods
+//**************************************************
+	
+//**************************************************
 // MARK: - Public Methods
 //**************************************************
 
-	func alert() {
+	public func alert() {
 		
 		self.borderColor = UIColor.redColor()
 		self.borderWidth = 1
 	}
 	
-	func clear() {
+	public func clear() {
 		
 		self.borderColor = self.backgroundColor
 		self.borderWidth = 0

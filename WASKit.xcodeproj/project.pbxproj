@@ -28,6 +28,7 @@
 		A7E76AE81CFD107C005F93E1 /* WASStarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE71CFD107C005F93E1 /* WASStarButton.swift */; };
 		A7E76AEA1CFD109F005F93E1 /* WASCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE91CFD109F005F93E1 /* WASCheckButton.swift */; };
 		A7EC86361D08CF4F007F5010 /* WASRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EC86351D08CF4F007F5010 /* WASRoundedView.swift */; };
+		A7FE35B11D284CE2004BD64C /* WASPie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FE35B01D284CE2004BD64C /* WASPie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		A7E76AE71CFD107C005F93E1 /* WASStarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASStarButton.swift; path = Classes/Buttons/WASStarButton.swift; sourceTree = "<group>"; };
 		A7E76AE91CFD109F005F93E1 /* WASCheckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASCheckButton.swift; path = Classes/Buttons/WASCheckButton.swift; sourceTree = "<group>"; };
 		A7EC86351D08CF4F007F5010 /* WASRoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASRoundedView.swift; sourceTree = "<group>"; };
+		A7FE35B01D284CE2004BD64C /* WASPie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASPie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				A7EC86351D08CF4F007F5010 /* WASRoundedView.swift */,
+				A7FE35B01D284CE2004BD64C /* WASPie.swift */,
 			);
 			name = Views;
 			path = Classes/Views;
@@ -310,6 +313,7 @@
 				A7E76AE81CFD107C005F93E1 /* WASStarButton.swift in Sources */,
 				A7E76AE41CFD103C005F93E1 /* WASDisLikeButton.swift in Sources */,
 				A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */,
+				A7FE35B11D284CE2004BD64C /* WASPie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
