@@ -23,11 +23,11 @@ import UIKit
 
 extension UIFont {
 	
-	public func WASFontBook(size: CGFloat) -> UIFont {
+	public class func WASFontBook(size: CGFloat) -> UIFont {
 		return UIFont(name: "Avenir-Book", size: size)!
 	}
 	
-	public func WASFontBlack(size: CGFloat) -> UIFont {
+	public class func WASFontBlack(size: CGFloat) -> UIFont {
 		return UIFont(name: "Avenir-Black", size: size)!
 	}
 }
