@@ -101,6 +101,21 @@ extension NSDate {
 	}
 	
 	/**
+	Return a date formated by template
+	
+	- parameter template: template to formmater the date. By default "dd-MM-yyyy HH:mm".currentLocale()
+	
+	- returns: Date string formatted. Ex. default: 08/10/1984 16:00
+	*/
+	public func toStringFormatted(template: String = "dd/MM/yyyy HH:mm") -> String {
+		let locale = NSLocale.currentLocale()
+		let dateFormatter = NSDateFormatter()
+		dateFormatter.dateFormat = NSDateFormatter.dateFormatFromTemplate(template, options: 0, locale: locale)
+		dateFormatter.locale = locale
+		return dateFormatter.stringFromDate(self)
+	}
+	
+	/**
 	- returns: Int date second.
 	*/
 	public var second: Int {
