@@ -1,15 +1,15 @@
 //
-//  WASString.swift
+//  NSString+WASDate.swift
 //  WASKit
 //
-//  Created by Wagner Sales on 6/26/16.
+//  Created by Wagner Sales on 9/14/16.
 //  Copyright © 2016 Wagner Sales. All rights reserved.
 //
 
 import UIKit
 
 extension String {
-	
+
 	/**
 	Return NSDate with format
 	
@@ -17,7 +17,7 @@ extension String {
 	
 	- returns: NSDate.
 	*/
-	public func toDate(format: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") -> NSDate? {
+	public func WAStoDate(format: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") -> NSDate? {
 		
 		var dateFormatted: NSDate?
 		
@@ -29,4 +29,5 @@ extension String {
 		
 		return dateFormatted
 	}
+	
 }

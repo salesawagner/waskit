@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A714D9681D23518B009C2C1F /* WASRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A714D9671D23518B009C2C1F /* WASRoundedButton.swift */; };
-		A72A48D71D206950000715B1 /* WASDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72A48D61D206950000715B1 /* WASDate.swift */; };
-		A72A48D91D20698D000715B1 /* WASString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72A48D81D20698D000715B1 /* WASString.swift */; };
+		A77852321D89E21500EEA483 /* NSDate+WASComparations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852311D89E21500EEA483 /* NSDate+WASComparations.swift */; };
+		A77852341D89E25A00EEA483 /* NSDate+WASTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852331D89E25A00EEA483 /* NSDate+WASTimeManager.swift */; };
+		A77852361D89E3CC00EEA483 /* NSDate+WASComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852351D89E3CC00EEA483 /* NSDate+WASComponents.swift */; };
+		A77852381D89E55C00EEA483 /* NSDate+WASFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852371D89E55C00EEA483 /* NSDate+WASFormats.swift */; };
 		A795E9B41CFCEE5B00B3E08C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A795E9B31CFCEE5B00B3E08C /* Assets.xcassets */; };
 		A79811991D2871F40085570B /* WASFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79811981D2871F40085570B /* WASFont.swift */; };
 		A7BB04721CD04BAD00194A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB04711CD04BAD00194A53 /* AppDelegate.swift */; };
@@ -22,6 +24,14 @@
 		A7BE76E71CD06FE0000D61BA /* foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7BE76E61CD06FE0000D61BA /* foto.jpg */; };
 		A7BE76E81CD06FF7000D61BA /* foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7BE76E61CD06FE0000D61BA /* foto.jpg */; };
 		A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BE76E91CD08326000D61BA /* WASColor.swift */; };
+		A7D7FA2C1D89EA4200E684A3 /* NSDate+WASOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA2B1D89EA4200E684A3 /* NSDate+WASOffset.swift */; };
+		A7D7FA2E1D89F3F400E684A3 /* WASDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA2D1D89F3F400E684A3 /* WASDate.swift */; };
+		A7D7FA311D89F93E00E684A3 /* String+WASDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA301D89F93E00E684A3 /* String+WASDate.swift */; };
+		A7D7FA331D89FA8500E684A3 /* String+WASRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA321D89FA8500E684A3 /* String+WASRegex.swift */; };
+		A7D7FA3C1D8A001200E684A3 /* UIColor+WASBrightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA3B1D8A001200E684A3 /* UIColor+WASBrightness.swift */; };
+		A7D7FA3E1D8A01B600E684A3 /* UIColor+WASPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA3D1D8A01B600E684A3 /* UIColor+WASPalette.swift */; };
+		A7D7FA401D8A046600E684A3 /* UIView+WASVisibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA3F1D8A046600E684A3 /* UIView+WASVisibleView.swift */; };
+		A7D7FA441D8A081B00E684A3 /* WASUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA431D8A081B00E684A3 /* WASUtil.swift */; };
 		A7E76AE01CFD0F64005F93E1 /* WASButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76ADF1CFD0F64005F93E1 /* WASButton.swift */; };
 		A7E76AE21CFD1013005F93E1 /* WASLikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE11CFD1013005F93E1 /* WASLikeButton.swift */; };
 		A7E76AE41CFD103C005F93E1 /* WASDisLikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE31CFD103C005F93E1 /* WASDisLikeButton.swift */; };
@@ -34,8 +44,10 @@
 
 /* Begin PBXFileReference section */
 		A714D9671D23518B009C2C1F /* WASRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASRoundedButton.swift; path = Classes/Buttons/WASRoundedButton.swift; sourceTree = "<group>"; };
-		A72A48D61D206950000715B1 /* WASDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASDate.swift; sourceTree = "<group>"; };
-		A72A48D81D20698D000715B1 /* WASString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASString.swift; sourceTree = "<group>"; };
+		A77852311D89E21500EEA483 /* NSDate+WASComparations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASComparations.swift"; path = "NSDate/NSDate+WASComparations.swift"; sourceTree = "<group>"; };
+		A77852331D89E25A00EEA483 /* NSDate+WASTimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASTimeManager.swift"; path = "NSDate/NSDate+WASTimeManager.swift"; sourceTree = "<group>"; };
+		A77852351D89E3CC00EEA483 /* NSDate+WASComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASComponents.swift"; path = "NSDate/NSDate+WASComponents.swift"; sourceTree = "<group>"; };
+		A77852371D89E55C00EEA483 /* NSDate+WASFormats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASFormats.swift"; path = "NSDate/NSDate+WASFormats.swift"; sourceTree = "<group>"; };
 		A795E9B31CFCEE5B00B3E08C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A79811981D2871F40085570B /* WASFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASFont.swift; sourceTree = "<group>"; };
 		A7AFDB0E1CD0390800178425 /* WASKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WASKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +62,14 @@
 		A7BE76E41CD06AAD000D61BA /* WASImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASImage.swift; sourceTree = "<group>"; };
 		A7BE76E61CD06FE0000D61BA /* foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = foto.jpg; path = "../ListMyPeople_Resources/Women Photos/foto.jpg"; sourceTree = "<group>"; };
 		A7BE76E91CD08326000D61BA /* WASColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASColor.swift; sourceTree = "<group>"; };
+		A7D7FA2B1D89EA4200E684A3 /* NSDate+WASOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASOffset.swift"; path = "NSDate/NSDate+WASOffset.swift"; sourceTree = "<group>"; };
+		A7D7FA2D1D89F3F400E684A3 /* WASDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASDate.swift; path = NSDate/WASDate.swift; sourceTree = "<group>"; };
+		A7D7FA301D89F93E00E684A3 /* String+WASDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+WASDate.swift"; path = "NSString/String+WASDate.swift"; sourceTree = "<group>"; };
+		A7D7FA321D89FA8500E684A3 /* String+WASRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+WASRegex.swift"; path = "NSString/String+WASRegex.swift"; sourceTree = "<group>"; };
+		A7D7FA3B1D8A001200E684A3 /* UIColor+WASBrightness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+WASBrightness.swift"; path = "WASColor/UIColor+WASBrightness.swift"; sourceTree = "<group>"; };
+		A7D7FA3D1D8A01B600E684A3 /* UIColor+WASPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+WASPalette.swift"; path = "WASColor/UIColor+WASPalette.swift"; sourceTree = "<group>"; };
+		A7D7FA3F1D8A046600E684A3 /* UIView+WASVisibleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+WASVisibleView.swift"; sourceTree = "<group>"; };
+		A7D7FA431D8A081B00E684A3 /* WASUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASUtil.swift; path = Classes/WASUtil.swift; sourceTree = "<group>"; };
 		A7E76ADF1CFD0F64005F93E1 /* WASButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASButton.swift; path = Classes/Buttons/WASButton.swift; sourceTree = "<group>"; };
 		A7E76AE11CFD1013005F93E1 /* WASLikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASLikeButton.swift; path = Classes/Buttons/WASLikeButton.swift; sourceTree = "<group>"; };
 		A7E76AE31CFD103C005F93E1 /* WASDisLikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASDisLikeButton.swift; path = Classes/Buttons/WASDisLikeButton.swift; sourceTree = "<group>"; };
@@ -79,11 +99,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A77852301D89E1DB00EEA483 /* WASDate */ = {
+			isa = PBXGroup;
+			children = (
+				A7D7FA2D1D89F3F400E684A3 /* WASDate.swift */,
+				A77852311D89E21500EEA483 /* NSDate+WASComparations.swift */,
+				A77852331D89E25A00EEA483 /* NSDate+WASTimeManager.swift */,
+				A77852351D89E3CC00EEA483 /* NSDate+WASComponents.swift */,
+				A77852371D89E55C00EEA483 /* NSDate+WASFormats.swift */,
+				A7D7FA2B1D89EA4200E684A3 /* NSDate+WASOffset.swift */,
+			);
+			name = WASDate;
+			sourceTree = "<group>";
+		};
 		A7A7CA181CFD0CEF00974339 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				A7EC86341D08CF4F007F5010 /* Views */,
 				A7A7CA191CFD0CF500974339 /* Buttons */,
+				A7D7FA431D8A081B00E684A3 /* WASUtil.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -172,13 +206,33 @@
 		A7BE76E11CD06A7F000D61BA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A72A48D61D206950000715B1 /* WASDate.swift */,
-				A7BE76E91CD08326000D61BA /* WASColor.swift */,
+				A7D7FA3A1D89FFE400E684A3 /* WASColor */,
+				A7D7FA2F1D89F7E900E684A3 /* WASString */,
+				A77852301D89E1DB00EEA483 /* WASDate */,
 				A7BE76E41CD06AAD000D61BA /* WASImage.swift */,
-				A72A48D81D20698D000715B1 /* WASString.swift */,
 				A79811981D2871F40085570B /* WASFont.swift */,
+				A7D7FA3F1D8A046600E684A3 /* UIView+WASVisibleView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7D7FA2F1D89F7E900E684A3 /* WASString */ = {
+			isa = PBXGroup;
+			children = (
+				A7D7FA301D89F93E00E684A3 /* String+WASDate.swift */,
+				A7D7FA321D89FA8500E684A3 /* String+WASRegex.swift */,
+			);
+			name = WASString;
+			sourceTree = "<group>";
+		};
+		A7D7FA3A1D89FFE400E684A3 /* WASColor */ = {
+			isa = PBXGroup;
+			children = (
+				A7BE76E91CD08326000D61BA /* WASColor.swift */,
+				A7D7FA3B1D8A001200E684A3 /* UIColor+WASBrightness.swift */,
+				A7D7FA3D1D8A01B600E684A3 /* UIColor+WASPalette.swift */,
+			);
+			name = WASColor;
 			sourceTree = "<group>";
 		};
 		A7EC86341D08CF4F007F5010 /* Views */ = {
@@ -305,19 +359,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7BE76E51CD06AAD000D61BA /* WASImage.swift in Sources */,
-				A72A48D71D206950000715B1 /* WASDate.swift in Sources */,
 				A7EC86361D08CF4F007F5010 /* WASRoundedView.swift in Sources */,
-				A72A48D91D20698D000715B1 /* WASString.swift in Sources */,
 				A7E76AE01CFD0F64005F93E1 /* WASButton.swift in Sources */,
 				A714D9681D23518B009C2C1F /* WASRoundedButton.swift in Sources */,
 				A79811991D2871F40085570B /* WASFont.swift in Sources */,
+				A7D7FA401D8A046600E684A3 /* UIView+WASVisibleView.swift in Sources */,
+				A77852341D89E25A00EEA483 /* NSDate+WASTimeManager.swift in Sources */,
 				A7E76AE61CFD105B005F93E1 /* WASPeopleButton.swift in Sources */,
+				A77852361D89E3CC00EEA483 /* NSDate+WASComponents.swift in Sources */,
 				A7E76AE21CFD1013005F93E1 /* WASLikeButton.swift in Sources */,
+				A77852381D89E55C00EEA483 /* NSDate+WASFormats.swift in Sources */,
+				A7D7FA2E1D89F3F400E684A3 /* WASDate.swift in Sources */,
+				A77852321D89E21500EEA483 /* NSDate+WASComparations.swift in Sources */,
+				A7D7FA3C1D8A001200E684A3 /* UIColor+WASBrightness.swift in Sources */,
 				A7E76AEA1CFD109F005F93E1 /* WASCheckButton.swift in Sources */,
 				A7E76AE81CFD107C005F93E1 /* WASStarButton.swift in Sources */,
+				A7D7FA3E1D8A01B600E684A3 /* UIColor+WASPalette.swift in Sources */,
+				A7D7FA441D8A081B00E684A3 /* WASUtil.swift in Sources */,
 				A7E76AE41CFD103C005F93E1 /* WASDisLikeButton.swift in Sources */,
 				A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */,
+				A7D7FA311D89F93E00E684A3 /* String+WASDate.swift in Sources */,
 				A7FE35B11D284CE2004BD64C /* WASPie.swift in Sources */,
+				A7D7FA331D89FA8500E684A3 /* String+WASRegex.swift in Sources */,
+				A7D7FA2C1D89EA4200E684A3 /* NSDate+WASOffset.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

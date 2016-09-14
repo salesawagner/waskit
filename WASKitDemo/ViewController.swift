@@ -18,14 +18,22 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		
 		
-		self.pie = WASPie(frame: CGRectMake(100,100,100,100))
-		pie.percent = 55
-//		pie.color = UIColor.WASPinkColor()
-//		pie.percent = 25
-//		pie.color = UIColor.WASGreenColor()
-		self.view.addSubview(self.pie)
+		let date = NSDate.WAScreate(year: 1984, month: 10, day: 8)!
 		
-//		self.photoImageView.image = image?.resize(CGSizeMake(100, 100))
+		let pt_BR = NSLocale(localeIdentifier: "pt_BR")
+		
+		print(date)
+		print("===================")
+		print(date.toString())
+		print(date.toLongString())
+		print("===================")
+		print(date.toString(locale: pt_BR))
+		print(date.toLongString(locale: pt_BR))
+		print("===================")
+//		print(NSDate.create(year: 1984, month: 10, day: 08))
+		
+		
+		print(WASKit.visibleView())
 		
 	}
 	
@@ -33,4 +41,6 @@ class ViewController: UIViewController {
 		self.pie.percent = 50
 	}
 }
+
+
 
