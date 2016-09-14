@@ -29,7 +29,7 @@ extension NSDate {
 	
 	- returns: Date string formatted. Ex. default: 08/10/1984 16:00
 	*/
-	public func toLongString(template: String = "dd/MM/yyyy HH:mm", locale: NSLocale = NSLocale.currentLocale()) -> String {
+	public func WAStoLongString(template: String = "dd/MM/yyyy HH:mm", locale: NSLocale = NSLocale.currentLocale()) -> String {
 		let dateFormatter = NSDateFormatter()
 		dateFormatter.dateFormat = NSDateFormatter.dateFormatFromTemplate(template, options: 0, locale: locale)
 		dateFormatter.locale = locale
@@ -44,7 +44,7 @@ extension NSDate {
 	
 	- returns: Date string formatted. Ex. default: 08/10/1984
 	*/
-	public func toString(template: String = "dd/MM/yyyy", locale: NSLocale = NSLocale.currentLocale()) -> String {
+	public func WAStoString(template: String = "dd/MM/yyyy", locale: NSLocale = NSLocale.currentLocale()) -> String {
 		let dateFormatter = NSDateFormatter()
 		dateFormatter.dateFormat = NSDateFormatter.dateFormatFromTemplate(template, options: 0, locale: locale)
 		dateFormatter.locale = locale

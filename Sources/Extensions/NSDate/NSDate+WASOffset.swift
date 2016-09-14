@@ -103,7 +103,7 @@ extension NSDate {
 	
 	- returns: Human string. ex 10w
 	*/
-	public func offsetFrom(date:NSDate) -> String {
+	public func WASoffsetFrom(date:NSDate) -> String {
 		var humanFormat = ""
 		if WASyearsFrom(date)   > 0 { humanFormat = "\(WASyearsFrom(date))y"   }
 		else if WASmonthsFrom(date)  > 0 { humanFormat = "\(WASmonthsFrom(date))M"  }
