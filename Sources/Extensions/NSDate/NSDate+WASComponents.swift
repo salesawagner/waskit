@@ -14,61 +14,61 @@ import UIKit
 //
 //**********************************************************************************************************
 
-let kComponentFlags: NSCalendarUnit = [.Year, .Month, .Day, .Hour, .Minute, .Second, .Weekday, .WeekdayOrdinal, .WeekOfYear]
+let kComponentFlags: NSCalendar.Unit = [.year, .month, .day, .hour, .minute, .second, .weekday, .weekdayOrdinal, .weekOfYear]
 
 //*************************
 // MARK: Components
 //*************************
 
-extension NSDate {
+extension Date {
 
 	/**
 	- Date components.
 	*/
-	public var WASdateComponents: NSDateComponents {
-		return NSCalendar.currentCalendar().components(kComponentFlags, fromDate: self)
+	public var WASdateComponents: DateComponents {
+		return (Calendar.current as NSCalendar).components(kComponentFlags, from: self)
 	}
 	
 	/**
 	- Date second.
 	*/
 	public var WASsecond: Int {
-		return self.WASdateComponents.second
+		return self.WASdateComponents.second!
 	}
 	
 	/**
 	- Date minute.
 	*/
 	public var WASminute: Int {
-		return self.WASdateComponents.minute
+		return self.WASdateComponents.minute!
 	}
 	
 	/**
 	- Date hour.
 	*/
 	public var WAShour: Int {
-		return self.WASdateComponents.hour
+		return self.WASdateComponents.hour!
 	}
 	
 	/**
 	- Date day.
 	*/
 	public var WASday: Int {
-		return self.WASdateComponents.day
+		return self.WASdateComponents.day!
 	}
 	
 	/**
 	- Date month.
 	*/
 	public var WASmonth: Int {
-		return self.WASdateComponents.month
+		return self.WASdateComponents.month!
 	}
 	
 	/**
 	- Date year.
 	*/
 	public var WASyear: Int {
-		return self.WASdateComponents.year
+		return self.WASdateComponents.year!
 	}
 	
 }

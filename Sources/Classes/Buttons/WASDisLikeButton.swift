@@ -53,7 +53,7 @@ import UIKit
 //**************************************************
 	
 	override func setup() {
-		self.type = .DisLike
+		self.type = .disLike
 		super.setup()
 	}
 }

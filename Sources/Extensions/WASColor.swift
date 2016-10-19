@@ -62,7 +62,7 @@ extension UIColor {
 	
 	- returns: Custom pink color.
 	*/
-	public class func WASGray(c: Int = 50, a: CGFloat = 1.0) -> UIColor {
+	public class func WASGray(_ c: Int = 50, a: CGFloat = 1.0) -> UIColor {
 		return UIColor(r:c, g: c, b: c, a: a)
 	}
 	

@@ -12,7 +12,7 @@ import UIKit
 // MARK: Comparassion
 //*************************
 
-extension NSDate {
+extension Date {
 	
 	/**
 	Compare if date is Greater than date parameter.
@@ -21,8 +21,8 @@ extension NSDate {
 	
 	- returns: true if greater, false if less.
 	*/
-	public func WASisGreaterThan(date: NSDate) -> Bool {
-		return self.compare(date) == .OrderedDescending
+	public func WASisGreaterThan(_ date: Date) -> Bool {
+		return self.compare(date) == .orderedDescending
 	}
 	
 	/**
@@ -32,8 +32,8 @@ extension NSDate {
 	
 	- returns: true if less, false if greater.
 	*/
-	public func WASisLessThan(date: NSDate) -> Bool {
-		return self.compare(date) == .OrderedAscending
+	public func WASisLessThan(_ date: Date) -> Bool {
+		return self.compare(date) == .orderedAscending
 	}
 	
 	/**
@@ -43,8 +43,8 @@ extension NSDate {
 	
 	- returns: true if equal, false if no equal.
 	*/
-	public func WASisEqualTo(date: NSDate) -> Bool {
-		return self.compare(date) == .OrderedSame
+	public func WASisEqualTo(_ date: Date) -> Bool {
+		return self.compare(date) == .orderedSame
 	}
 
 }

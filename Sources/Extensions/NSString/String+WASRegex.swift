@@ -17,14 +17,14 @@ extension String {
 	
 	- returns: String array of matches
 	*/
-	func WASmatchesForRegexInText(regexString: String) -> [String] {
+	func WASmatchesForRegexInText(_ regexString: String) -> [String] {
 		do {
-			let regex = try NSRegularExpression(pattern: regexString, options: .CaseInsensitive)
+			let regex = try NSRegularExpression(pattern: regexString, options: .caseInsensitive)
 			let nsString = self as NSString
 			let range = NSMakeRange(0, nsString.length)
-			let results = regex.matchesInString(self, options: .ReportCompletion, range: range)
+			let results = regex.matches(in: self, options: .reportCompletion, range: range)
 			return results.map({
-				nsString.substringWithRange($0.range)
+				nsString.substring(with: $0.range)
 			})
 		} catch let e {
 			print(e)

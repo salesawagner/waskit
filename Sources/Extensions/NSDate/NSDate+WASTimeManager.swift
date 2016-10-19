@@ -12,7 +12,7 @@ import UIKit
 // MARK: Time manager
 //*************************
 
-extension NSDate {
+extension Date {
 	
 	/**
 	Add second(s) to date.
@@ -21,8 +21,8 @@ extension NSDate {
 	
 	- returns: Date with seconds added.
 	*/
-	public func WASaddSeconds(value: Int) -> NSDate {
-		return self.WASfuture(value, unit: .Second)
+	public func WASaddSeconds(_ value: Int) -> Date {
+		return self.WASfuture(value, unit: .second)
 	}
 
 	/**
@@ -32,8 +32,8 @@ extension NSDate {
 	
 	- returns: Date with minute added.
 	*/
-	public func WASaddMinutes(value: Int) -> NSDate {
-		return self.WASfuture(value, unit: .Minute)
+	public func WASaddMinutes(_ value: Int) -> Date {
+		return self.WASfuture(value, unit: .minute)
 	}
 	
 	/**
@@ -43,8 +43,8 @@ extension NSDate {
 	
 	- returns: Date with hour added.
 	*/
-	public func WASaddHours(value: Int) -> NSDate {
-		return self.WASfuture(value, unit: .Hour)
+	public func WASaddHours(_ value: Int) -> Date {
+		return self.WASfuture(value, unit: .hour)
 	}
 	
 	/**
@@ -54,8 +54,8 @@ extension NSDate {
 	
 	- returns: Date with day added.
 	*/
-	public func WASaddDays(value: Int) -> NSDate {
-		return self.WASfuture(value, unit: .Day)
+	public func WASaddDays(_ value: Int) -> Date {
+		return self.WASfuture(value, unit: .day)
 	}
 	
 	/**
@@ -65,8 +65,8 @@ extension NSDate {
 	
 	- returns: Date with month added.
 	*/
-	public func WASaddMonths(value: Int) -> NSDate {
-		return self.WASfuture(value, unit: .Month)
+	public func WASaddMonths(_ value: Int) -> Date {
+		return self.WASfuture(value, unit: .month)
 	}
 	
 	/**
@@ -76,8 +76,8 @@ extension NSDate {
 	
 	- returns: Date with year added.
 	*/
-	public func WASaddYears(value: Int) -> NSDate {
-		return self.WASfuture(value, unit: .Year)
+	public func WASaddYears(_ value: Int) -> Date {
+		return self.WASfuture(value, unit: .year)
 	}
 	
 	/**
@@ -88,10 +88,10 @@ extension NSDate {
 	
 	- returns: Date with unit added.
 	*/
-	public func WASfuture(value: Int, unit: NSCalendarUnit) -> NSDate {
-		let components: NSDateComponents = NSDateComponents()
-		components.setValue(value, forComponent: unit);
-		return NSCalendar.currentCalendar().dateByAddingComponents(components, toDate: self, options: NSCalendarOptions(rawValue: 0))!
+	public func WASfuture(_ value: Int, unit: NSCalendar.Unit) -> Date {
+		let components: DateComponents = DateComponents()
+		(components as NSDateComponents).setValue(value, forComponent: unit);
+		return (Calendar.current as NSCalendar).date(byAdding: components, to: self, options: NSCalendar.Options(rawValue: 0))!
 	}
 	
 }

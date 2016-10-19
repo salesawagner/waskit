@@ -17,13 +17,13 @@ extension String {
 	
 	- returns: NSDate.
 	*/
-	public func WAStoDate(format: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") -> NSDate? {
+	public func WAStoDate(_ format: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") -> Date? {
 		
-		var dateFormatted: NSDate?
+		var dateFormatted: Date?
 		
-		let dateFormatter = NSDateFormatter()
+		let dateFormatter = DateFormatter()
 		dateFormatter.dateFormat = format
-		if let date = dateFormatter.dateFromString(self) {
+		if let date = dateFormatter.date(from: self) {
 			dateFormatted = date
 		}
 		

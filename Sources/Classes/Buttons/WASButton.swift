@@ -22,27 +22,27 @@ import UIKit
 
 public enum WASButtonType: Int {
 	
-	case None
-	case Like
-	case DisLike
-	case Star
-	case People
-	case Check
+	case none
+	case like
+	case disLike
+	case star
+	case people
+	case check
 	
 	public func imageName() -> String {
 		var imageName = ""
 		switch self {
-		case .None:
+		case .none:
 			imageName = ""
-		case .Like:
+		case .like:
 			imageName = "WASIcn_like"
-		case .DisLike:
+		case .disLike:
 			imageName = "WASIcn_dislike"
-		case .Star:
+		case .star:
 			imageName = "WASIcn_star"
-		case .People:
+		case .people:
 			imageName = "WASIcn_people"
-		case .Check:
+		case .check:
 			imageName = "WASIcn_check"
 		}
 		return imageName
@@ -51,17 +51,17 @@ public enum WASButtonType: Int {
 	func emoji() -> String {
 		var imageName = ""
 		switch self {
-		case .None:
+		case .none:
 			imageName = ""
-		case .Like:
+		case .like:
 			imageName = "❤️"
-		case .DisLike:
+		case .disLike:
 			imageName = "❌"
-		case .Star:
+		case .star:
 			imageName = "⭐️"
-		case .People:
+		case .people:
 			imageName = "👥"
-		case .Check:
+		case .check:
 			imageName = "✅"
 		}
 		return imageName
@@ -80,7 +80,7 @@ public enum WASButtonType: Int {
 // MARK: - Properties
 //**************************************************
 	
-	var type = WASButtonType.None
+	var type = WASButtonType.none
 	
 //**************************************************
 // MARK: - Constructors
@@ -102,7 +102,7 @@ public enum WASButtonType: Int {
 	}
 	
 	init(type: WASButtonType) {
-		super.init(frame:CGRectZero)
+		super.init(frame:CGRect.zero)
 		self.type = type
 	}
 	
@@ -116,12 +116,12 @@ public enum WASButtonType: Int {
 	
 	func setup() {
 		#if !TARGET_INTERFACE_BUILDER
-			let image = UIImage(named: self.type.imageName(), inBundle: NSBundle(forClass: WASButton.self), compatibleWithTraitCollection: nil)
-			self.setImage(image, forState: .Normal)
+			let image = UIImage(named: self.type.imageName(), in: Bundle(for: WASButton.self), compatibleWith: nil)
+			self.setImage(image, for: UIControlState())
 
-			self.setTitle("", forState: .Highlighted)
-			self.setTitle("", forState: .Disabled)
-			self.setTitle("", forState: .Selected)			
+			self.setTitle("", for: .highlighted)
+			self.setTitle("", for: .disabled)
+			self.setTitle("", for: .selected)			
 		#else
 			self.setTitle(self.type.emoji(), forState: .Normal)
 		#endif

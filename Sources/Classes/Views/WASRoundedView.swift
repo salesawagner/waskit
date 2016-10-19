@@ -26,7 +26,7 @@ import UIKit
 //
 //**********************************************************************************************************
 
-@IBDesignable public class WASRoundedView: UIView {
+@IBDesignable open class WASRoundedView: UIView {
 	
 //**************************************************
 // MARK: - Properties
@@ -47,16 +47,16 @@ import UIKit
 	
 	@IBInspectable var borderColor: UIColor? {
 		didSet {
-			layer.borderColor = borderColor?.CGColor
+			layer.borderColor = borderColor?.cgColor
 		}
 	}
 	
-	@IBInspectable var shadowColor: UIColor = UIColor.blackColor() {
+	@IBInspectable var shadowColor: UIColor = UIColor.black {
 		didSet {
-			self.layer.shadowColor		= shadowColor.CGColor
+			self.layer.shadowColor		= shadowColor.cgColor
 			self.layer.shadowOpacity	= 1
 			self.layer.shadowRadius		= 1
-			self.layer.shadowOffset		= CGSizeMake(0, 2)
+			self.layer.shadowOffset		= CGSize(width: 0, height: 2)
 		}
 	}
 	
@@ -83,11 +83,11 @@ import UIKit
 // MARK: - Private Methods
 //**************************************************
 	
-	private func setup() {
+	fileprivate func setup() {
 		self.cornerRadius = 4
 		self.borderWidth = 1
 		self.borderColor = UIColor.WASLineColor()
-		self.shadowColor = UIColor.clearColor()
+		self.shadowColor = UIColor.clear
 	}
 	
 //**************************************************
@@ -98,13 +98,13 @@ import UIKit
 // MARK: - Public Methods
 //**************************************************
 
-	public func alert() {
+	open func alert() {
 		
-		self.borderColor = UIColor.redColor()
+		self.borderColor = UIColor.red
 		self.borderWidth = 1
 	}
 	
-	public func clear() {
+	open func clear() {
 		
 		self.borderColor = self.backgroundColor
 		self.borderWidth = 0

@@ -53,7 +53,7 @@ import UIKit
 //**************************************************
 	
 	override func setup() {
-		self.type = .People
+		self.type = .people
 		super.setup()
 	}
 }

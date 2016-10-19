@@ -14,7 +14,7 @@ extension UIWindow {
 // MARK: - Private Methods
 //**************************************************
 
-	private static func getVisibleViewControllerFrom(vc: UIViewController?) -> UIViewController? {
+	fileprivate static func getVisibleViewControllerFrom(_ vc: UIViewController?) -> UIViewController? {
 		if let nc = vc as? UINavigationController {
 			return UIWindow.getVisibleViewControllerFrom(nc.visibleViewController)
 		} else if let tc = vc as? UITabBarController {

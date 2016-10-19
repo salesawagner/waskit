@@ -53,7 +53,7 @@ import UIKit
 //**************************************************
 
 	override func setup() {
-		self.type = .Like
+		self.type = .like
 		super.setup()
 	}
 }

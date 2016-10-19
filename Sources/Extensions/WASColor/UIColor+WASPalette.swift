@@ -21,7 +21,7 @@ extension UIColor {
 	
 	- returns: Custom green color.
 	*/
-	public class func WASGreenColor(alpha: CGFloat = 1.0) -> UIColor {
+	public class func WASGreenColor(_ alpha: CGFloat = 1.0) -> UIColor {
 		return UIColor(r: 80, g: 210, b: 194, a: alpha)
 	}
 	
@@ -32,7 +32,7 @@ extension UIColor {
 	
 	- returns: Custom pink color.
 	*/
-	public class func WASPinkColor(alpha: CGFloat = 1.0) -> UIColor {
+	public class func WASPinkColor(_ alpha: CGFloat = 1.0) -> UIColor {
 		return UIColor(r: 255, g: 51, b: 102, a: alpha)
 	}
 	
@@ -43,7 +43,7 @@ extension UIColor {
 	
 	- returns: Custom purple color.
 	*/
-	public class func WASPurpleColor(alpha: CGFloat = 1.0) -> UIColor {
+	public class func WASPurpleColor(_ alpha: CGFloat = 1.0) -> UIColor {
 		return UIColor(r: 140, g: 136, b: 255, a: alpha)
 	}
 	
@@ -54,7 +54,7 @@ extension UIColor {
 	
 	- returns: Custom orange color.
 	*/
-	public class func WASOrangeColor(alpha: CGFloat = 1.0) -> UIColor {
+	public class func WASOrangeColor(_ alpha: CGFloat = 1.0) -> UIColor {
 		return UIColor(r: 238, g: 143, b: 110, a: alpha)
 	}
 	
@@ -65,7 +65,7 @@ extension UIColor {
 	
 	- returns: Custom yellow color.
 	*/
-	public class func WASYellowColor(alpha: CGFloat = 1.0) -> UIColor {
+	public class func WASYellowColor(_ alpha: CGFloat = 1.0) -> UIColor {
 		return UIColor(r: 255, g: 246, b: 187, a: alpha)
 	}
 	
@@ -76,7 +76,7 @@ extension UIColor {
 	
 	- returns: Custom red color.
 	*/
-	public class func WASRedColor(alpha: CGFloat = 1.0) -> UIColor {
+	public class func WASRedColor(_ alpha: CGFloat = 1.0) -> UIColor {
 		return UIColor(r: 242, g: 89, b: 75, a: alpha)
 	}
 	
@@ -87,7 +87,7 @@ extension UIColor {
 	
 	- returns: Custom pink color.
 	*/
-	public class func WASLineColor(alpha: CGFloat = 0.2) -> UIColor {
+	public class func WASLineColor(_ alpha: CGFloat = 0.2) -> UIColor {
 		return self.WASGray(216)
 	}
 	

@@ -12,7 +12,7 @@ import UIKit
 // MARK: Formats
 //*************************
 
-extension NSDate {
+extension Date {
 
 	/**
 	- returns: string "HH:mm"
@@ -29,11 +29,11 @@ extension NSDate {
 	
 	- returns: Date string formatted. Ex. default: 08/10/1984 16:00
 	*/
-	public func WAStoLongString(template: String = "dd/MM/yyyy HH:mm", locale: NSLocale = NSLocale.currentLocale()) -> String {
-		let dateFormatter = NSDateFormatter()
-		dateFormatter.dateFormat = NSDateFormatter.dateFormatFromTemplate(template, options: 0, locale: locale)
+	public func WAStoLongString(_ template: String = "dd/MM/yyyy HH:mm", locale: Locale = Locale.current) -> String {
+		let dateFormatter = DateFormatter()
+		dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: template, options: 0, locale: locale)
 		dateFormatter.locale = locale
-		return dateFormatter.stringFromDate(self)
+		return dateFormatter.string(from: self)
 	}
 	
 	/**
@@ -44,11 +44,11 @@ extension NSDate {
 	
 	- returns: Date string formatted. Ex. default: 08/10/1984
 	*/
-	public func WAStoString(template: String = "dd/MM/yyyy", locale: NSLocale = NSLocale.currentLocale()) -> String {
-		let dateFormatter = NSDateFormatter()
-		dateFormatter.dateFormat = NSDateFormatter.dateFormatFromTemplate(template, options: 0, locale: locale)
+	public func WAStoString(_ template: String = "dd/MM/yyyy", locale: Locale = Locale.current) -> String {
+		let dateFormatter = DateFormatter()
+		dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: template, options: 0, locale: locale)
 		dateFormatter.locale = locale
-		return dateFormatter.stringFromDate(self)
+		return dateFormatter.string(from: self)
 	}
 	
 }

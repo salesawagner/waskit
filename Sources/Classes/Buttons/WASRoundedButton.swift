@@ -26,7 +26,7 @@ import UIKit
 //
 //**********************************************************************************************************
 
-public class WASRoundedButton: UIButton {
+open class WASRoundedButton: UIButton {
 
 //**************************************************
 // MARK: - Properties
@@ -62,19 +62,19 @@ public class WASRoundedButton: UIButton {
 // MARK: - Private Methods
 //**************************************************
 
-	private func setup() {
+	fileprivate func setup() {
 	
 		self.layer.cornerRadius = self.frame.size.width/2;
 		self.adjustsImageWhenHighlighted = false;
 		
 		// Shadow
-		self.layer.shadowColor		= UIColor.blackColor().CGColor
+		self.layer.shadowColor		= UIColor.black.cgColor
 		self.layer.shadowOpacity	= 0.5;
 		self.layer.shadowRadius		= self.frame.size.width/15;
-		self.layer.shadowOffset		= CGSizeMake(2.0, 2.0);
+		self.layer.shadowOffset		= CGSize(width: 2.0, height: 2.0);
 	}
 	
-	private func animation(zoom: Bool = false) {
+	fileprivate func animation(_ zoom: Bool = false) {
 		
 		// Scale
 		let fromScale: CGFloat	= self.transform.a
@@ -82,7 +82,7 @@ public class WASRoundedButton: UIButton {
 		let scale				= CABasicAnimation(keyPath: "scale")
 		scale.fromValue			= fromScale
 		scale.toValue			= toScale
-		self.transform			= CGAffineTransformMakeScale(toScale, toScale);
+		self.transform			= CGAffineTransform(scaleX: toScale, y: toScale);
 		
 		// Shadow
 		let fromShadow			= self.layer.shadowRadius
@@ -96,8 +96,8 @@ public class WASRoundedButton: UIButton {
 		let fromColor			= self.backgroundColor
 		let toColor				= zoom ? self.colorHighlighted : self.colorNormal
 		let color				= CABasicAnimation(keyPath: "background")
-		color.fromValue			= fromColor?.CGColor
-		color.toValue			= toColor?.CGColor
+		color.fromValue			= fromColor?.cgColor
+		color.toValue			= toColor?.cgColor
 		self.backgroundColor	= toColor
 		
 		let both				= CAAnimationGroup()
@@ -106,14 +106,14 @@ public class WASRoundedButton: UIButton {
 		both.timingFunction		= CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
 		
 		self.layer.removeAllAnimations()
-		self.layer.addAnimation(both, forKey: "buttonIn")
+		self.layer.add(both, forKey: "buttonIn")
 	}
 	
-	private func setDefaultBackground() {
+	fileprivate func setDefaultBackground() {
 		self.animation()
 	}
 	
-	private func setHighlightedBackground() {
+	fileprivate func setHighlightedBackground() {
 		self.colorNormal		= self.backgroundColor
 		self.colorHighlighted	= self.backgroundColor?.WASDarkerColor()
 		self.animation(true)
@@ -131,14 +131,14 @@ public class WASRoundedButton: UIButton {
 // MARK: - Override Public Methods
 //**************************************************
 	
-	override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+	override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		self.setHighlightedBackground()
-		super.touchesBegan(touches, withEvent: event)
+		super.touchesBegan(touches, with: event)
 	}
 	
-	override public func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+	override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
 		self.setDefaultBackground()
-		super.touchesEnded(touches, withEvent: event)
+		super.touchesEnded(touches, with: event)
 	}
 	
 }

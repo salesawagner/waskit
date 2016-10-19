@@ -15,8 +15,8 @@ import UIKit
 //**********************************************************************************************************
 
 private enum WASBrightnessType: Int {
-	case WASbrightnessDarker
-	case WASbrightnessLighter
+	case waSbrightnessDarker
+	case waSbrightnessLighter
 }
 
 //*************************
@@ -29,7 +29,7 @@ extension UIColor {
 // MARK: - Private Methods
 //**************************************************
 	
-	private func brightness(brightnessType: WASBrightnessType) -> UIColor {
+	fileprivate func brightness(_ brightnessType: WASBrightnessType) -> UIColor {
 		
 		var h: CGFloat = 0
 		var s: CGFloat = 0
@@ -41,9 +41,9 @@ extension UIColor {
 		if self.getHue(&h, saturation: &s, brightness: &b, alpha: &a) {
 			
 			var brightness = b
-			if brightnessType == .WASbrightnessLighter {
+			if brightnessType == .waSbrightnessLighter {
 				brightness = min((b * 1.3), 1.0)
-			} else if brightnessType == .WASbrightnessDarker {
+			} else if brightnessType == .waSbrightnessDarker {
 				brightness = (b * 0.75)
 			}
 			
@@ -63,7 +63,7 @@ extension UIColor {
 	- returns: Lighter color.
 	*/
 	public func WASLighterColor() -> UIColor {
-		return self.brightness(.WASbrightnessLighter)
+		return self.brightness(.waSbrightnessLighter)
 	}
 	
 	/**
@@ -72,7 +72,7 @@ extension UIColor {
 	- returns: Darker color.
 	*/
 	public func WASDarkerColor() -> UIColor {
-		return self.brightness(.WASbrightnessDarker)
+		return self.brightness(.waSbrightnessDarker)
 	}
 	
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class WASKit: NSObject {
+open class WASKit: NSObject {
 
 	//*************************
 	// MARK: ViewControllers
@@ -19,9 +19,9 @@ public class WASKit: NSObject {
 	
 	- returns: The visible view controller optional.
 	*/
-	static public func visibleView() -> UIViewController? {
+	static open func visibleView() -> UIViewController? {
 		var viewController: UIViewController!
-		if let delegate = UIApplication.sharedApplication().delegate {
+		if let delegate = UIApplication.shared.delegate {
 			if let window = delegate.window {
 				viewController = window!.visibleViewController
 			}

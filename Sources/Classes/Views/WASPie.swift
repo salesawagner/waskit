@@ -26,31 +26,31 @@ import UIKit
 //
 //**********************************************************************************************************
 
-@IBDesignable public class WASPie: UIView {
+@IBDesignable open class WASPie: UIView {
 
 //**************************************************
 // MARK: - Properties
 //**************************************************
 
-	private var circleShape: CAShapeLayer!
-	private var percentLabel: UILabel!
+	fileprivate var circleShape: CAShapeLayer!
+	fileprivate var percentLabel: UILabel!
 
-	public var percent: CGFloat = 0 {
+	open var percent: CGFloat = 0 {
 		didSet {
 			self.drawPie()
 		}
 	}
-	public var color: UIColor = UIColor.redColor() {
+	open var color: UIColor = UIColor.red {
 		didSet {
 			self.drawPie()
 		}
 	}
-	public var textColor: UIColor = UIColor.whiteColor() {
+	open var textColor: UIColor = UIColor.white {
 		didSet {
 			self.drawPie()
 		}
 	}
-	public var title: String? {
+	open var title: String? {
 		didSet {
 			self.drawPie()
 		}
@@ -79,28 +79,28 @@ import UIKit
 // MARK: - Private Methods
 //**************************************************
 
-	private func setup() {
+	fileprivate func setup() {
 		
 		self.circleShape = CAShapeLayer()
 		self.circleShape.lineWidth = 1
-		self.circleShape.fillColor = UIColor.clearColor().CGColor
-		self.circleShape.strokeColor = self.color.CGColor
+		self.circleShape.fillColor = UIColor.clear.cgColor
+		self.circleShape.strokeColor = self.color.cgColor
 		self.layer.addSublayer(self.circleShape)
 		
-		if self.backgroundColor != UIColor.clearColor() {
+		if self.backgroundColor != UIColor.clear {
 			if let color = self.backgroundColor {
 				self.color = color
 			}
 		}
 		
-		self.backgroundColor	= UIColor.clearColor()
+		self.backgroundColor	= UIColor.clear
 //		self.layer.cornerRadius = self.frame.width/2
 //		self.clipsToBounds		= true
 		
 		self.drawPie()
 	}
 	
-	private func setupLabel() {
+	fileprivate func setupLabel() {
 		
 		if self.percentLabel != nil {
 			self.percentLabel.removeFromSuperview()
@@ -108,9 +108,9 @@ import UIKit
 		}
 		
 		let width = self.frame.size.width
-		self.percentLabel = UILabel(frame: CGRectMake(0, 0, width, width))
-		self.percentLabel.textAlignment = .Center
-		self.percentLabel.font = UIFont.boldSystemFontOfSize(width/2.5)
+		self.percentLabel = UILabel(frame: CGRect(x: 0, y: 0, width: width, height: width))
+		self.percentLabel.textAlignment = .center
+		self.percentLabel.font = UIFont.boldSystemFont(ofSize: width/2.5)
 		self.percentLabel.minimumScaleFactor = 0.2
 		self.percentLabel.adjustsFontSizeToFitWidth = true
 		self.percentLabel.textColor = self.textColor
@@ -124,10 +124,10 @@ import UIKit
 		self.addSubview(self.percentLabel)
 	}
 	
-	private func drawPie() {
+	fileprivate func drawPie() {
 		
-		let radius		= CGRectGetWidth(self.frame)/2
-		let piePoint	= CGPointMake(radius, radius)
+		let radius		= self.frame.width/2
+		let piePoint	= CGPoint(x: radius, y: radius)
 		let percent		= self.percent == 0 ? 100 : self.percent / 100
 		let startAngle	= CGFloat(M_PI * 1.5)
 		let endAngle	= (CGFloat((M_PI * 1.5) + (M_PI * 2)) - startAngle) * percent + startAngle
@@ -138,16 +138,16 @@ import UIKit
 		                        endAngle: endAngle,
 		                        clockwise: true)
 		if self.percent == 0 {
-			self.circleShape.fillColor = UIColor.clearColor().CGColor
+			self.circleShape.fillColor = UIColor.clear.cgColor
 		} else {
-			path.addLineToPoint(piePoint)
-			self.circleShape.fillColor = self.color.CGColor
+			path.addLine(to: piePoint)
+			self.circleShape.fillColor = self.color.cgColor
 		}
 		
-		path.closePath()
+		path.close()
 		
-		self.circleShape.path = path.CGPath
-		self.circleShape.strokeColor = self.color.CGColor
+		self.circleShape.path = path.cgPath
+		self.circleShape.strokeColor = self.color.cgColor
 		self.setupLabel()
 	}
 	

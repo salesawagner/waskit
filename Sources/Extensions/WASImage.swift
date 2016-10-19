@@ -41,28 +41,28 @@ extension UIImage {
 	
 	- returns: Scaled image.
 	*/
-	public func resize(size: CGSize) -> UIImage {
+	public func resize(_ size: CGSize) -> UIImage {
 		
 		var finishImage = self
 		
-		let cgImage = self.CGImage
+		let cgImage = self.cgImage
 		
 		let width = Int(size.width)
 		let height = Int(size.height)
-		let bitsPerComponent = CGImageGetBitsPerComponent(cgImage)
-		let bytesPerRow = CGImageGetBytesPerRow(cgImage)
-		let colorSpace = CGImageGetColorSpace(cgImage)
-		let bitmapInfo = CGImageGetBitmapInfo(cgImage)
+		let bitsPerComponent = cgImage?.bitsPerComponent
+		let bytesPerRow = cgImage?.bytesPerRow
+		let colorSpace = cgImage?.colorSpace
+		let bitmapInfo = cgImage?.bitmapInfo
 		
-		let context = CGBitmapContextCreate(nil, width, height, bitsPerComponent, bytesPerRow, colorSpace,
-		                                    bitmapInfo.rawValue)
+		let context = CGContext(data: nil, width: width, height: height, bitsPerComponent: bitsPerComponent!, bytesPerRow: bytesPerRow!, space: colorSpace!,
+		                                    bitmapInfo: (bitmapInfo?.rawValue)!)
 		
-		CGContextSetInterpolationQuality(context, .High)
+		context!.interpolationQuality = .high
 		
-		CGContextDrawImage(context, CGRect(origin: CGPointZero, size: CGSize(width: CGFloat(width),
-			height: CGFloat(height))), cgImage)
+		context?.draw(cgImage!, in: CGRect(origin: CGPoint.zero, size: CGSize(width: CGFloat(width),
+			height: CGFloat(height))))
 		
-		let scaledImage = CGBitmapContextCreateImage(context).flatMap { UIImage(CGImage: $0) }
+		let scaledImage = context?.makeImage().flatMap { UIImage(cgImage: $0) }
 		if scaledImage != nil {
 			finishImage = scaledImage!
 		}
@@ -77,12 +77,12 @@ extension UIImage {
 	
 	- returns: Scaled image.
 	*/
-	public func resizeWithScale(scale: CGFloat) -> UIImage {
+	public func resizeWithScale(_ scale: CGFloat) -> UIImage {
 		
 		let width = self.size.width * scale
 		let height = self.size.height * scale
 		
-		return self.resize(CGSizeMake(width, height))
+		return self.resize(CGSize(width: width, height: height))
 	}
 	
 	/**
@@ -92,14 +92,14 @@ extension UIImage {
 	
 	- returns: Cropped image.
 	*/
-	public func crop(rect: CGRect) -> UIImage {
+	public func crop(_ rect: CGRect) -> UIImage {
 		
 		var finishImage = self
 		
-		let cgImage = self.CGImage
+		let cgImage = self.cgImage
 		
-		if let imageRef: CGImageRef = CGImageCreateWithImageInRect(cgImage, rect) {
-			finishImage = UIImage(CGImage: imageRef)
+		if let imageRef: CGImage = cgImage?.cropping(to: rect) {
+			finishImage = UIImage(cgImage: imageRef)
 		}
 		
 		return finishImage

@@ -11,34 +11,20 @@ import WASKit
 
 class ViewController: UIViewController {
 
-	var pie: WASPie!
 	@IBOutlet weak var photoImageView: UIImageView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		
-		let date = NSDate.WAScreate(year: 1984, month: 10, day: 8)!
-		
-		let pt_BR = NSLocale(localeIdentifier: "pt_BR")
+		let date = Date(year: 1984, month: 10, day: 8, hour: 10, second: 58)
 		
 		print(date)
-		print("===================")
-		print(date.toString())
-		print(date.toLongString())
-		print("===================")
-		print(date.toString(locale: pt_BR))
-		print(date.toLongString(locale: pt_BR))
-		print("===================")
-//		print(NSDate.create(year: 1984, month: 10, day: 08))
-		
-		
-		print(WASKit.visibleView())
-		
+		print(date.WAStoString())
+		print(date.WAStoLongString())
 	}
 	
-	@IBAction func bla(sender: AnyObject) {
-		self.pie.percent = 50
+	@IBAction func bla(_ sender: AnyObject) {
+		
 	}
 }
 

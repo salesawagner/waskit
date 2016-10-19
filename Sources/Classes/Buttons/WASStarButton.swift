@@ -53,7 +53,7 @@ import UIKit
 //**************************************************
 	
 	override func setup() {
-		self.type = .Star
+		self.type = .star
 		super.setup()
 	}
 }

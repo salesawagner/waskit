@@ -12,11 +12,11 @@ import UIKit
 // MARK: Offset
 //*************************
 
-extension NSDate {
+extension Date {
 
-	func componentsFrom(date: NSDate) -> NSDateComponents {
-		let current = NSCalendar.currentCalendar()
-		return current.components(kComponentFlags, fromDate: date, toDate: self, options: [])
+	func componentsFrom(_ date: Date) -> DateComponents {
+		let current = Calendar.current
+		return (current as NSCalendar).components(kComponentFlags, from: date, to: self, options: [])
 	}
 	
 	/**
@@ -26,8 +26,8 @@ extension NSDate {
 	
 	- returns: Int Second(s) offset
 	*/
-	public func WASsecondsFrom(date:NSDate) -> Int {
-		return self.componentsFrom(date).second
+	public func WASsecondsFrom(_ date:Date) -> Int {
+		return self.componentsFrom(date).second!
 	}
 	
 	/**
@@ -37,8 +37,8 @@ extension NSDate {
 	
 	- returns: Int Minute(s) offset
 	*/
-	public func WASminutesFrom(date:NSDate) -> Int {
-		return self.componentsFrom(date).minute
+	public func WASminutesFrom(_ date:Date) -> Int {
+		return self.componentsFrom(date).minute!
 	}
 	
 	/**
@@ -48,8 +48,8 @@ extension NSDate {
 	
 	- returns: Int Hour(s) offset
 	*/
-	public func WAShoursFrom(date:NSDate) -> Int {
-		return self.componentsFrom(date).hour
+	public func WAShoursFrom(_ date:Date) -> Int {
+		return self.componentsFrom(date).hour!
 	}
 	
 	/**
@@ -59,8 +59,8 @@ extension NSDate {
 	
 	- returns: Int Day(s) offset
 	*/
-	public func WASdaysFrom(date:NSDate) -> Int {
-		return self.componentsFrom(date).day
+	public func WASdaysFrom(_ date:Date) -> Int {
+		return self.componentsFrom(date).day!
 	}
 	
 	/**
@@ -70,8 +70,8 @@ extension NSDate {
 	
 	- returns: Int Week(s) offset
 	*/
-	public func WASweeksFrom(date:NSDate) -> Int {
-		return self.componentsFrom(date).weekOfYear
+	public func WASweeksFrom(_ date:Date) -> Int {
+		return self.componentsFrom(date).weekOfYear!
 	}
 	
 	/**
@@ -81,8 +81,8 @@ extension NSDate {
 	
 	- returns: Int Month(s) offset
 	*/
-	public func WASmonthsFrom(date:NSDate) -> Int {
-		return self.componentsFrom(date).month
+	public func WASmonthsFrom(_ date:Date) -> Int {
+		return self.componentsFrom(date).month!
 	}
 	
 	/**
@@ -92,8 +92,8 @@ extension NSDate {
 	
 	- returns: Int Year(s) offset
 	*/
-	public func WASyearsFrom(date:NSDate) -> Int {
-		return self.componentsFrom(date).year
+	public func WASyearsFrom(_ date:Date) -> Int {
+		return self.componentsFrom(date).year!
 	}
 	
 	/**
@@ -103,7 +103,7 @@ extension NSDate {
 	
 	- returns: Human string. ex 10w
 	*/
-	public func WASoffsetFrom(date:NSDate) -> String {
+	public func WASoffsetFrom(_ date:Date) -> String {
 		var humanFormat = ""
 		if WASyearsFrom(date)   > 0 { humanFormat = "\(WASyearsFrom(date))y"   }
 		else if WASmonthsFrom(date)  > 0 { humanFormat = "\(WASmonthsFrom(date))M"  }
