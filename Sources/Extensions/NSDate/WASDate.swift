@@ -20,16 +20,13 @@ extension NSDate {
 	- returns: NSDate
 	*/
 	public static func WAScreate(year year: Int, month: Int, day: Int) -> NSDate? {
-		
 		var dateFormatted: NSDate?
 		let dateString = String(format:"%d/%d/%d", year, month, day)
-		
 		let dateFormatter = NSDateFormatter()
 		dateFormatter.dateFormat = "yyyy/MM/dd"
 		if let date = dateFormatter.dateFromString(dateString) {
 			dateFormatted = date
 		}
-		
 		return dateFormatted
 	}
 	

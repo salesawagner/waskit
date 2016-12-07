@@ -18,15 +18,12 @@ extension String {
 	- returns: NSDate.
 	*/
 	public func WAStoDate(format: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") -> NSDate? {
-		
 		var dateFormatted: NSDate?
-		
 		let dateFormatter = NSDateFormatter()
 		dateFormatter.dateFormat = format
 		if let date = dateFormatter.dateFromString(self) {
 			dateFormatted = date
 		}
-		
 		return dateFormatted
 	}
 	

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A714D9681D23518B009C2C1F /* WASRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A714D9671D23518B009C2C1F /* WASRoundedButton.swift */; };
+		A7693A961DC0424100598453 /* WASColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7693A951DC0424100598453 /* WASColor.swift */; };
+		A7693A991DC042A100598453 /* WASArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7693A981DC042A100598453 /* WASArray.swift */; };
 		A77852321D89E21500EEA483 /* NSDate+WASComparations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852311D89E21500EEA483 /* NSDate+WASComparations.swift */; };
 		A77852341D89E25A00EEA483 /* NSDate+WASTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852331D89E25A00EEA483 /* NSDate+WASTimeManager.swift */; };
 		A77852361D89E3CC00EEA483 /* NSDate+WASComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852351D89E3CC00EEA483 /* NSDate+WASComponents.swift */; };
@@ -23,7 +25,6 @@
 		A7BE76E51CD06AAD000D61BA /* WASImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BE76E41CD06AAD000D61BA /* WASImage.swift */; };
 		A7BE76E71CD06FE0000D61BA /* foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7BE76E61CD06FE0000D61BA /* foto.jpg */; };
 		A7BE76E81CD06FF7000D61BA /* foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7BE76E61CD06FE0000D61BA /* foto.jpg */; };
-		A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BE76E91CD08326000D61BA /* WASColor.swift */; };
 		A7D7FA2C1D89EA4200E684A3 /* NSDate+WASOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA2B1D89EA4200E684A3 /* NSDate+WASOffset.swift */; };
 		A7D7FA2E1D89F3F400E684A3 /* WASDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA2D1D89F3F400E684A3 /* WASDate.swift */; };
 		A7D7FA311D89F93E00E684A3 /* String+WASDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA301D89F93E00E684A3 /* String+WASDate.swift */; };
@@ -44,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		A714D9671D23518B009C2C1F /* WASRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASRoundedButton.swift; path = Classes/Buttons/WASRoundedButton.swift; sourceTree = "<group>"; };
+		A7693A951DC0424100598453 /* WASColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASColor.swift; path = WASColor/WASColor.swift; sourceTree = "<group>"; };
+		A7693A981DC042A100598453 /* WASArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASArray.swift; sourceTree = "<group>"; };
 		A77852311D89E21500EEA483 /* NSDate+WASComparations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASComparations.swift"; path = "NSDate/NSDate+WASComparations.swift"; sourceTree = "<group>"; };
 		A77852331D89E25A00EEA483 /* NSDate+WASTimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASTimeManager.swift"; path = "NSDate/NSDate+WASTimeManager.swift"; sourceTree = "<group>"; };
 		A77852351D89E3CC00EEA483 /* NSDate+WASComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASComponents.swift"; path = "NSDate/NSDate+WASComponents.swift"; sourceTree = "<group>"; };
@@ -61,7 +64,6 @@
 		A7BB047D1CD04BAD00194A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7BE76E41CD06AAD000D61BA /* WASImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASImage.swift; sourceTree = "<group>"; };
 		A7BE76E61CD06FE0000D61BA /* foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = foto.jpg; path = "../ListMyPeople_Resources/Women Photos/foto.jpg"; sourceTree = "<group>"; };
-		A7BE76E91CD08326000D61BA /* WASColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASColor.swift; sourceTree = "<group>"; };
 		A7D7FA2B1D89EA4200E684A3 /* NSDate+WASOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASOffset.swift"; path = "NSDate/NSDate+WASOffset.swift"; sourceTree = "<group>"; };
 		A7D7FA2D1D89F3F400E684A3 /* WASDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASDate.swift; path = NSDate/WASDate.swift; sourceTree = "<group>"; };
 		A7D7FA301D89F93E00E684A3 /* String+WASDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+WASDate.swift"; path = "NSString/String+WASDate.swift"; sourceTree = "<group>"; };
@@ -99,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7693A971DC042A100598453 /* WASArray */ = {
+			isa = PBXGroup;
+			children = (
+				A7693A981DC042A100598453 /* WASArray.swift */,
+			);
+			path = WASArray;
+			sourceTree = "<group>";
+		};
 		A77852301D89E1DB00EEA483 /* WASDate */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +216,7 @@
 		A7BE76E11CD06A7F000D61BA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A7693A971DC042A100598453 /* WASArray */,
 				A7D7FA3A1D89FFE400E684A3 /* WASColor */,
 				A7D7FA2F1D89F7E900E684A3 /* WASString */,
 				A77852301D89E1DB00EEA483 /* WASDate */,
@@ -228,7 +239,7 @@
 		A7D7FA3A1D89FFE400E684A3 /* WASColor */ = {
 			isa = PBXGroup;
 			children = (
-				A7BE76E91CD08326000D61BA /* WASColor.swift */,
+				A7693A951DC0424100598453 /* WASColor.swift */,
 				A7D7FA3B1D8A001200E684A3 /* UIColor+WASBrightness.swift */,
 				A7D7FA3D1D8A01B600E684A3 /* UIColor+WASPalette.swift */,
 			);
@@ -373,11 +384,12 @@
 				A77852321D89E21500EEA483 /* NSDate+WASComparations.swift in Sources */,
 				A7D7FA3C1D8A001200E684A3 /* UIColor+WASBrightness.swift in Sources */,
 				A7E76AEA1CFD109F005F93E1 /* WASCheckButton.swift in Sources */,
+				A7693A991DC042A100598453 /* WASArray.swift in Sources */,
 				A7E76AE81CFD107C005F93E1 /* WASStarButton.swift in Sources */,
 				A7D7FA3E1D8A01B600E684A3 /* UIColor+WASPalette.swift in Sources */,
+				A7693A961DC0424100598453 /* WASColor.swift in Sources */,
 				A7D7FA441D8A081B00E684A3 /* WASUtil.swift in Sources */,
 				A7E76AE41CFD103C005F93E1 /* WASDisLikeButton.swift in Sources */,
-				A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */,
 				A7D7FA311D89F93E00E684A3 /* String+WASDate.swift in Sources */,
 				A7FE35B11D284CE2004BD64C /* WASPie.swift in Sources */,
 				A7D7FA331D89FA8500E684A3 /* String+WASRegex.swift in Sources */,

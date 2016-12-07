@@ -11,13 +11,13 @@ import UIKit
 extension String {
 
 	/**
-	Matche in string by regex parameter
+	Matche in string by regex parameter.
 	
-	- parameter regexString: regex String
+	- parameter regexString: regex String.
 	
-	- returns: String array of matches
+	- returns: String array of matches.
 	*/
-	func WASmatchesForRegexInText(regexString: String) -> [String] {
+	public func WASMatchesForRegexInText(regexString: String) -> [String] {
 		do {
 			let regex = try NSRegularExpression(pattern: regexString, options: .CaseInsensitive)
 			let nsString = self as NSString
@@ -27,9 +27,8 @@ extension String {
 				nsString.substringWithRange($0.range)
 			})
 		} catch let e {
-			print(e)
+			print("Error: \(e)")
 		}
-		
 		return [String]()
 	}
 	
