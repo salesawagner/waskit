@@ -20,7 +20,7 @@ script:
 - sleep 5;
 - set -o pipefail;
 - xcodebuild clean test -project WASKit.xcodeproj -scheme WASKit -destination "platform=iOS Simulator,OS=10.1,name=iPhone 7 Plus" -enableCodeCoverage YES | xcpretty;
-- pod lib lint --verbose;
+#- pod lib lint --verbose;
 
 after_success:
 - bash <(curl -s https://codecov.io/bash);
