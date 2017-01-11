@@ -5,23 +5,23 @@ dist: trusty
 osx_image: xcode8.2
 
 before_install:
-	gem install xcpretty -N --no-ri --no-rdoc;
-	gem install cocoapods --pre --no-rdoc --no-ri --no-document;
-	brew update;
+- gem install xcpretty -N --no-ri --no-rdoc;
+- gem install cocoapods --pre --no-rdoc --no-ri --no-document;
+- brew update;
   
 install:
-	./install_swiftlint.sh;
-	
+- .install_swiftlint.sh;
+
 script:
-    swift -version
-    xcodebuild -version;
-    xcodebuild -showsdks;
-    swiftlint;
-    sleep 5;
-    set -o pipefail;
-    xcodebuild clean test -project WASKit.xcodeproj -scheme WASKit -destination "platform=iOS Simulator,OS=10.1,name=iPhone 7 Plus" -enableCodeCoverage YES | xcpretty;
-    pod lib lint --verbose;
-	
+- swift -version;
+- xcodebuild -version;
+- xcodebuild -showsdks;
+- swiftlint;
+- sleep 5;
+- set -o pipefail;
+- xcodebuild clean test -project WASKit.xcodeproj -scheme WASKit -destination "platform=iOS Simulator,OS=10.1,name=iPhone 7 Plus" -enableCodeCoverage YES | xcpretty;
+- pod lib lint --verbose;
+
 after_success:
-	bash <(curl -s https://codecov.io/bash);
-	sleep 5;
+- bash <(curl -s https://codecov.io/bash);
+- sleep 5;
