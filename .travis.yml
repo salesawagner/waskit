@@ -10,7 +10,7 @@ before_install:
 - brew update;
   
 install:
-- .install_swiftlint.sh;
+- ./install_swiftlint.sh;
 
 script:
 - swift -version;
