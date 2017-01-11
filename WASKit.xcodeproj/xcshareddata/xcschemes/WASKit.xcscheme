@@ -29,7 +29,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A7AF2CCA1DF8474B003031D4"
+               BuildableName = "WASKitTests.xctest"
+               BlueprintName = "WASKitTests"
+               ReferencedContainer = "container:WASKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A7AFDB0D1CD0390800178425"
+            BuildableName = "WASKit.framework"
+            BlueprintName = "WASKit"
+            ReferencedContainer = "container:WASKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
