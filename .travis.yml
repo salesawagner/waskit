@@ -15,5 +15,5 @@ script:
 - xcodebuild -scheme WASKit -destination "platform=iOS Simulator,name=iPhone 6s,OS=10.0" clean test | xcpretty
 
 after_success: 
-  - slather
+  - slather coverage -s --scheme WASKitTests WASKit.xcodeproj
   - bash <(curl -s https://codecov.io/bash) -f ./_files/CI/TestsReports/cobertura.xml
