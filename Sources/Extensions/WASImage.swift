@@ -1,15 +1,30 @@
 //
-//  WASImage.swift
 //  WASKit
 //
-//  Created by Wagner Sales on 4/27/16.
-//  Copyright © 2016 Wagner Sales. All rights reserved.
+//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
 //
 
 import UIKit
 
 extension UIImage {
-	
 //**************************************************
 // MARK: - Properties
 //**************************************************
@@ -29,84 +44,54 @@ extension UIImage {
 //**************************************************
 // MARK: - Public Methods
 //**************************************************
-
-	//*************************
-	// MARK: Scaling
-	//*************************
-	
-	/**
-	Returns a new version of the image scaled to the specified size.
-	
-	- parameter size: The size to use when scaling the new image.
-	
-	- returns: Scaled image.
-	*/
-	public func resize(size: CGSize) -> UIImage {
-		
-		var finishImage = self
-		
-		let cgImage = self.CGImage
-		
-		let width = Int(size.width)
-		let height = Int(size.height)
-		let bitsPerComponent = CGImageGetBitsPerComponent(cgImage)
-		let bytesPerRow = CGImageGetBytesPerRow(cgImage)
-		let colorSpace = CGImageGetColorSpace(cgImage)
-		let bitmapInfo = CGImageGetBitmapInfo(cgImage)
-		
-		let context = CGBitmapContextCreate(nil, width, height, bitsPerComponent, bytesPerRow, colorSpace,
-		                                    bitmapInfo.rawValue)
-		
-		CGContextSetInterpolationQuality(context, .High)
-		
-		CGContextDrawImage(context, CGRect(origin: CGPointZero, size: CGSize(width: CGFloat(width),
-			height: CGFloat(height))), cgImage)
-		
-		let scaledImage = CGBitmapContextCreateImage(context).flatMap { UIImage(CGImage: $0) }
-		if scaledImage != nil {
-			finishImage = scaledImage!
+	/// Returns a new version of the image scaled to the specified size.
+	///
+	/// - Parameter size: The size to use when scaling the new image.
+	/// - Returns: Scaled image.
+	public func resize(_ size: CGSize) -> UIImage {
+		guard
+			let cgImage = self.cgImage,
+			let colorSpace = cgImage.colorSpace,
+			size.width > 0,
+			size.height > 0,
+			let context = CGContext(data: nil,
+			                        width: Int(size.width),
+			                        height: Int(size.height),
+			                        bitsPerComponent: cgImage.bitsPerComponent,
+			                        bytesPerRow: cgImage.bytesPerRow,
+			                        space: colorSpace,
+			                        bitmapInfo: cgImage.bitmapInfo.rawValue) else {
+			return self
 		}
-		
-		return finishImage
+		context.interpolationQuality = .high
+		context.draw(cgImage, in: CGRect(origin: CGPoint.zero, size: size))
+		let scaled = context.makeImage().flatMap {
+			UIImage(cgImage: $0)
+		}
+		return scaled ?? self
 	}
-	
-	/**
-	Returns a new version of the image scaled to the scale.
-	
-	- parameter scale: The scale to use when scaling the new image.
-	
-	- returns: Scaled image.
-	*/
-	public func resizeWithScale(scale: CGFloat) -> UIImage {
-		
+	/// Returns a new version of the image scaled to the scale.
+	///
+	/// - Parameter scale: The scale to use when scaling the new image.
+	/// - Returns: Scaled image.
+	public func resizeWithScale(_ scale: CGFloat) -> UIImage {
 		let width = self.size.width * scale
 		let height = self.size.height * scale
-		
-		return self.resize(CGSizeMake(width, height))
+		return self.resize(CGSize(width: width, height: height))
 	}
-	
-	/**
-	Returns a new version of the image cropped.
-	
-	- parameter rect: The rect to use when cropping the new image.
-	
-	- returns: Cropped image.
-	*/
-	public func crop(rect: CGRect) -> UIImage {
-		
-		var finishImage = self
-		
-		let cgImage = self.CGImage
-		
-		if let imageRef: CGImageRef = CGImageCreateWithImageInRect(cgImage, rect) {
-			finishImage = UIImage(CGImage: imageRef)
+	/// Returns a new version of the image cropped.
+	///
+	/// - Parameter rect: The rect to use when cropping the new image.
+	/// - Returns: Cropped image.
+	public func crop(_ rect: CGRect) -> UIImage {
+		guard
+			let cgImage = self.cgImage,
+			let cropped = cgImage.cropping(to: rect) else {
+				return self
 		}
-		
-		return finishImage
+		return UIImage(cgImage: cropped)
 	}
-	
 //**************************************************
 // MARK: - Override Public Methods
 //**************************************************
-	
 }

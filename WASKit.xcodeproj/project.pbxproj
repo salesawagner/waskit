@@ -7,82 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A714D9681D23518B009C2C1F /* WASRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A714D9671D23518B009C2C1F /* WASRoundedButton.swift */; };
-		A7693A961DC0424100598453 /* WASColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7693A951DC0424100598453 /* WASColor.swift */; };
-		A7693A991DC042A100598453 /* WASArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7693A981DC042A100598453 /* WASArray.swift */; };
-		A77852321D89E21500EEA483 /* NSDate+WASComparations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852311D89E21500EEA483 /* NSDate+WASComparations.swift */; };
-		A77852341D89E25A00EEA483 /* NSDate+WASTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852331D89E25A00EEA483 /* NSDate+WASTimeManager.swift */; };
-		A77852361D89E3CC00EEA483 /* NSDate+WASComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852351D89E3CC00EEA483 /* NSDate+WASComponents.swift */; };
-		A77852381D89E55C00EEA483 /* NSDate+WASFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852371D89E55C00EEA483 /* NSDate+WASFormats.swift */; };
-		A795E9B41CFCEE5B00B3E08C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A795E9B31CFCEE5B00B3E08C /* Assets.xcassets */; };
-		A79811991D2871F40085570B /* WASFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79811981D2871F40085570B /* WASFont.swift */; };
-		A7BB04721CD04BAD00194A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB04711CD04BAD00194A53 /* AppDelegate.swift */; };
-		A7BB04741CD04BAD00194A53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB04731CD04BAD00194A53 /* ViewController.swift */; };
-		A7BB04771CD04BAD00194A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BB04751CD04BAD00194A53 /* Main.storyboard */; };
-		A7BB04791CD04BAD00194A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7BB04781CD04BAD00194A53 /* Assets.xcassets */; };
-		A7BB047C1CD04BAD00194A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7BB047A1CD04BAD00194A53 /* LaunchScreen.storyboard */; };
-		A7BB04811CD051AD00194A53 /* WASKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AFDB0E1CD0390800178425 /* WASKit.framework */; };
+		A752D98A1DFC40FB00DC9542 /* Int+WASComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A752D9881DFC40E400DC9542 /* Int+WASComponents.swift */; };
+		A752D98D1DFC415400DC9542 /* DateComponents+WASUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A752D98C1DFC415400DC9542 /* DateComponents+WASUtils.swift */; };
+		A75B0B061DFF8CBA00FE7FE4 /* WASDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B0B051DFF8CBA00FE7FE4 /* WASDateTests.swift */; };
+		A768AD041E04C51200E51A3B /* WASStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768AD031E04C51200E51A3B /* WASStyles.swift */; };
+		A77852321D89E21500EEA483 /* Date+WASComparations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852311D89E21500EEA483 /* Date+WASComparations.swift */; };
+		A77852341D89E25A00EEA483 /* Date+WASTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852331D89E25A00EEA483 /* Date+WASTimeManager.swift */; };
+		A77852361D89E3CC00EEA483 /* Date+WASComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852351D89E3CC00EEA483 /* Date+WASComponents.swift */; };
+		A77852381D89E55C00EEA483 /* Date+WASFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852371D89E55C00EEA483 /* Date+WASFormats.swift */; };
+		A78426A41DFF988B006456D1 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78426A31DFF988B006456D1 /* DateTests.swift */; };
+		A7AF2CC41DF82CE4003031D4 /* UIColor+WASUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CC31DF82CE4003031D4 /* UIColor+WASUtils.swift */; };
+		A7AF2CD01DF8474B003031D4 /* WASKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AFDB0E1CD0390800178425 /* WASKit.framework */; };
+		A7AF2CDD1DF88236003031D4 /* WASColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CDC1DF88236003031D4 /* WASColorTests.swift */; };
+		A7AF2CE01DF885C1003031D4 /* UIColor+WASBrightnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CDF1DF885C1003031D4 /* UIColor+WASBrightnessTests.swift */; };
+		A7AF2CE51DF8DF57003031D4 /* String+WASRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CE21DF8DF57003031D4 /* String+WASRegex.swift */; };
+		A7AF2CE61DF8DF57003031D4 /* String+WASUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CE31DF8DF57003031D4 /* String+WASUtils.swift */; };
+		A7AF2CF11DF8DF99003031D4 /* String+WASMatchesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CED1DF8DF99003031D4 /* String+WASMatchesTests.swift */; };
+		A7AF2CF21DF8DF99003031D4 /* String+WASUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CEE1DF8DF99003031D4 /* String+WASUtilsTests.swift */; };
+		A7AF2CF41DF8DFF6003031D4 /* UIColor+WASUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CF31DF8DFF6003031D4 /* UIColor+WASUtilsTests.swift */; };
+		A7AF2CF71DF8E35D003031D4 /* WASRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CF61DF8E35D003031D4 /* WASRegex.swift */; };
+		A7AF2CF91DF8E3E5003031D4 /* String+WASMatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CF81DF8E3E5003031D4 /* String+WASMatches.swift */; };
 		A7BE76E51CD06AAD000D61BA /* WASImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BE76E41CD06AAD000D61BA /* WASImage.swift */; };
-		A7BE76E71CD06FE0000D61BA /* foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7BE76E61CD06FE0000D61BA /* foto.jpg */; };
-		A7BE76E81CD06FF7000D61BA /* foto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7BE76E61CD06FE0000D61BA /* foto.jpg */; };
-		A7D7FA2C1D89EA4200E684A3 /* NSDate+WASOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA2B1D89EA4200E684A3 /* NSDate+WASOffset.swift */; };
+		A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BE76E91CD08326000D61BA /* WASColor.swift */; };
+		A7D7FA2C1D89EA4200E684A3 /* Date+WASOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA2B1D89EA4200E684A3 /* Date+WASOffset.swift */; };
 		A7D7FA2E1D89F3F400E684A3 /* WASDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA2D1D89F3F400E684A3 /* WASDate.swift */; };
-		A7D7FA311D89F93E00E684A3 /* String+WASDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA301D89F93E00E684A3 /* String+WASDate.swift */; };
-		A7D7FA331D89FA8500E684A3 /* String+WASRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA321D89FA8500E684A3 /* String+WASRegex.swift */; };
 		A7D7FA3C1D8A001200E684A3 /* UIColor+WASBrightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA3B1D8A001200E684A3 /* UIColor+WASBrightness.swift */; };
-		A7D7FA3E1D8A01B600E684A3 /* UIColor+WASPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA3D1D8A01B600E684A3 /* UIColor+WASPalette.swift */; };
-		A7D7FA401D8A046600E684A3 /* UIView+WASVisibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA3F1D8A046600E684A3 /* UIView+WASVisibleView.swift */; };
-		A7D7FA441D8A081B00E684A3 /* WASUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA431D8A081B00E684A3 /* WASUtil.swift */; };
-		A7E76AE01CFD0F64005F93E1 /* WASButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76ADF1CFD0F64005F93E1 /* WASButton.swift */; };
-		A7E76AE21CFD1013005F93E1 /* WASLikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE11CFD1013005F93E1 /* WASLikeButton.swift */; };
-		A7E76AE41CFD103C005F93E1 /* WASDisLikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE31CFD103C005F93E1 /* WASDisLikeButton.swift */; };
-		A7E76AE61CFD105B005F93E1 /* WASPeopleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE51CFD105B005F93E1 /* WASPeopleButton.swift */; };
-		A7E76AE81CFD107C005F93E1 /* WASStarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE71CFD107C005F93E1 /* WASStarButton.swift */; };
-		A7E76AEA1CFD109F005F93E1 /* WASCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E76AE91CFD109F005F93E1 /* WASCheckButton.swift */; };
-		A7EC86361D08CF4F007F5010 /* WASRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EC86351D08CF4F007F5010 /* WASRoundedView.swift */; };
-		A7FE35B11D284CE2004BD64C /* WASPie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FE35B01D284CE2004BD64C /* WASPie.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A7AF2CD11DF8474B003031D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7AFDB051CD0390800178425 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7AFDB0D1CD0390800178425;
+			remoteInfo = WASKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		A714D9671D23518B009C2C1F /* WASRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASRoundedButton.swift; path = Classes/Buttons/WASRoundedButton.swift; sourceTree = "<group>"; };
-		A7693A951DC0424100598453 /* WASColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASColor.swift; path = WASColor/WASColor.swift; sourceTree = "<group>"; };
-		A7693A981DC042A100598453 /* WASArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASArray.swift; sourceTree = "<group>"; };
-		A77852311D89E21500EEA483 /* NSDate+WASComparations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASComparations.swift"; path = "NSDate/NSDate+WASComparations.swift"; sourceTree = "<group>"; };
-		A77852331D89E25A00EEA483 /* NSDate+WASTimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASTimeManager.swift"; path = "NSDate/NSDate+WASTimeManager.swift"; sourceTree = "<group>"; };
-		A77852351D89E3CC00EEA483 /* NSDate+WASComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASComponents.swift"; path = "NSDate/NSDate+WASComponents.swift"; sourceTree = "<group>"; };
-		A77852371D89E55C00EEA483 /* NSDate+WASFormats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASFormats.swift"; path = "NSDate/NSDate+WASFormats.swift"; sourceTree = "<group>"; };
-		A795E9B31CFCEE5B00B3E08C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A79811981D2871F40085570B /* WASFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASFont.swift; sourceTree = "<group>"; };
+		A752D9881DFC40E400DC9542 /* Int+WASComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int+WASComponents.swift"; path = "Int/Int+WASComponents.swift"; sourceTree = "<group>"; };
+		A752D98C1DFC415400DC9542 /* DateComponents+WASUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateComponents+WASUtils.swift"; path = "WASDateConponents/DateComponents+WASUtils.swift"; sourceTree = "<group>"; };
+		A75B0B051DFF8CBA00FE7FE4 /* WASDateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASDateTests.swift; path = WASDate/WASDateTests.swift; sourceTree = "<group>"; };
+		A768AD031E04C51200E51A3B /* WASStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASStyles.swift; path = Structs/WASStyles.swift; sourceTree = "<group>"; };
+		A77852311D89E21500EEA483 /* Date+WASComparations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+WASComparations.swift"; path = "NSDate/Date+WASComparations.swift"; sourceTree = "<group>"; };
+		A77852331D89E25A00EEA483 /* Date+WASTimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+WASTimeManager.swift"; path = "NSDate/Date+WASTimeManager.swift"; sourceTree = "<group>"; };
+		A77852351D89E3CC00EEA483 /* Date+WASComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+WASComponents.swift"; path = "NSDate/Date+WASComponents.swift"; sourceTree = "<group>"; };
+		A77852371D89E55C00EEA483 /* Date+WASFormats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+WASFormats.swift"; path = "NSDate/Date+WASFormats.swift"; sourceTree = "<group>"; };
+		A78426A31DFF988B006456D1 /* DateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTests.swift; path = WASDate/DateTests.swift; sourceTree = "<group>"; };
+		A7AF2CC31DF82CE4003031D4 /* UIColor+WASUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+WASUtils.swift"; path = "WASColor/UIColor+WASUtils.swift"; sourceTree = "<group>"; };
+		A7AF2CCB1DF8474B003031D4 /* WASKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WASKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7AF2CCF1DF8474B003031D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AF2CDC1DF88236003031D4 /* WASColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASColorTests.swift; path = WASColor/WASColorTests.swift; sourceTree = "<group>"; };
+		A7AF2CDF1DF885C1003031D4 /* UIColor+WASBrightnessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+WASBrightnessTests.swift"; path = "WASColor/UIColor+WASBrightnessTests.swift"; sourceTree = "<group>"; };
+		A7AF2CE21DF8DF57003031D4 /* String+WASRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASRegex.swift"; sourceTree = "<group>"; };
+		A7AF2CE31DF8DF57003031D4 /* String+WASUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASUtils.swift"; sourceTree = "<group>"; };
+		A7AF2CED1DF8DF99003031D4 /* String+WASMatchesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASMatchesTests.swift"; sourceTree = "<group>"; };
+		A7AF2CEE1DF8DF99003031D4 /* String+WASUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASUtilsTests.swift"; sourceTree = "<group>"; };
+		A7AF2CF31DF8DFF6003031D4 /* UIColor+WASUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+WASUtilsTests.swift"; path = "WASColor/UIColor+WASUtilsTests.swift"; sourceTree = "<group>"; };
+		A7AF2CF61DF8E35D003031D4 /* WASRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASRegex.swift; path = Structs/WASRegex.swift; sourceTree = "<group>"; };
+		A7AF2CF81DF8E3E5003031D4 /* String+WASMatches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASMatches.swift"; sourceTree = "<group>"; };
 		A7AFDB0E1CD0390800178425 /* WASKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WASKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AFDB1B1CD03A5900178425 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7BB046F1CD04BAD00194A53 /* WASKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WASKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7BB04711CD04BAD00194A53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7BB04731CD04BAD00194A53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A7BB04761CD04BAD00194A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A7BB04781CD04BAD00194A53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A7BB047B1CD04BAD00194A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A7BB047D1CD04BAD00194A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7BE76E41CD06AAD000D61BA /* WASImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASImage.swift; sourceTree = "<group>"; };
-		A7BE76E61CD06FE0000D61BA /* foto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = foto.jpg; path = "../ListMyPeople_Resources/Women Photos/foto.jpg"; sourceTree = "<group>"; };
-		A7D7FA2B1D89EA4200E684A3 /* NSDate+WASOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+WASOffset.swift"; path = "NSDate/NSDate+WASOffset.swift"; sourceTree = "<group>"; };
+		A7BE76E91CD08326000D61BA /* WASColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASColor.swift; sourceTree = "<group>"; };
+		A7D7FA2B1D89EA4200E684A3 /* Date+WASOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+WASOffset.swift"; path = "NSDate/Date+WASOffset.swift"; sourceTree = "<group>"; };
 		A7D7FA2D1D89F3F400E684A3 /* WASDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASDate.swift; path = NSDate/WASDate.swift; sourceTree = "<group>"; };
-		A7D7FA301D89F93E00E684A3 /* String+WASDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+WASDate.swift"; path = "NSString/String+WASDate.swift"; sourceTree = "<group>"; };
-		A7D7FA321D89FA8500E684A3 /* String+WASRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+WASRegex.swift"; path = "NSString/String+WASRegex.swift"; sourceTree = "<group>"; };
 		A7D7FA3B1D8A001200E684A3 /* UIColor+WASBrightness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+WASBrightness.swift"; path = "WASColor/UIColor+WASBrightness.swift"; sourceTree = "<group>"; };
-		A7D7FA3D1D8A01B600E684A3 /* UIColor+WASPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+WASPalette.swift"; path = "WASColor/UIColor+WASPalette.swift"; sourceTree = "<group>"; };
-		A7D7FA3F1D8A046600E684A3 /* UIView+WASVisibleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+WASVisibleView.swift"; sourceTree = "<group>"; };
-		A7D7FA431D8A081B00E684A3 /* WASUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASUtil.swift; path = Classes/WASUtil.swift; sourceTree = "<group>"; };
-		A7E76ADF1CFD0F64005F93E1 /* WASButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASButton.swift; path = Classes/Buttons/WASButton.swift; sourceTree = "<group>"; };
-		A7E76AE11CFD1013005F93E1 /* WASLikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASLikeButton.swift; path = Classes/Buttons/WASLikeButton.swift; sourceTree = "<group>"; };
-		A7E76AE31CFD103C005F93E1 /* WASDisLikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASDisLikeButton.swift; path = Classes/Buttons/WASDisLikeButton.swift; sourceTree = "<group>"; };
-		A7E76AE51CFD105B005F93E1 /* WASPeopleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASPeopleButton.swift; path = Classes/Buttons/WASPeopleButton.swift; sourceTree = "<group>"; };
-		A7E76AE71CFD107C005F93E1 /* WASStarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASStarButton.swift; path = Classes/Buttons/WASStarButton.swift; sourceTree = "<group>"; };
-		A7E76AE91CFD109F005F93E1 /* WASCheckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASCheckButton.swift; path = Classes/Buttons/WASCheckButton.swift; sourceTree = "<group>"; };
-		A7EC86351D08CF4F007F5010 /* WASRoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASRoundedView.swift; sourceTree = "<group>"; };
-		A7FE35B01D284CE2004BD64C /* WASPie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASPie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A7AF2CC81DF8474B003031D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AF2CD01DF8474B003031D4 /* WASKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7AFDB0A1CD0390800178425 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,68 +91,109 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7BB046C1CD04BAD00194A53 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7BB04811CD051AD00194A53 /* WASKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A7693A971DC042A100598453 /* WASArray */ = {
+		A738CD071DFBFAE5008E922F /* WASImage */ = {
 			isa = PBXGroup;
 			children = (
-				A7693A981DC042A100598453 /* WASArray.swift */,
+				A7BE76E41CD06AAD000D61BA /* WASImage.swift */,
 			);
-			path = WASArray;
+			name = WASImage;
+			sourceTree = "<group>";
+		};
+		A752D9871DFC409F00DC9542 /* WASInt */ = {
+			isa = PBXGroup;
+			children = (
+				A752D9881DFC40E400DC9542 /* Int+WASComponents.swift */,
+			);
+			name = WASInt;
+			sourceTree = "<group>";
+		};
+		A752D98B1DFC411E00DC9542 /* WASDateComponents */ = {
+			isa = PBXGroup;
+			children = (
+				A752D98C1DFC415400DC9542 /* DateComponents+WASUtils.swift */,
+			);
+			name = WASDateComponents;
+			sourceTree = "<group>";
+		};
+		A75B0B041DFF8C8E00FE7FE4 /* WASDate */ = {
+			isa = PBXGroup;
+			children = (
+				A78426A31DFF988B006456D1 /* DateTests.swift */,
+				A75B0B051DFF8CBA00FE7FE4 /* WASDateTests.swift */,
+			);
+			name = WASDate;
 			sourceTree = "<group>";
 		};
 		A77852301D89E1DB00EEA483 /* WASDate */ = {
 			isa = PBXGroup;
 			children = (
 				A7D7FA2D1D89F3F400E684A3 /* WASDate.swift */,
-				A77852311D89E21500EEA483 /* NSDate+WASComparations.swift */,
-				A77852331D89E25A00EEA483 /* NSDate+WASTimeManager.swift */,
-				A77852351D89E3CC00EEA483 /* NSDate+WASComponents.swift */,
-				A77852371D89E55C00EEA483 /* NSDate+WASFormats.swift */,
-				A7D7FA2B1D89EA4200E684A3 /* NSDate+WASOffset.swift */,
+				A77852311D89E21500EEA483 /* Date+WASComparations.swift */,
+				A77852331D89E25A00EEA483 /* Date+WASTimeManager.swift */,
+				A77852351D89E3CC00EEA483 /* Date+WASComponents.swift */,
+				A7D7FA2B1D89EA4200E684A3 /* Date+WASOffset.swift */,
+				A77852371D89E55C00EEA483 /* Date+WASFormats.swift */,
 			);
 			name = WASDate;
 			sourceTree = "<group>";
 		};
-		A7A7CA181CFD0CEF00974339 /* Classes */ = {
+		A7AF2CCC1DF8474B003031D4 /* WASKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				A7EC86341D08CF4F007F5010 /* Views */,
-				A7A7CA191CFD0CF500974339 /* Buttons */,
-				A7D7FA431D8A081B00E684A3 /* WASUtil.swift */,
+				A75B0B041DFF8C8E00FE7FE4 /* WASDate */,
+				A7AF2CDE1DF882E6003031D4 /* WASColor */,
+				A7AF2CEC1DF8DF99003031D4 /* WASString */,
+				A7AF2CCF1DF8474B003031D4 /* Info.plist */,
 			);
-			name = Classes;
+			path = WASKitTests;
 			sourceTree = "<group>";
 		};
-		A7A7CA191CFD0CF500974339 /* Buttons */ = {
+		A7AF2CDE1DF882E6003031D4 /* WASColor */ = {
 			isa = PBXGroup;
 			children = (
-				A714D9671D23518B009C2C1F /* WASRoundedButton.swift */,
-				A7E76ADF1CFD0F64005F93E1 /* WASButton.swift */,
-				A7E76AE91CFD109F005F93E1 /* WASCheckButton.swift */,
-				A7E76AE11CFD1013005F93E1 /* WASLikeButton.swift */,
-				A7E76AE31CFD103C005F93E1 /* WASDisLikeButton.swift */,
-				A7E76AE51CFD105B005F93E1 /* WASPeopleButton.swift */,
-				A7E76AE71CFD107C005F93E1 /* WASStarButton.swift */,
+				A7AF2CDC1DF88236003031D4 /* WASColorTests.swift */,
+				A7AF2CF31DF8DFF6003031D4 /* UIColor+WASUtilsTests.swift */,
+				A7AF2CDF1DF885C1003031D4 /* UIColor+WASBrightnessTests.swift */,
 			);
-			name = Buttons;
+			name = WASColor;
+			sourceTree = "<group>";
+		};
+		A7AF2CE11DF8DF57003031D4 /* WASString */ = {
+			isa = PBXGroup;
+			children = (
+				A7AF2CF81DF8E3E5003031D4 /* String+WASMatches.swift */,
+				A7AF2CE21DF8DF57003031D4 /* String+WASRegex.swift */,
+				A7AF2CE31DF8DF57003031D4 /* String+WASUtils.swift */,
+			);
+			path = WASString;
+			sourceTree = "<group>";
+		};
+		A7AF2CEC1DF8DF99003031D4 /* WASString */ = {
+			isa = PBXGroup;
+			children = (
+				A7AF2CED1DF8DF99003031D4 /* String+WASMatchesTests.swift */,
+				A7AF2CEE1DF8DF99003031D4 /* String+WASUtilsTests.swift */,
+			);
+			path = WASString;
+			sourceTree = "<group>";
+		};
+		A7AF2CF51DF8E229003031D4 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				A7AF2CF61DF8E35D003031D4 /* WASRegex.swift */,
+				A768AD031E04C51200E51A3B /* WASStyles.swift */,
+			);
+			name = Structs;
 			sourceTree = "<group>";
 		};
 		A7AFDB041CD0390800178425 = {
 			isa = PBXGroup;
 			children = (
-				A7BE76E61CD06FE0000D61BA /* foto.jpg */,
 				A7AFDB101CD0390800178425 /* WASKit */,
-				A7BB04701CD04BAD00194A53 /* WASKitDemo */,
+				A7AF2CCC1DF8474B003031D4 /* WASKitTests */,
 				A7AFDB0F1CD0390800178425 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -160,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				A7AFDB0E1CD0390800178425 /* WASKit.framework */,
-				A7BB046F1CD04BAD00194A53 /* WASKitDemo.app */,
+				A7AF2CCB1DF8474B003031D4 /* WASKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				A7AFDB1A1CD03A5900178425 /* Supporting Files */,
-				A795E9B31CFCEE5B00B3E08C /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
@@ -194,66 +235,33 @@
 		A7AFDB1C1CD03A5900178425 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A7A7CA181CFD0CEF00974339 /* Classes */,
+				A7AF2CF51DF8E229003031D4 /* Structs */,
 				A7BE76E11CD06A7F000D61BA /* Extensions */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		A7BB04701CD04BAD00194A53 /* WASKitDemo */ = {
-			isa = PBXGroup;
-			children = (
-				A7BB04711CD04BAD00194A53 /* AppDelegate.swift */,
-				A7BB04731CD04BAD00194A53 /* ViewController.swift */,
-				A7BB04751CD04BAD00194A53 /* Main.storyboard */,
-				A7BB04781CD04BAD00194A53 /* Assets.xcassets */,
-				A7BB047A1CD04BAD00194A53 /* LaunchScreen.storyboard */,
-				A7BB047D1CD04BAD00194A53 /* Info.plist */,
-			);
-			path = WASKitDemo;
-			sourceTree = "<group>";
-		};
 		A7BE76E11CD06A7F000D61BA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A7693A971DC042A100598453 /* WASArray */,
+				A752D98B1DFC411E00DC9542 /* WASDateComponents */,
+				A752D9871DFC409F00DC9542 /* WASInt */,
+				A7AF2CE11DF8DF57003031D4 /* WASString */,
 				A7D7FA3A1D89FFE400E684A3 /* WASColor */,
-				A7D7FA2F1D89F7E900E684A3 /* WASString */,
 				A77852301D89E1DB00EEA483 /* WASDate */,
-				A7BE76E41CD06AAD000D61BA /* WASImage.swift */,
-				A79811981D2871F40085570B /* WASFont.swift */,
-				A7D7FA3F1D8A046600E684A3 /* UIView+WASVisibleView.swift */,
+				A738CD071DFBFAE5008E922F /* WASImage */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		A7D7FA2F1D89F7E900E684A3 /* WASString */ = {
-			isa = PBXGroup;
-			children = (
-				A7D7FA301D89F93E00E684A3 /* String+WASDate.swift */,
-				A7D7FA321D89FA8500E684A3 /* String+WASRegex.swift */,
-			);
-			name = WASString;
 			sourceTree = "<group>";
 		};
 		A7D7FA3A1D89FFE400E684A3 /* WASColor */ = {
 			isa = PBXGroup;
 			children = (
-				A7693A951DC0424100598453 /* WASColor.swift */,
+				A7BE76E91CD08326000D61BA /* WASColor.swift */,
+				A7AF2CC31DF82CE4003031D4 /* UIColor+WASUtils.swift */,
 				A7D7FA3B1D8A001200E684A3 /* UIColor+WASBrightness.swift */,
-				A7D7FA3D1D8A01B600E684A3 /* UIColor+WASPalette.swift */,
 			);
 			name = WASColor;
-			sourceTree = "<group>";
-		};
-		A7EC86341D08CF4F007F5010 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				A7EC86351D08CF4F007F5010 /* WASRoundedView.swift */,
-				A7FE35B01D284CE2004BD64C /* WASPie.swift */,
-			);
-			name = Views;
-			path = Classes/Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,12 +277,31 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		A7AF2CCA1DF8474B003031D4 /* WASKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7AF2CD31DF8474B003031D4 /* Build configuration list for PBXNativeTarget "WASKitTests" */;
+			buildPhases = (
+				A7AF2CC71DF8474B003031D4 /* Sources */,
+				A7AF2CC81DF8474B003031D4 /* Frameworks */,
+				A7AF2CC91DF8474B003031D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7AF2CD21DF8474B003031D4 /* PBXTargetDependency */,
+			);
+			name = WASKitTests;
+			productName = WASKitTests;
+			productReference = A7AF2CCB1DF8474B003031D4 /* WASKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A7AFDB0D1CD0390800178425 /* WASKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7AFDB161CD0390800178425 /* Build configuration list for PBXNativeTarget "WASKit" */;
 			buildPhases = (
 				A7AFDB091CD0390800178425 /* Sources */,
 				A7AFDB0A1CD0390800178425 /* Frameworks */,
+				A7AF2CC21DF81948003031D4 /* SwiftLint */,
 				A7AFDB0B1CD0390800178425 /* Headers */,
 				A7AFDB0C1CD0390800178425 /* Resources */,
 			);
@@ -287,38 +314,25 @@
 			productReference = A7AFDB0E1CD0390800178425 /* WASKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A7BB046E1CD04BAD00194A53 /* WASKitDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A7BB047E1CD04BAD00194A53 /* Build configuration list for PBXNativeTarget "WASKitDemo" */;
-			buildPhases = (
-				A7BB046B1CD04BAD00194A53 /* Sources */,
-				A7BB046C1CD04BAD00194A53 /* Frameworks */,
-				A7BB046D1CD04BAD00194A53 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WASKitDemo;
-			productName = WASKitDemo;
-			productReference = A7BB046F1CD04BAD00194A53 /* WASKitDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A7AFDB051CD0390800178425 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Wagner Sales";
 				TargetAttributes = {
+					A7AF2CCA1DF8474B003031D4 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = B6M4H2TQY8;
+						ProvisioningStyle = Automatic;
+					};
 					A7AFDB0D1CD0390800178425 = {
 						CreatedOnToolsVersion = 7.3;
-					};
-					A7BB046E1CD04BAD00194A53 = {
-						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = B6M4H2TQY8;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -336,98 +350,126 @@
 			projectRoot = "";
 			targets = (
 				A7AFDB0D1CD0390800178425 /* WASKit */,
-				A7BB046E1CD04BAD00194A53 /* WASKitDemo */,
+				A7AF2CCA1DF8474B003031D4 /* WASKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A7AF2CC91DF8474B003031D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7AFDB0C1CD0390800178425 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A795E9B41CFCEE5B00B3E08C /* Assets.xcassets in Resources */,
-				A7BE76E71CD06FE0000D61BA /* foto.jpg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7BB046D1CD04BAD00194A53 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7BB047C1CD04BAD00194A53 /* LaunchScreen.storyboard in Resources */,
-				A7BB04791CD04BAD00194A53 /* Assets.xcassets in Resources */,
-				A7BB04771CD04BAD00194A53 /* Main.storyboard in Resources */,
-				A7BE76E81CD06FF7000D61BA /* foto.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A7AF2CC21DF81948003031D4 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		A7AF2CC71DF8474B003031D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AF2CDD1DF88236003031D4 /* WASColorTests.swift in Sources */,
+				A75B0B061DFF8CBA00FE7FE4 /* WASDateTests.swift in Sources */,
+				A7AF2CF41DF8DFF6003031D4 /* UIColor+WASUtilsTests.swift in Sources */,
+				A78426A41DFF988B006456D1 /* DateTests.swift in Sources */,
+				A7AF2CE01DF885C1003031D4 /* UIColor+WASBrightnessTests.swift in Sources */,
+				A7AF2CF21DF8DF99003031D4 /* String+WASUtilsTests.swift in Sources */,
+				A7AF2CF11DF8DF99003031D4 /* String+WASMatchesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7AFDB091CD0390800178425 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A7BE76E51CD06AAD000D61BA /* WASImage.swift in Sources */,
-				A7EC86361D08CF4F007F5010 /* WASRoundedView.swift in Sources */,
-				A7E76AE01CFD0F64005F93E1 /* WASButton.swift in Sources */,
-				A714D9681D23518B009C2C1F /* WASRoundedButton.swift in Sources */,
-				A79811991D2871F40085570B /* WASFont.swift in Sources */,
-				A7D7FA401D8A046600E684A3 /* UIView+WASVisibleView.swift in Sources */,
-				A77852341D89E25A00EEA483 /* NSDate+WASTimeManager.swift in Sources */,
-				A7E76AE61CFD105B005F93E1 /* WASPeopleButton.swift in Sources */,
-				A77852361D89E3CC00EEA483 /* NSDate+WASComponents.swift in Sources */,
-				A7E76AE21CFD1013005F93E1 /* WASLikeButton.swift in Sources */,
-				A77852381D89E55C00EEA483 /* NSDate+WASFormats.swift in Sources */,
+				A768AD041E04C51200E51A3B /* WASStyles.swift in Sources */,
+				A752D98A1DFC40FB00DC9542 /* Int+WASComponents.swift in Sources */,
+				A7AF2CF91DF8E3E5003031D4 /* String+WASMatches.swift in Sources */,
+				A77852341D89E25A00EEA483 /* Date+WASTimeManager.swift in Sources */,
+				A77852361D89E3CC00EEA483 /* Date+WASComponents.swift in Sources */,
+				A752D98D1DFC415400DC9542 /* DateComponents+WASUtils.swift in Sources */,
+				A7AF2CC41DF82CE4003031D4 /* UIColor+WASUtils.swift in Sources */,
+				A77852381D89E55C00EEA483 /* Date+WASFormats.swift in Sources */,
 				A7D7FA2E1D89F3F400E684A3 /* WASDate.swift in Sources */,
-				A77852321D89E21500EEA483 /* NSDate+WASComparations.swift in Sources */,
+				A7AF2CF71DF8E35D003031D4 /* WASRegex.swift in Sources */,
+				A77852321D89E21500EEA483 /* Date+WASComparations.swift in Sources */,
 				A7D7FA3C1D8A001200E684A3 /* UIColor+WASBrightness.swift in Sources */,
-				A7E76AEA1CFD109F005F93E1 /* WASCheckButton.swift in Sources */,
-				A7693A991DC042A100598453 /* WASArray.swift in Sources */,
-				A7E76AE81CFD107C005F93E1 /* WASStarButton.swift in Sources */,
-				A7D7FA3E1D8A01B600E684A3 /* UIColor+WASPalette.swift in Sources */,
-				A7693A961DC0424100598453 /* WASColor.swift in Sources */,
-				A7D7FA441D8A081B00E684A3 /* WASUtil.swift in Sources */,
-				A7E76AE41CFD103C005F93E1 /* WASDisLikeButton.swift in Sources */,
-				A7D7FA311D89F93E00E684A3 /* String+WASDate.swift in Sources */,
-				A7FE35B11D284CE2004BD64C /* WASPie.swift in Sources */,
-				A7D7FA331D89FA8500E684A3 /* String+WASRegex.swift in Sources */,
-				A7D7FA2C1D89EA4200E684A3 /* NSDate+WASOffset.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7BB046B1CD04BAD00194A53 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7BB04741CD04BAD00194A53 /* ViewController.swift in Sources */,
-				A7BB04721CD04BAD00194A53 /* AppDelegate.swift in Sources */,
+				A7AF2CE51DF8DF57003031D4 /* String+WASRegex.swift in Sources */,
+				A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */,
+				A7D7FA2C1D89EA4200E684A3 /* Date+WASOffset.swift in Sources */,
+				A7AF2CE61DF8DF57003031D4 /* String+WASUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		A7BB04751CD04BAD00194A53 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7BB04761CD04BAD00194A53 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		A7AF2CD21DF8474B003031D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7AFDB0D1CD0390800178425 /* WASKit */;
+			targetProxy = A7AF2CD11DF8474B003031D4 /* PBXContainerItemProxy */;
 		};
-		A7BB047A1CD04BAD00194A53 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7BB047B1CD04BAD00194A53 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		A7AF2CD41DF8474B003031D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = B6M4H2TQY8;
+				INFOPLIST_FILE = WASKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.wagnersales.WASKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A7AF2CD51DF8474B003031D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = B6M4H2TQY8;
+				INFOPLIST_FILE = WASKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.wagnersales.WASKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		A7AFDB141CD0390800178425 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -442,8 +484,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -466,7 +510,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -491,8 +535,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -509,9 +555,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -523,17 +570,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B6M4H2TQY8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.wagnersales.WASKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -541,46 +592,35 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B6M4H2TQY8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.wagnersales.WASKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		A7BB047F1CD04BAD00194A53 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WASKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.wagnersales.WASKitDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		A7BB04801CD04BAD00194A53 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WASKitDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.wagnersales.WASKitDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A7AF2CD31DF8474B003031D4 /* Build configuration list for PBXNativeTarget "WASKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AF2CD41DF8474B003031D4 /* Debug */,
+				A7AF2CD51DF8474B003031D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A7AFDB081CD0390800178425 /* Build configuration list for PBXProject "WASKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -595,15 +635,6 @@
 			buildConfigurations = (
 				A7AFDB171CD0390800178425 /* Debug */,
 				A7AFDB181CD0390800178425 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A7BB047E1CD04BAD00194A53 /* Build configuration list for PBXNativeTarget "WASKitDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A7BB047F1CD04BAD00194A53 /* Debug */,
-				A7BB04801CD04BAD00194A53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

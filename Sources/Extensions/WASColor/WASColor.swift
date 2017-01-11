@@ -1,95 +1,96 @@
 //
-//  WASColor.swift
 //  WASKit
 //
-//  Created by Wagner Sales on 4/26/16.
-//  Copyright © 2016 Wagner Sales. All rights reserved.
+//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
 //
 
 import UIKit
 
-//**********************************************************************************************************
-//
-// MARK: - Constants -
-//
-//**********************************************************************************************************
-
-//**********************************************************************************************************
-//
-// MARK: - Definitions -
-//
-//**********************************************************************************************************
-
-//**********************************************************************************************************
-//
-// MARK: - Class -
-//
-//**********************************************************************************************************
-
 extension UIColor {
-	
-//**************************************************
-// MARK: - Constructors
-//**************************************************
-
-	/**
-	Construct a UIColor using an Int Value RGB formatted value and an alpha value
-	
-	- parameter r: Red Int value.
-	- parameter g: Green Int value.
-	- parameter b: Blue Int Value
-	- parameter a: Alpha value.
-	
-	- returns: An UIColor instance that represent the required color
-	*/
-	public convenience init(r: Int, g: Int, b: Int, a: CGFloat) {
-		
-		let red		= CGFloat(r) / 255.0
-		let green	= CGFloat(g) / 255.0
-		let blue	= CGFloat(b) / 255.0
-		self.init(red: red, green: green, blue: blue, alpha: CGFloat(a))
+	/// Create a `UIColor` using an `UInt8` value RGB formatted and an alpha `CGFloat` value.
+	/// 
+	/// - Example:
+	///   - `UIColor(10, 20, 30)`
+	///   - `UIColor(10, 20, 30, 0.5)`
+	///
+	/// - Parameters:
+	///   - r: Red `UInt8` value.
+	///   - g: Green `UInt8` value.
+	///   - b: Blue `UInt8` Value
+	///   - a: Alpha `CGFloat` value. By default 1.0
+	public convenience init(_ r: UInt8, _ g: UInt8, _ b: UInt8, _ a: CGFloat = 1.0) {
+		let divisor	= CGFloat(255.0)
+		let r = CGFloat(r) / divisor
+		let g = CGFloat(g) / divisor
+		let b = CGFloat(b) / divisor
+		self.init(red: r, green: g, blue: b, alpha: a)
 	}
-	
-//**************************************************
-// MARK: - Public Methods
-//**************************************************
-
-	/**
-	Return a gray color.
-	
-	- parameter c: Color. Default 50
-	- parameter a: Alpha value. Default 1.0
-	
-	- returns: Custom pink color.
-	*/
-	public class func WASGray(c: Int = 50, a: CGFloat = 1.0) -> UIColor {
-		return UIColor(r:c, g: c, b: c, a: a)
+	/// Create a `UIColor` using an `UInt8` value RGB formatted and an alpha `CGFloat` value.
+	///
+	/// - Example:
+	///   - `UIColor(10, 20, 30)`
+	///   - `UIColor(10, 20, 30, 0.5)`
+	///
+	/// - Parameters:
+	///   - r: Red `UInt8` value.
+	///   - g: Green `UInt8` value.
+	///   - b: Blue `UInt8` Value
+	///   - a: Alpha `CGFloat` value. By default 1.0
+	public convenience init(r: UInt8, g: UInt8, b: UInt8, a: CGFloat = 1.0) {
+		self.init(r, g, b, a)
 	}
-	
-	//*************************
-	// MARK: Helpers
-	//*************************
-	
-	/**
-	Convert color to UInt
-	
-	- returns: UInt number.
-	*/
-	public func WASColorToUInt() -> UInt? {
-		
-		var intColor: UInt?
-		
-		var fRed : CGFloat = 0, fGreen : CGFloat = 0, fBlue : CGFloat = 0, fAlpha: CGFloat = 0
-		if self.getRed(&fRed, green: &fGreen, blue: &fBlue, alpha: &fAlpha) {
-			let iRed	= UInt(fRed * 255.0)
-			let iGreen	= UInt(fGreen * 255.0)
-			let iBlue	= UInt(fBlue * 255.0)
-			let iAlpha	= UInt(fAlpha * 255.0)
-			
-			intColor = (iAlpha << 24) + (iRed << 16) + (iGreen << 8) + iBlue
+	/// Create a `UIColor` using an gray sacale `UInt8` value and an alpha `CGFloat` value.
+	///
+	/// - Example:
+	///   - `UIColor(grayScale: 10)`
+	///   - `UIColor(grayScale: 10, a: 0.5)`
+	///
+	/// - Parameters:
+	///   - gray:  Gray scale `UInt8` value. By default 50.
+	///   - a: Alpha `CGFloat` value. By default 1.0.
+	public convenience init(grayScale gray: UInt8 = 50, a: CGFloat = 1.0) {
+		self.init(gray, gray, gray, a)
+	}
+	/// Create a `UIColor` using hexa decimal `String` value.
+	///
+	/// - Note:
+	/// If the given hexa decimal `String` is invalid the initialiser will create a black color.
+	///
+	/// - Example:
+	///   - `UIColor(hexaString: "#3498db")`
+	///   - `UIColor(hexaString: "3498db")`
+	///
+	/// - Parameter hexaDecimal: A hexa decimal color `String` value.
+	public convenience init(string: String) {
+		var string = string.trimmingCharacters(in: .whitespacesAndNewlines)
+		string = string.remove("#")
+		guard string.characters.count == 6, string.isHexaDecimal() else {
+			self.init(0, 0, 0, 1)
+			return
 		}
-		
-		return intColor
+		var rgb: UInt32 = 0
+		Scanner(string: string).scanHexInt32(&rgb)
+		let r = UInt8((rgb & 0xFF0000) >> 16)
+		let g = UInt8((rgb & 0x00FF00) >> 8)
+		let b = UInt8(rgb & 0x0000FF)
+		self.init(r, g, b)
 	}
-	
 }
