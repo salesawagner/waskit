@@ -1,19 +1,27 @@
-language: objective-c
-osx_image: xcode8.0
-xcode_project: ./WASKit.xcodeproj
-xcode_sdk: iphonesimulator10
+os: osx
+language: generic
+sudo: required
+dist: trusty
+osx_image: xcode8.2
 
 before_install:
-- rm -rf /Users/travis/Library/Developer/Xcode/DerivedData/WASKit-*/
-- rvm use $RVM_RUBY_VERSION
-
+	gem install xcpretty -N --no-ri --no-rdoc;
+	gem install cocoapods --pre --no-rdoc --no-ri --no-document;
+	brew update;
+  
 install:
-- bundle
-- bundle install --without=documentation --path ../travis_bundle_dir
-
+	./install_swiftlint.sh;
+	
 script:
-- xcodebuild -scheme WASKit -destination "platform=iOS Simulator,name=iPhone 6s,OS=10.0" clean test | xcpretty
-
-after_success: 
-  - slather coverage -s --scheme WASKitTests WASKit.xcodeproj
-  - bash <(curl -s https://codecov.io/bash) -f ./_files/CI/TestsReports/cobertura.xml
+    swift -version
+    xcodebuild -version;
+    xcodebuild -showsdks;
+    swiftlint;
+    sleep 5;
+    set -o pipefail;
+    xcodebuild clean test -project WASKit.xcodeproj -scheme WASKit -destination "platform=iOS Simulator,OS=10.1,name=iPhone 7 Plus" -enableCodeCoverage YES | xcpretty;
+    pod lib lint --verbose;
+	
+after_success:
+	bash <(curl -s https://codecov.io/bash);
+	sleep 5;
