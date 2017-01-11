@@ -12,6 +12,14 @@ Requirements
 |:--------------------:|:---------------------------:|:----------------------------:|
 | 3.0 | iOS 10.0 | Xcode 8+ |
 
+Todo
+====
+- Create a Example App.
+- 100% of code coverage with Unit Tests
+- Add Carthage support
+- Add to CocoaPods
+- Create documentation
+
 Author
 ==================
 **Wagner Sales**
