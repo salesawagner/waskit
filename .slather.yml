@@ -1,0 +1,6 @@
+ci_service: travis_ci
+coverage_service: cobertura_xml
+xcodeproj: ./WASKit.xcodeproj
+scheme: WASKitTests
+source_directory: ./Sources/
+output_directory: ._files/CI/TestsReports/
