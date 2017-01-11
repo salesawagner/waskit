@@ -19,7 +19,7 @@ script:
 - swiftlint;
 - sleep 5;
 - set -o pipefail;
-- xcodebuild clean test -project WASKit.xcodeproj -scheme WASKit -destination "platform=iOS Simulator,OS=10.1,name=iPhone 7 Plus" -enableCodeCoverage YES | xcpretty;
+- xcodebuild clean test -project WASKit.xcodeproj -scheme WASKitTests -destination "platform=iOS Simulator,OS=10.0,name=iPhone 7 Plus" -enableCodeCoverage YES | xcpretty;
 #- pod lib lint --verbose;
 
 after_success:
