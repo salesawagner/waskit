@@ -7,31 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A752D98A1DFC40FB00DC9542 /* Int+WASComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A752D9881DFC40E400DC9542 /* Int+WASComponents.swift */; };
-		A752D98D1DFC415400DC9542 /* DateComponents+WASUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A752D98C1DFC415400DC9542 /* DateComponents+WASUtils.swift */; };
-		A75B0B061DFF8CBA00FE7FE4 /* WASDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B0B051DFF8CBA00FE7FE4 /* WASDateTests.swift */; };
-		A768AD041E04C51200E51A3B /* WASStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A768AD031E04C51200E51A3B /* WASStyles.swift */; };
-		A77852321D89E21500EEA483 /* Date+WASComparations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852311D89E21500EEA483 /* Date+WASComparations.swift */; };
-		A77852341D89E25A00EEA483 /* Date+WASTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852331D89E25A00EEA483 /* Date+WASTimeManager.swift */; };
-		A77852361D89E3CC00EEA483 /* Date+WASComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852351D89E3CC00EEA483 /* Date+WASComponents.swift */; };
-		A77852381D89E55C00EEA483 /* Date+WASFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852371D89E55C00EEA483 /* Date+WASFormats.swift */; };
-		A78426A41DFF988B006456D1 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78426A31DFF988B006456D1 /* DateTests.swift */; };
-		A7AF2CC41DF82CE4003031D4 /* UIColor+WASUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CC31DF82CE4003031D4 /* UIColor+WASUtils.swift */; };
+		A782CA4B1E261744001AC933 /* Array+WASUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA301E261744001AC933 /* Array+WASUtils.swift */; };
+		A782CA4C1E261744001AC933 /* Date+WASComparations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA321E261744001AC933 /* Date+WASComparations.swift */; };
+		A782CA4D1E261744001AC933 /* Date+WASComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA331E261744001AC933 /* Date+WASComponents.swift */; };
+		A782CA4E1E261744001AC933 /* Date+WASFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA341E261744001AC933 /* Date+WASFormats.swift */; };
+		A782CA4F1E261744001AC933 /* Date+WASOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA351E261744001AC933 /* Date+WASOffset.swift */; };
+		A782CA501E261744001AC933 /* Date+WASTimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA361E261744001AC933 /* Date+WASTimeManager.swift */; };
+		A782CA521E261744001AC933 /* WASDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA381E261744001AC933 /* WASDate.swift */; };
+		A782CA531E261744001AC933 /* DateComponents+WASUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA3A1E261744001AC933 /* DateComponents+WASUtils.swift */; };
+		A782CA541E261744001AC933 /* WASImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA3C1E261744001AC933 /* WASImage.swift */; };
+		A782CA551E261744001AC933 /* Int+WASComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA3E1E261744001AC933 /* Int+WASComponents.swift */; };
+		A782CA571E261744001AC933 /* String+WASMatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA411E261744001AC933 /* String+WASMatches.swift */; };
+		A782CA581E261744001AC933 /* String+WASRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA421E261744001AC933 /* String+WASRegex.swift */; };
+		A782CA591E261744001AC933 /* String+WASUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA431E261744001AC933 /* String+WASUtils.swift */; };
+		A782CA5A1E261744001AC933 /* UIColor+WASBrightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA451E261744001AC933 /* UIColor+WASBrightness.swift */; };
+		A782CA5B1E261744001AC933 /* UIColor+WASUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA461E261744001AC933 /* UIColor+WASUtils.swift */; };
+		A782CA5C1E261744001AC933 /* WASColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA471E261744001AC933 /* WASColor.swift */; };
+		A782CA5D1E261744001AC933 /* WASRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA491E261744001AC933 /* WASRegex.swift */; };
+		A782CA5E1E261744001AC933 /* WASStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA4A1E261744001AC933 /* WASStyles.swift */; };
+		A782CA6E1E2617EE001AC933 /* UIColor+WASBrightnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA641E2617EE001AC933 /* UIColor+WASBrightnessTests.swift */; };
+		A782CA6F1E2617EE001AC933 /* UIColor+WASUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA651E2617EE001AC933 /* UIColor+WASUtilsTests.swift */; };
+		A782CA701E2617EE001AC933 /* WASColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA661E2617EE001AC933 /* WASColorTests.swift */; };
+		A782CA711E2617EE001AC933 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA681E2617EE001AC933 /* DateTests.swift */; };
+		A782CA721E2617EE001AC933 /* WASDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA691E2617EE001AC933 /* WASDateTests.swift */; };
+		A782CA731E2617EE001AC933 /* String+WASMatchesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA6B1E2617EE001AC933 /* String+WASMatchesTests.swift */; };
+		A782CA741E2617EE001AC933 /* String+WASUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA6C1E2617EE001AC933 /* String+WASUtilsTests.swift */; };
+		A782CA751E261F25001AC933 /* String+WASDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA401E261744001AC933 /* String+WASDate.swift */; };
 		A7AF2CD01DF8474B003031D4 /* WASKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AFDB0E1CD0390800178425 /* WASKit.framework */; };
-		A7AF2CDD1DF88236003031D4 /* WASColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CDC1DF88236003031D4 /* WASColorTests.swift */; };
-		A7AF2CE01DF885C1003031D4 /* UIColor+WASBrightnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CDF1DF885C1003031D4 /* UIColor+WASBrightnessTests.swift */; };
-		A7AF2CE51DF8DF57003031D4 /* String+WASRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CE21DF8DF57003031D4 /* String+WASRegex.swift */; };
-		A7AF2CE61DF8DF57003031D4 /* String+WASUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CE31DF8DF57003031D4 /* String+WASUtils.swift */; };
-		A7AF2CF11DF8DF99003031D4 /* String+WASMatchesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CED1DF8DF99003031D4 /* String+WASMatchesTests.swift */; };
-		A7AF2CF21DF8DF99003031D4 /* String+WASUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CEE1DF8DF99003031D4 /* String+WASUtilsTests.swift */; };
-		A7AF2CF41DF8DFF6003031D4 /* UIColor+WASUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CF31DF8DFF6003031D4 /* UIColor+WASUtilsTests.swift */; };
-		A7AF2CF71DF8E35D003031D4 /* WASRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CF61DF8E35D003031D4 /* WASRegex.swift */; };
-		A7AF2CF91DF8E3E5003031D4 /* String+WASMatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CF81DF8E3E5003031D4 /* String+WASMatches.swift */; };
-		A7BE76E51CD06AAD000D61BA /* WASImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BE76E41CD06AAD000D61BA /* WASImage.swift */; };
-		A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BE76E91CD08326000D61BA /* WASColor.swift */; };
-		A7D7FA2C1D89EA4200E684A3 /* Date+WASOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA2B1D89EA4200E684A3 /* Date+WASOffset.swift */; };
-		A7D7FA2E1D89F3F400E684A3 /* WASDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA2D1D89F3F400E684A3 /* WASDate.swift */; };
-		A7D7FA3C1D8A001200E684A3 /* UIColor+WASBrightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D7FA3B1D8A001200E684A3 /* UIColor+WASBrightness.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,34 +47,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A752D9881DFC40E400DC9542 /* Int+WASComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int+WASComponents.swift"; path = "Int/Int+WASComponents.swift"; sourceTree = "<group>"; };
-		A752D98C1DFC415400DC9542 /* DateComponents+WASUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DateComponents+WASUtils.swift"; path = "WASDateConponents/DateComponents+WASUtils.swift"; sourceTree = "<group>"; };
-		A75B0B051DFF8CBA00FE7FE4 /* WASDateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASDateTests.swift; path = WASDate/WASDateTests.swift; sourceTree = "<group>"; };
-		A768AD031E04C51200E51A3B /* WASStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASStyles.swift; path = Structs/WASStyles.swift; sourceTree = "<group>"; };
-		A77852311D89E21500EEA483 /* Date+WASComparations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+WASComparations.swift"; path = "NSDate/Date+WASComparations.swift"; sourceTree = "<group>"; };
-		A77852331D89E25A00EEA483 /* Date+WASTimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+WASTimeManager.swift"; path = "NSDate/Date+WASTimeManager.swift"; sourceTree = "<group>"; };
-		A77852351D89E3CC00EEA483 /* Date+WASComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+WASComponents.swift"; path = "NSDate/Date+WASComponents.swift"; sourceTree = "<group>"; };
-		A77852371D89E55C00EEA483 /* Date+WASFormats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+WASFormats.swift"; path = "NSDate/Date+WASFormats.swift"; sourceTree = "<group>"; };
-		A78426A31DFF988B006456D1 /* DateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTests.swift; path = WASDate/DateTests.swift; sourceTree = "<group>"; };
-		A7AF2CC31DF82CE4003031D4 /* UIColor+WASUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+WASUtils.swift"; path = "WASColor/UIColor+WASUtils.swift"; sourceTree = "<group>"; };
+		A782CA301E261744001AC933 /* Array+WASUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+WASUtils.swift"; sourceTree = "<group>"; };
+		A782CA321E261744001AC933 /* Date+WASComparations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WASComparations.swift"; sourceTree = "<group>"; };
+		A782CA331E261744001AC933 /* Date+WASComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WASComponents.swift"; sourceTree = "<group>"; };
+		A782CA341E261744001AC933 /* Date+WASFormats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WASFormats.swift"; sourceTree = "<group>"; };
+		A782CA351E261744001AC933 /* Date+WASOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WASOffset.swift"; sourceTree = "<group>"; };
+		A782CA361E261744001AC933 /* Date+WASTimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WASTimeManager.swift"; sourceTree = "<group>"; };
+		A782CA381E261744001AC933 /* WASDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASDate.swift; sourceTree = "<group>"; };
+		A782CA3A1E261744001AC933 /* DateComponents+WASUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateComponents+WASUtils.swift"; sourceTree = "<group>"; };
+		A782CA3C1E261744001AC933 /* WASImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASImage.swift; sourceTree = "<group>"; };
+		A782CA3E1E261744001AC933 /* Int+WASComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+WASComponents.swift"; sourceTree = "<group>"; };
+		A782CA401E261744001AC933 /* String+WASDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASDate.swift"; sourceTree = "<group>"; };
+		A782CA411E261744001AC933 /* String+WASMatches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASMatches.swift"; sourceTree = "<group>"; };
+		A782CA421E261744001AC933 /* String+WASRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASRegex.swift"; sourceTree = "<group>"; };
+		A782CA431E261744001AC933 /* String+WASUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASUtils.swift"; sourceTree = "<group>"; };
+		A782CA451E261744001AC933 /* UIColor+WASBrightness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+WASBrightness.swift"; sourceTree = "<group>"; };
+		A782CA461E261744001AC933 /* UIColor+WASUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+WASUtils.swift"; sourceTree = "<group>"; };
+		A782CA471E261744001AC933 /* WASColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASColor.swift; sourceTree = "<group>"; };
+		A782CA491E261744001AC933 /* WASRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASRegex.swift; sourceTree = "<group>"; };
+		A782CA4A1E261744001AC933 /* WASStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASStyles.swift; sourceTree = "<group>"; };
+		A782CA611E2617EE001AC933 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A782CA641E2617EE001AC933 /* UIColor+WASBrightnessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+WASBrightnessTests.swift"; sourceTree = "<group>"; };
+		A782CA651E2617EE001AC933 /* UIColor+WASUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+WASUtilsTests.swift"; sourceTree = "<group>"; };
+		A782CA661E2617EE001AC933 /* WASColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASColorTests.swift; sourceTree = "<group>"; };
+		A782CA681E2617EE001AC933 /* DateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
+		A782CA691E2617EE001AC933 /* WASDateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASDateTests.swift; sourceTree = "<group>"; };
+		A782CA6B1E2617EE001AC933 /* String+WASMatchesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASMatchesTests.swift"; sourceTree = "<group>"; };
+		A782CA6C1E2617EE001AC933 /* String+WASUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASUtilsTests.swift"; sourceTree = "<group>"; };
 		A7AF2CCB1DF8474B003031D4 /* WASKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WASKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7AF2CCF1DF8474B003031D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7AF2CDC1DF88236003031D4 /* WASColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASColorTests.swift; path = WASColor/WASColorTests.swift; sourceTree = "<group>"; };
-		A7AF2CDF1DF885C1003031D4 /* UIColor+WASBrightnessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+WASBrightnessTests.swift"; path = "WASColor/UIColor+WASBrightnessTests.swift"; sourceTree = "<group>"; };
-		A7AF2CE21DF8DF57003031D4 /* String+WASRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASRegex.swift"; sourceTree = "<group>"; };
-		A7AF2CE31DF8DF57003031D4 /* String+WASUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASUtils.swift"; sourceTree = "<group>"; };
-		A7AF2CED1DF8DF99003031D4 /* String+WASMatchesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASMatchesTests.swift"; sourceTree = "<group>"; };
-		A7AF2CEE1DF8DF99003031D4 /* String+WASUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASUtilsTests.swift"; sourceTree = "<group>"; };
-		A7AF2CF31DF8DFF6003031D4 /* UIColor+WASUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+WASUtilsTests.swift"; path = "WASColor/UIColor+WASUtilsTests.swift"; sourceTree = "<group>"; };
-		A7AF2CF61DF8E35D003031D4 /* WASRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASRegex.swift; path = Structs/WASRegex.swift; sourceTree = "<group>"; };
-		A7AF2CF81DF8E3E5003031D4 /* String+WASMatches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASMatches.swift"; sourceTree = "<group>"; };
 		A7AFDB0E1CD0390800178425 /* WASKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WASKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AFDB1B1CD03A5900178425 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7BE76E41CD06AAD000D61BA /* WASImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASImage.swift; sourceTree = "<group>"; };
-		A7BE76E91CD08326000D61BA /* WASColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASColor.swift; sourceTree = "<group>"; };
-		A7D7FA2B1D89EA4200E684A3 /* Date+WASOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+WASOffset.swift"; path = "NSDate/Date+WASOffset.swift"; sourceTree = "<group>"; };
-		A7D7FA2D1D89F3F400E684A3 /* WASDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WASDate.swift; path = NSDate/WASDate.swift; sourceTree = "<group>"; };
-		A7D7FA3B1D8A001200E684A3 /* UIColor+WASBrightness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+WASBrightness.swift"; path = "WASColor/UIColor+WASBrightness.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,99 +98,156 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A738CD071DFBFAE5008E922F /* WASImage */ = {
+		A782CA2E1E261744001AC933 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A7BE76E41CD06AAD000D61BA /* WASImage.swift */,
+				A782CA2F1E261744001AC933 /* Array */,
+				A782CA311E261744001AC933 /* Date */,
+				A782CA391E261744001AC933 /* DateConponents */,
+				A782CA3B1E261744001AC933 /* Image */,
+				A782CA3D1E261744001AC933 /* Int */,
+				A782CA3F1E261744001AC933 /* String */,
+				A782CA441E261744001AC933 /* UIColor */,
 			);
-			name = WASImage;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		A752D9871DFC409F00DC9542 /* WASInt */ = {
+		A782CA2F1E261744001AC933 /* Array */ = {
 			isa = PBXGroup;
 			children = (
-				A752D9881DFC40E400DC9542 /* Int+WASComponents.swift */,
+				A782CA301E261744001AC933 /* Array+WASUtils.swift */,
 			);
-			name = WASInt;
+			path = Array;
 			sourceTree = "<group>";
 		};
-		A752D98B1DFC411E00DC9542 /* WASDateComponents */ = {
+		A782CA311E261744001AC933 /* Date */ = {
 			isa = PBXGroup;
 			children = (
-				A752D98C1DFC415400DC9542 /* DateComponents+WASUtils.swift */,
+				A782CA321E261744001AC933 /* Date+WASComparations.swift */,
+				A782CA331E261744001AC933 /* Date+WASComponents.swift */,
+				A782CA341E261744001AC933 /* Date+WASFormats.swift */,
+				A782CA351E261744001AC933 /* Date+WASOffset.swift */,
+				A782CA361E261744001AC933 /* Date+WASTimeManager.swift */,
+				A782CA381E261744001AC933 /* WASDate.swift */,
 			);
-			name = WASDateComponents;
+			path = Date;
 			sourceTree = "<group>";
 		};
-		A75B0B041DFF8C8E00FE7FE4 /* WASDate */ = {
+		A782CA391E261744001AC933 /* DateConponents */ = {
 			isa = PBXGroup;
 			children = (
-				A78426A31DFF988B006456D1 /* DateTests.swift */,
-				A75B0B051DFF8CBA00FE7FE4 /* WASDateTests.swift */,
+				A782CA3A1E261744001AC933 /* DateComponents+WASUtils.swift */,
 			);
-			name = WASDate;
+			path = DateConponents;
 			sourceTree = "<group>";
 		};
-		A77852301D89E1DB00EEA483 /* WASDate */ = {
+		A782CA3B1E261744001AC933 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				A7D7FA2D1D89F3F400E684A3 /* WASDate.swift */,
-				A77852311D89E21500EEA483 /* Date+WASComparations.swift */,
-				A77852331D89E25A00EEA483 /* Date+WASTimeManager.swift */,
-				A77852351D89E3CC00EEA483 /* Date+WASComponents.swift */,
-				A7D7FA2B1D89EA4200E684A3 /* Date+WASOffset.swift */,
-				A77852371D89E55C00EEA483 /* Date+WASFormats.swift */,
+				A782CA3C1E261744001AC933 /* WASImage.swift */,
 			);
-			name = WASDate;
+			path = Image;
+			sourceTree = "<group>";
+		};
+		A782CA3D1E261744001AC933 /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				A782CA3E1E261744001AC933 /* Int+WASComponents.swift */,
+			);
+			path = Int;
+			sourceTree = "<group>";
+		};
+		A782CA3F1E261744001AC933 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				A782CA401E261744001AC933 /* String+WASDate.swift */,
+				A782CA411E261744001AC933 /* String+WASMatches.swift */,
+				A782CA421E261744001AC933 /* String+WASRegex.swift */,
+				A782CA431E261744001AC933 /* String+WASUtils.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		A782CA441E261744001AC933 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				A782CA451E261744001AC933 /* UIColor+WASBrightness.swift */,
+				A782CA461E261744001AC933 /* UIColor+WASUtils.swift */,
+				A782CA471E261744001AC933 /* WASColor.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		A782CA481E261744001AC933 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				A782CA491E261744001AC933 /* WASRegex.swift */,
+				A782CA4A1E261744001AC933 /* WASStyles.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		A782CA5F1E2617EE001AC933 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A782CA601E2617EE001AC933 /* Supporting Files */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A782CA601E2617EE001AC933 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A782CA611E2617EE001AC933 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A782CA621E2617EE001AC933 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A782CA631E2617EE001AC933 /* Color */,
+				A782CA671E2617EE001AC933 /* Date */,
+				A782CA6A1E2617EE001AC933 /* String */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A782CA631E2617EE001AC933 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				A782CA641E2617EE001AC933 /* UIColor+WASBrightnessTests.swift */,
+				A782CA651E2617EE001AC933 /* UIColor+WASUtilsTests.swift */,
+				A782CA661E2617EE001AC933 /* WASColorTests.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		A782CA671E2617EE001AC933 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				A782CA681E2617EE001AC933 /* DateTests.swift */,
+				A782CA691E2617EE001AC933 /* WASDateTests.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		A782CA6A1E2617EE001AC933 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				A782CA6B1E2617EE001AC933 /* String+WASMatchesTests.swift */,
+				A782CA6C1E2617EE001AC933 /* String+WASUtilsTests.swift */,
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 		A7AF2CCC1DF8474B003031D4 /* WASKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				A75B0B041DFF8C8E00FE7FE4 /* WASDate */,
-				A7AF2CDE1DF882E6003031D4 /* WASColor */,
-				A7AF2CEC1DF8DF99003031D4 /* WASString */,
-				A7AF2CCF1DF8474B003031D4 /* Info.plist */,
+				A782CA5F1E2617EE001AC933 /* Resources */,
+				A782CA621E2617EE001AC933 /* Sources */,
 			);
 			path = WASKitTests;
-			sourceTree = "<group>";
-		};
-		A7AF2CDE1DF882E6003031D4 /* WASColor */ = {
-			isa = PBXGroup;
-			children = (
-				A7AF2CDC1DF88236003031D4 /* WASColorTests.swift */,
-				A7AF2CF31DF8DFF6003031D4 /* UIColor+WASUtilsTests.swift */,
-				A7AF2CDF1DF885C1003031D4 /* UIColor+WASBrightnessTests.swift */,
-			);
-			name = WASColor;
-			sourceTree = "<group>";
-		};
-		A7AF2CE11DF8DF57003031D4 /* WASString */ = {
-			isa = PBXGroup;
-			children = (
-				A7AF2CF81DF8E3E5003031D4 /* String+WASMatches.swift */,
-				A7AF2CE21DF8DF57003031D4 /* String+WASRegex.swift */,
-				A7AF2CE31DF8DF57003031D4 /* String+WASUtils.swift */,
-			);
-			path = WASString;
-			sourceTree = "<group>";
-		};
-		A7AF2CEC1DF8DF99003031D4 /* WASString */ = {
-			isa = PBXGroup;
-			children = (
-				A7AF2CED1DF8DF99003031D4 /* String+WASMatchesTests.swift */,
-				A7AF2CEE1DF8DF99003031D4 /* String+WASUtilsTests.swift */,
-			);
-			path = WASString;
-			sourceTree = "<group>";
-		};
-		A7AF2CF51DF8E229003031D4 /* Structs */ = {
-			isa = PBXGroup;
-			children = (
-				A7AF2CF61DF8E35D003031D4 /* WASRegex.swift */,
-				A768AD031E04C51200E51A3B /* WASStyles.swift */,
-			);
-			name = Structs;
 			sourceTree = "<group>";
 		};
 		A7AFDB041CD0390800178425 = {
@@ -235,34 +296,11 @@
 		A7AFDB1C1CD03A5900178425 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A7AF2CF51DF8E229003031D4 /* Structs */,
-				A7BE76E11CD06A7F000D61BA /* Extensions */,
+				A782CA2E1E261744001AC933 /* Extensions */,
+				A782CA481E261744001AC933 /* Structs */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
-		};
-		A7BE76E11CD06A7F000D61BA /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A752D98B1DFC411E00DC9542 /* WASDateComponents */,
-				A752D9871DFC409F00DC9542 /* WASInt */,
-				A7AF2CE11DF8DF57003031D4 /* WASString */,
-				A7D7FA3A1D89FFE400E684A3 /* WASColor */,
-				A77852301D89E1DB00EEA483 /* WASDate */,
-				A738CD071DFBFAE5008E922F /* WASImage */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		A7D7FA3A1D89FFE400E684A3 /* WASColor */ = {
-			isa = PBXGroup;
-			children = (
-				A7BE76E91CD08326000D61BA /* WASColor.swift */,
-				A7AF2CC31DF82CE4003031D4 /* UIColor+WASUtils.swift */,
-				A7D7FA3B1D8A001200E684A3 /* UIColor+WASBrightness.swift */,
-			);
-			name = WASColor;
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -394,13 +432,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7AF2CDD1DF88236003031D4 /* WASColorTests.swift in Sources */,
-				A75B0B061DFF8CBA00FE7FE4 /* WASDateTests.swift in Sources */,
-				A7AF2CF41DF8DFF6003031D4 /* UIColor+WASUtilsTests.swift in Sources */,
-				A78426A41DFF988B006456D1 /* DateTests.swift in Sources */,
-				A7AF2CE01DF885C1003031D4 /* UIColor+WASBrightnessTests.swift in Sources */,
-				A7AF2CF21DF8DF99003031D4 /* String+WASUtilsTests.swift in Sources */,
-				A7AF2CF11DF8DF99003031D4 /* String+WASMatchesTests.swift in Sources */,
+				A782CA6E1E2617EE001AC933 /* UIColor+WASBrightnessTests.swift in Sources */,
+				A782CA721E2617EE001AC933 /* WASDateTests.swift in Sources */,
+				A782CA731E2617EE001AC933 /* String+WASMatchesTests.swift in Sources */,
+				A782CA701E2617EE001AC933 /* WASColorTests.swift in Sources */,
+				A782CA741E2617EE001AC933 /* String+WASUtilsTests.swift in Sources */,
+				A782CA6F1E2617EE001AC933 /* UIColor+WASUtilsTests.swift in Sources */,
+				A782CA711E2617EE001AC933 /* DateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,23 +446,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7BE76E51CD06AAD000D61BA /* WASImage.swift in Sources */,
-				A768AD041E04C51200E51A3B /* WASStyles.swift in Sources */,
-				A752D98A1DFC40FB00DC9542 /* Int+WASComponents.swift in Sources */,
-				A7AF2CF91DF8E3E5003031D4 /* String+WASMatches.swift in Sources */,
-				A77852341D89E25A00EEA483 /* Date+WASTimeManager.swift in Sources */,
-				A77852361D89E3CC00EEA483 /* Date+WASComponents.swift in Sources */,
-				A752D98D1DFC415400DC9542 /* DateComponents+WASUtils.swift in Sources */,
-				A7AF2CC41DF82CE4003031D4 /* UIColor+WASUtils.swift in Sources */,
-				A77852381D89E55C00EEA483 /* Date+WASFormats.swift in Sources */,
-				A7D7FA2E1D89F3F400E684A3 /* WASDate.swift in Sources */,
-				A7AF2CF71DF8E35D003031D4 /* WASRegex.swift in Sources */,
-				A77852321D89E21500EEA483 /* Date+WASComparations.swift in Sources */,
-				A7D7FA3C1D8A001200E684A3 /* UIColor+WASBrightness.swift in Sources */,
-				A7AF2CE51DF8DF57003031D4 /* String+WASRegex.swift in Sources */,
-				A7BE76EA1CD08326000D61BA /* WASColor.swift in Sources */,
-				A7D7FA2C1D89EA4200E684A3 /* Date+WASOffset.swift in Sources */,
-				A7AF2CE61DF8DF57003031D4 /* String+WASUtils.swift in Sources */,
+				A782CA4E1E261744001AC933 /* Date+WASFormats.swift in Sources */,
+				A782CA551E261744001AC933 /* Int+WASComponents.swift in Sources */,
+				A782CA5A1E261744001AC933 /* UIColor+WASBrightness.swift in Sources */,
+				A782CA531E261744001AC933 /* DateComponents+WASUtils.swift in Sources */,
+				A782CA521E261744001AC933 /* WASDate.swift in Sources */,
+				A782CA4B1E261744001AC933 /* Array+WASUtils.swift in Sources */,
+				A782CA4F1E261744001AC933 /* Date+WASOffset.swift in Sources */,
+				A782CA4D1E261744001AC933 /* Date+WASComponents.swift in Sources */,
+				A782CA571E261744001AC933 /* String+WASMatches.swift in Sources */,
+				A782CA5D1E261744001AC933 /* WASRegex.swift in Sources */,
+				A782CA501E261744001AC933 /* Date+WASTimeManager.swift in Sources */,
+				A782CA5E1E261744001AC933 /* WASStyles.swift in Sources */,
+				A782CA4C1E261744001AC933 /* Date+WASComparations.swift in Sources */,
+				A782CA5C1E261744001AC933 /* WASColor.swift in Sources */,
+				A782CA751E261F25001AC933 /* String+WASDate.swift in Sources */,
+				A782CA581E261744001AC933 /* String+WASRegex.swift in Sources */,
+				A782CA541E261744001AC933 /* WASImage.swift in Sources */,
+				A782CA591E261744001AC933 /* String+WASUtils.swift in Sources */,
+				A782CA5B1E261744001AC933 /* UIColor+WASUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,10 +482,11 @@
 		A7AF2CD41DF8474B003031D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				DEVELOPMENT_TEAM = B6M4H2TQY8;
-				INFOPLIST_FILE = WASKitTests/Info.plist;
+				INFOPLIST_FILE = "WASKitTests/Resources/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.wagnersales.WASKitTests;
@@ -458,10 +499,11 @@
 		A7AF2CD51DF8474B003031D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				DEVELOPMENT_TEAM = B6M4H2TQY8;
-				INFOPLIST_FILE = WASKitTests/Info.plist;
+				INFOPLIST_FILE = "WASKitTests/Resources/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.wagnersales.WASKitTests;

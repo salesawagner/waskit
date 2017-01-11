@@ -32,8 +32,6 @@ extension String {
 		return self.trimmingCharacters(in: .whitespacesAndNewlines)
 	}
 	/// Mutating trimming white spaces and new lines.
-	///
-	/// - Returns: The `String` Trimmed.
 	public mutating func trimInPlace() {
 		self = self.trimmingCharacters(in: .whitespacesAndNewlines)
 	}
@@ -64,7 +62,6 @@ extension String {
 	/// Mutating abrevite the `String` with the characters count.
 	///
 	/// - Parameter characteres: The Number of characters the `String` needs to have.
-	/// - Returns: The `String` abreviated.
 	public mutating func abbreviationInPlace(_ characteres: Int) {
 		self = self.abbreviation(characteres)
 	}
@@ -80,8 +77,6 @@ extension String {
 		return first + other
 	}
 	/// Mutating capitalize the first character.
-	///
-	/// - Returns: The `String` with the first letter capitalized.
 	public mutating func capitalizeFirstInPlace() {
 		self = self.capitalizeFirst()
 	}
