@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) 2015-2016 Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://salesawagner.com/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -66,5 +66,27 @@ class WASDate: DateTests {
 		XCTAssertEqual(components.hour, nowComponents.hour)
 		XCTAssertEqual(components.minute, nowComponents.minute)
 		XCTAssertEqual(components.second, nowComponents.second)
+	}
+	func testYesterdayInitialization() {
+		let yesterday = Date.WASyesterday
+		let yesterdayComponents = self.calendar.dateComponents(flags, from: yesterday)
+		let components = self.calendar.dateComponents(flags, from: (Date() - 1.day))
+		XCTAssertEqual(yesterdayComponents.year, components.year)
+		XCTAssertEqual(yesterdayComponents.month, components.month)
+		XCTAssertEqual(yesterdayComponents.day, components.day)
+		XCTAssertEqual(yesterdayComponents.hour, components.hour)
+		XCTAssertEqual(yesterdayComponents.minute, components.minute)
+		XCTAssertEqual(yesterdayComponents.second, components.second)
+	}
+	func testTomorrowInitialization() {
+		let tomorrow = Date.WAStomorrow
+		let tomorrowComponents = self.calendar.dateComponents(flags, from: tomorrow)
+		let components = self.calendar.dateComponents(flags, from: (Date() + 1.day))
+		XCTAssertEqual(tomorrowComponents.year, components.year)
+		XCTAssertEqual(tomorrowComponents.month, components.month)
+		XCTAssertEqual(tomorrowComponents.day, components.day)
+		XCTAssertEqual(tomorrowComponents.hour, components.hour)
+		XCTAssertEqual(tomorrowComponents.minute, components.minute)
+		XCTAssertEqual(tomorrowComponents.second, components.second)
 	}
 }

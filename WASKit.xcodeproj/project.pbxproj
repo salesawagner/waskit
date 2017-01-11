@@ -16,7 +16,6 @@
 		A77852361D89E3CC00EEA483 /* Date+WASComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852351D89E3CC00EEA483 /* Date+WASComponents.swift */; };
 		A77852381D89E55C00EEA483 /* Date+WASFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77852371D89E55C00EEA483 /* Date+WASFormats.swift */; };
 		A78426A41DFF988B006456D1 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78426A31DFF988B006456D1 /* DateTests.swift */; };
-		A795E9B41CFCEE5B00B3E08C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A795E9B31CFCEE5B00B3E08C /* Assets.xcassets */; };
 		A7AF2CC41DF82CE4003031D4 /* UIColor+WASUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CC31DF82CE4003031D4 /* UIColor+WASUtils.swift */; };
 		A7AF2CD01DF8474B003031D4 /* WASKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AFDB0E1CD0390800178425 /* WASKit.framework */; };
 		A7AF2CDD1DF88236003031D4 /* WASColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AF2CDC1DF88236003031D4 /* WASColorTests.swift */; };
@@ -55,7 +54,6 @@
 		A77852351D89E3CC00EEA483 /* Date+WASComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+WASComponents.swift"; path = "NSDate/Date+WASComponents.swift"; sourceTree = "<group>"; };
 		A77852371D89E55C00EEA483 /* Date+WASFormats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+WASFormats.swift"; path = "NSDate/Date+WASFormats.swift"; sourceTree = "<group>"; };
 		A78426A31DFF988B006456D1 /* DateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTests.swift; path = WASDate/DateTests.swift; sourceTree = "<group>"; };
-		A795E9B31CFCEE5B00B3E08C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7AF2CC31DF82CE4003031D4 /* UIColor+WASUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+WASUtils.swift"; path = "WASColor/UIColor+WASUtils.swift"; sourceTree = "<group>"; };
 		A7AF2CCB1DF8474B003031D4 /* WASKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WASKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AF2CCF1DF8474B003031D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -222,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				A7AFDB1A1CD03A5900178425 /* Supporting Files */,
-				A795E9B31CFCEE5B00B3E08C /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
@@ -370,7 +367,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A795E9B41CFCEE5B00B3E08C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

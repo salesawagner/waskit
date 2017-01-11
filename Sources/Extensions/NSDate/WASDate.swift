@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) 2015-2016 Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://salesawagner.com/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -42,7 +42,7 @@ extension Date {
 	/// Create a `Date` using an `Int` value for each `DateComponent`.
 	///
 	/// - Example:
-	///   - `Date(year: 1984, month: 10, day: 08)
+	///   - `Date(year: 1984, month: 10, day: 08)`
 	///
 	/// - Parameters:
 	///   - year: year `Int` value.
