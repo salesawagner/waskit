@@ -24,21 +24,18 @@
 
 import UIKit
 
-extension String {
-	/// Create a `Date` from the `String` with `format` value.
-	///
-	/// - Note:
-	/// If the `String` is invalid date the method will return nil.
+extension NSMutableAttributedString {
+	/// Append text with custom font to AttributedString
 	///
 	/// - Example:
-	///   `"1984-10-08T16:00:44.078Z".WAStoDate()`
+	///   - `let formattedString = NSMutableAttributedString()
+	///      formattedString.appendText(withFont: defaultFont, text: "GRUPO COM ")`
 	///
-	/// - Parameter format: The `String` format that date should be created.
-	/// By default yyyy-MM-dd'T'HH:mm:ss.SSSZ
-	/// - Returns: The `Date`.
-	public func WAStoDate(format: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") -> Date? {
-		let dateFormatter = DateFormatter()
-		dateFormatter.dateFormat = format
-		return dateFormatter.date(from: self)
+	/// - Returns: AttributedString + formatted text
+	@discardableResult func WASappendText(withFont font: UIFont, text: String) -> NSMutableAttributedString {
+		let attributes: [String: Any] = [NSFontAttributeName: font]
+		let attributedString = NSMutableAttributedString(string: text, attributes: attributes)
+		self.append(attributedString)
+		return self
 	}
 }

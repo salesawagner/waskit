@@ -36,6 +36,7 @@ extension UIColor {
 	///   - g: Green `UInt8` value.
 	///   - b: Blue `UInt8` Value
 	///   - a: Alpha `CGFloat` value. By default 1.0
+	// swiftlint:disable variable_name
 	public convenience init(_ r: UInt8, _ g: UInt8, _ b: UInt8, _ a: CGFloat = 1.0) {
 		let divisor	= CGFloat(255.0)
 		let r = CGFloat(r) / divisor

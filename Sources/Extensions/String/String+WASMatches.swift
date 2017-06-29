@@ -34,7 +34,7 @@ extension String {
 	/// "@wagner you around?" return `["@wagner"]`
 	///
 	/// - Returns: An `Array` of `String` with all mentions.
-	public func WASMentions() -> [String] {
+	public func WASmentions() -> [String] {
 		return self.WASMatchesForRegex(regex: WASRegex.mentions)
 	}
 	/// Get all hexa decimal colors.
@@ -46,7 +46,7 @@ extension String {
 	/// "#FF00FF is a nice color" return `["#FF00FF"]`
 	///
 	/// - Returns: An `Array` of `String` with all hexa decimal colors.
-	public func WASColors() -> [String] {
+	public func WAScolors() -> [String] {
 		return self.WASMatchesForRegex(regex: WASRegex.colors)
 	}
 	/// Get all urls colors `String`.
@@ -55,7 +55,7 @@ extension String {
 	/// "Did you see http://www.wagnersales.com.br ?" return `["http://www.wagnersales.com.br"]`
 	///
 	/// - Returns: An `Array` of `String` with all urls.
-	public func WASUrls() -> [String] {
+	public func WASurls() -> [String] {
 		return self.WASMatchesForRegex(regex: WASRegex.url)
 	}
 	/// Always starts with a character defined on string paramenter.
@@ -64,7 +64,7 @@ extension String {
 	/// Always starts with an `parameter` and ends when hitting a non-word character.
 	///
 	/// - Parameter string: An `Array` of `String` with all `String` that start with paramenter.
-	public func WASStart(with string: String) -> [String] {
+	public func WASstart(with string: String) -> [String] {
 		let regex = WASRegex.startWith(string: string)
 		return self.WASMatchesForRegex(regex: regex)
 	}

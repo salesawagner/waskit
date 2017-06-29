@@ -22,23 +22,21 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
+import Foundation
 
 extension String {
-	/// Create a `Date` from the `String` with `format` value.
-	///
-	/// - Note:
-	/// If the `String` is invalid date the method will return nil.
-	///
-	/// - Example:
-	///   `"1984-10-08T16:00:44.078Z".WAStoDate()`
-	///
-	/// - Parameter format: The `String` format that date should be created.
-	/// By default yyyy-MM-dd'T'HH:mm:ss.SSSZ
-	/// - Returns: The `Date`.
-	public func WAStoDate(format: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") -> Date? {
-		let dateFormatter = DateFormatter()
-		dateFormatter.dateFormat = format
-		return dateFormatter.date(from: self)
+	
+	subscript(i: Int) -> Character {
+		return self[index(startIndex, offsetBy: i)]
+	}
+	
+	subscript(i: Int) -> String {
+		return String(self[i] as Character)
+	}
+	
+	subscript(r: Range<Int>) -> String {
+		let start = index(startIndex, offsetBy: r.lowerBound)
+		let end = index(startIndex, offsetBy: r.upperBound - r.lowerBound)
+		return self[Range(start ..< end)]
 	}
 }

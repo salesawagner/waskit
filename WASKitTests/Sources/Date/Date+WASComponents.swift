@@ -22,23 +22,32 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
+import XCTest
+import WASKit
 
-extension String {
-	/// Create a `Date` from the `String` with `format` value.
-	///
-	/// - Note:
-	/// If the `String` is invalid date the method will return nil.
-	///
-	/// - Example:
-	///   `"1984-10-08T16:00:44.078Z".WAStoDate()`
-	///
-	/// - Parameter format: The `String` format that date should be created.
-	/// By default yyyy-MM-dd'T'HH:mm:ss.SSSZ
-	/// - Returns: The `Date`.
-	public func WAStoDate(format: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") -> Date? {
-		let dateFormatter = DateFormatter()
-		dateFormatter.dateFormat = format
-		return dateFormatter.date(from: self)
+class WASComponents: DateTests {
+	func testWASera() {
+		XCTAssertEqual(self.date.WASera, self.era)
+	}
+	func testWASyear() {
+		XCTAssertEqual(self.date.WASyear, self.year)
+	}
+	func testWASday() {
+		XCTAssertEqual(self.date.WASday, self.day)
+	}
+	func testWASmonth() {
+		XCTAssertEqual(self.date.WASmonth, self.month)
+	}
+	func testWAShour() {
+		XCTAssertEqual(self.date.WAShour, self.hour)
+	}
+	func testWASminute() {
+		XCTAssertEqual(self.date.WASminute, self.minute)
+	}
+	func testWASsecond() {
+		XCTAssertEqual(self.date.WASsecond, self.second)
+	}
+	func testWASnanosecond() {
+		XCTAssertEqual(self.date.WASnanosecond, self.nanosecond)
 	}
 }

@@ -36,7 +36,10 @@ extension Date {
 	/// - Returns: The `Date` added or left `Date` if a date could not be calculated with the given 
 	/// input.
 	public static func + (left: Date, right: DateComponents) -> Date {
-		return Calendar.current.date(byAdding: right, to: left) ?? left
+		guard let date = Calendar.current.date(byAdding: right, to: left) else {
+			return left
+		}
+		return date
 	}
 	/// Creates a `Date` with the `DateComponents` subtracted.
 	///
@@ -49,6 +52,9 @@ extension Date {
 	/// - Returns: The `Date` subtracted or left `Date` if a date could not be calculated with the 
 	/// given input.
 	public static func - (left: Date, right: DateComponents) -> Date {
-		return Calendar.current.date(byAdding: -right, to: left) ?? left
+		guard let date = Calendar.current.date(byAdding: right, to: left) else {
+			return left
+		}
+		return date
 	}
 }

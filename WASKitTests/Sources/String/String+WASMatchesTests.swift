@@ -34,37 +34,37 @@ class WASStringMatchesTests: XCTestCase {
 	func testColors() {
 		let string = "Nice color " + self.validColor
 		let countExpected = 1
-		XCTAssertEqual(string.colors().count, countExpected)
-		XCTAssertEqual(string.colors().first!, self.validColor)
+		XCTAssertEqual(string.WAScolors().count, countExpected)
+		XCTAssertEqual(string.WAScolors().first!, self.validColor)
 	}
 	func testColorsFail() {
 		let string = "Nice color " + self.invalidColor
 		let countExpected = 0
-		XCTAssertEqual(string.colors().count, countExpected)
-		XCTAssertNil(string.colors().first)
+		XCTAssertEqual(string.WAScolors().count, countExpected)
+		XCTAssertNil(string.WAScolors().first)
 	}
 	func testMentions() {
 		let string = self.validMention + " you around?"
 		let countExpected = 1
-		XCTAssertEqual(string.mentions().count, countExpected)
-		XCTAssertEqual(string.mentions().first!, self.validMention)
+		XCTAssertEqual(string.WASmentions().count, countExpected)
+		XCTAssertEqual(string.WASmentions().first!, self.validMention)
 	}
 	func testMentionsInvalid() {
 		let string = self.invalidMention + " you around?"
 		let countExpected = 0
-		XCTAssertEqual(string.mentions().count, countExpected)
-		XCTAssertNil(string.mentions().first)
+		XCTAssertEqual(string.WASmentions().count, countExpected)
+		XCTAssertNil(string.WASmentions().first)
 	}
 	func testUrls() {
 		let string = "Did you see \(self.validUrl) ?"
 		let countExpected = 1
-		XCTAssertEqual(string.urls().count, countExpected)
-		XCTAssertEqual(string.urls().first!, self.validUrl)
+		XCTAssertEqual(string.WASurls().count, countExpected)
+		XCTAssertEqual(string.WASurls().first!, self.validUrl)
 	}
 	func testStart() {
 		let string = self.validMention + " you around?"
 		let countExpected = 1
-		let matches = string.start(with: "@")
+		let matches = string.WASstart(with: "@")
 		XCTAssertEqual(matches.count, countExpected)
 		XCTAssertEqual(matches.first!, self.validMention)
 	}

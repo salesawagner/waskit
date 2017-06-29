@@ -53,7 +53,7 @@ let kComponentFlags = Set<Calendar.Component>([
 
 extension Date {
 	/// The `DateComponents`
-	public var WASdateComponents: DateComponents {
+	private var WASdateComponents: DateComponents {
 		return Calendar.current.dateComponents(kComponentFlags, from: self)
 	}
 	/// The era value.

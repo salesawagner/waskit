@@ -43,6 +43,7 @@ class DateTests: XCTestCase {
 	let calendar = Calendar.current
 	let era = 0
 	let year = 1984
+	let shortYear = 84
 	let month = 10
 	let day = 08
 	let hour = 16

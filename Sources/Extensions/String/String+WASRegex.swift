@@ -32,7 +32,7 @@ extension String {
 	public func WASMatchesForRegex(regex: String) -> [String] {
 		var strings = [""]
 		if let regex = try? NSRegularExpression(pattern: regex, options: []) {
-			let range = NSMakeRange(0, self.characters.count)
+			let range = NSMakeRange(0, self.characters.count) // swiftlint:disable:this legacy_constructor
 			let ranges = regex.matches(in: self, options: .reportCompletion, range: range)
 			strings = ranges.map {
 				let nSString = self as NSString

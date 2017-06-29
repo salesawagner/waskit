@@ -89,4 +89,14 @@ class WASDate: DateTests {
 		XCTAssertEqual(tomorrowComponents.minute, components.minute)
 		XCTAssertEqual(tomorrowComponents.second, components.second)
 	}
+	// TODO:
+	func testWrongInitialization() {
+		
+	}
+	func testTomorrowError() {
+		
+	}
+	func testYesterdayError() {
+		
+	}
 }

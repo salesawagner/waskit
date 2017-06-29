@@ -50,6 +50,7 @@ extension UIColor {
 	/// Returns the RGBA components.
 	///
 	/// - Returns: The RGBA components as a tuple (r, g, b, a).
+	// swiftlint:disable large_tuple
 	public func WAStoRGBA() -> (r: UInt8, g: UInt8, b: UInt8, a: CGFloat) {
 		func toUInt(_ value: CGFloat) -> UInt8 {
 			let multi = CGFloat(255)
