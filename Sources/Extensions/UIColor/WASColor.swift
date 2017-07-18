@@ -24,7 +24,12 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
+
+//*************************
+// MARK: Constructors
+//*************************
+	
 	/// Create a `UIColor` using an `UInt8` value RGB formatted and an alpha `CGFloat` value.
 	/// 
 	/// - Example:
@@ -44,6 +49,7 @@ extension UIColor {
 		let b = CGFloat(b) / divisor
 		self.init(red: r, green: g, blue: b, alpha: a)
 	}
+	
 	/// Create a `UIColor` using an `UInt8` value RGB formatted and an alpha `CGFloat` value.
 	///
 	/// - Example:
@@ -58,6 +64,7 @@ extension UIColor {
 	public convenience init(r: UInt8, g: UInt8, b: UInt8, a: CGFloat = 1.0) {
 		self.init(r, g, b, a)
 	}
+	
 	/// Create a `UIColor` using an gray sacale `UInt8` value and an alpha `CGFloat` value.
 	///
 	/// - Example:
@@ -70,6 +77,7 @@ extension UIColor {
 	public convenience init(grayScale gray: UInt8 = 50, a: CGFloat = 1.0) {
 		self.init(gray, gray, gray, a)
 	}
+	
 	/// Create a `UIColor` using hexa decimal `String` value.
 	///
 	/// - Note:
@@ -82,8 +90,8 @@ extension UIColor {
 	/// - Parameter hexaDecimal: A hexa decimal color `String` value.
 	public convenience init(string: String) {
 		var string = string.trimmingCharacters(in: .whitespacesAndNewlines)
-		string = string.remove("#")
-		guard string.characters.count == 6, string.isHexaDecimal() else {
+		string = string.WASremove("#")
+		guard string.characters.count == 6, string.WASisHexaDecimal else {
 			self.init(0, 0, 0, 1)
 			return
 		}

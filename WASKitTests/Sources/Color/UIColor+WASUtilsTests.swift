@@ -38,7 +38,7 @@ class WASColorUtilsTests: XCTestCase {
 		XCTAssertEqual(self.color.WASdescription, expected)
 	}
 	func testWAStoRGBA() {
-		let RGBA = self.color.WAStoRGBA()
+		let RGBA = self.color.WAStoRGBA
 		let color = UIColor(RGBA.r, RGBA.g, RGBA.b, RGBA.a)
 		XCTAssertEqual(RGBA.r, self.r)
 		XCTAssertEqual(RGBA.g, self.g)
@@ -48,27 +48,27 @@ class WASColorUtilsTests: XCTestCase {
 		XCTAssertEqual(self.color.WASgreen, self.g)
 		XCTAssertEqual(self.color.WASblue, self.b)
 		XCTAssertEqual(self.color.WASalpha, self.a)
-		XCTAssertEqual(color.WAStoUInt(), self.color.WAStoUInt())
+		XCTAssertEqual(color.WAStoUInt, self.color.WAStoUInt)
 	}
 	func testWAStoInt() {
-		XCTAssertEqual(UIColor.black.WAStoUInt(), 4278190080)
-		XCTAssertEqual(UIColor.white.WAStoUInt(), 4294967295)
-		XCTAssertEqual(UIColor.red.WAStoUInt(), 4294901760)
-		XCTAssertEqual(UIColor.green.WAStoUInt(), 4278255360)
-		XCTAssertEqual(UIColor.blue.WAStoUInt(), 4278190335)
+		XCTAssertEqual(UIColor.black.WAStoUInt, 4278190080)
+		XCTAssertEqual(UIColor.white.WAStoUInt, 4294967295)
+		XCTAssertEqual(UIColor.red.WAStoUInt, 4294901760)
+		XCTAssertEqual(UIColor.green.WAStoUInt, 4278255360)
+		XCTAssertEqual(UIColor.blue.WAStoUInt, 4278190335)
 	}
 	func testWAStoHexaDecimal() {
-		XCTAssertEqual(UIColor.black.WAStoHexaDecimal(), 0x000000)
-		XCTAssertEqual(UIColor.white.WAStoHexaDecimal(), 0xffffff)
-		XCTAssertEqual(UIColor.red.WAStoHexaDecimal(), 0xff0000)
-		XCTAssertEqual(UIColor.green.WAStoHexaDecimal(), 0x00ff00)
-		XCTAssertEqual(UIColor.blue.WAStoHexaDecimal(), 0x0000ff)
+		XCTAssertEqual(UIColor.black.WAStoHexaDecimal, 0x000000)
+		XCTAssertEqual(UIColor.white.WAStoHexaDecimal, 0xffffff)
+		XCTAssertEqual(UIColor.red.WAStoHexaDecimal, 0xff0000)
+		XCTAssertEqual(UIColor.green.WAStoHexaDecimal, 0x00ff00)
+		XCTAssertEqual(UIColor.blue.WAStoHexaDecimal, 0x0000ff)
 	}
 	func testWAStoString() {
-		XCTAssertEqual(UIColor.black.WAStoString(), "#000000")
-		XCTAssertEqual(UIColor.white.WAStoString(), "#ffffff")
-		XCTAssertEqual(UIColor.red.WAStoString(), "#ff0000")
-		XCTAssertEqual(UIColor.green.WAStoString(), "#00ff00")
-		XCTAssertEqual(UIColor.blue.WAStoString(), "#0000ff")
+		XCTAssertEqual(UIColor.black.WAStoString, "#000000")
+		XCTAssertEqual(UIColor.white.WAStoString, "#ffffff")
+		XCTAssertEqual(UIColor.red.WAStoString, "#ff0000")
+		XCTAssertEqual(UIColor.green.WAStoString, "#00ff00")
+		XCTAssertEqual(UIColor.blue.WAStoString, "#0000ff")
 	}
 }

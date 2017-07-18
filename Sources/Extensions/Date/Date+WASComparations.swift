@@ -22,23 +22,26 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
+import Foundation
 
-extension Date {
+public extension Date {
+	
+//*************************
+// MARK: Public prorpeties
+//*************************
+	
 	/// `true` if yesterday or `false` if not.
 	public var WASisYestarday: Bool {
-		return self === Date() - 1.day
+		return self == Date() - 1.WASday
 	}
+	
 	/// `true` if today or `false` if not.
 	public var WASisToday: Bool {
-		return self === Date()
+		return self == Date()
 	}
+	
 	/// `true` if tomorrow or `false` if not.
 	public var WASisTomorrow: Bool {
-		return self === Date() + 1.day
-	}
-	public static func === (lhs: Date, rhs: Date) -> Bool {
-		let calendar = Calendar.current
-		return calendar.startOfDay(for: lhs) == calendar.startOfDay(for: rhs)
+		return self == Date() + 1.WASday
 	}
 }

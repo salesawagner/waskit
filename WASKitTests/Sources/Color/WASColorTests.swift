@@ -32,10 +32,10 @@ class WASColorTests: XCTestCase {
 	let hex = "ffffff"
 	let invalidHex = "invalid"
 	func testInitialization() {
-		XCTAssertEqual(UIColor(r, g, b).WAStoUInt(), UIColor.white.WAStoUInt())
-		XCTAssertEqual(UIColor(r: r, g: g, b: b).WAStoUInt(), UIColor.white.WAStoUInt())
-		XCTAssertEqual(UIColor(grayScale: r).WAStoUInt(), UIColor.white.WAStoUInt())
-		XCTAssertEqual(UIColor(string: hex).WAStoUInt(), UIColor.white.WAStoUInt())
-		XCTAssertEqual(UIColor(string: invalidHex).WAStoUInt(), UIColor.black.WAStoUInt())
+		XCTAssertEqual(UIColor(r, g, b).WAStoUInt, UIColor.white.WAStoUInt)
+		XCTAssertEqual(UIColor(r: r, g: g, b: b).WAStoUInt, UIColor.white.WAStoUInt)
+		XCTAssertEqual(UIColor(grayScale: r).WAStoUInt, UIColor.white.WAStoUInt)
+		XCTAssertEqual(UIColor(string: hex).WAStoUInt, UIColor.white.WAStoUInt)
+		XCTAssertEqual(UIColor(string: invalidHex).WAStoUInt, UIColor.black.WAStoUInt)
 	}
 }

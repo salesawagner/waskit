@@ -25,36 +25,48 @@
 import Foundation
 
 public extension Int {
+
+//*************************
+// MARK: Public properties
+//*************************
+
 	/// The year `DateComponents` amount.
-	var year: DateComponents {
+	var WASyear: DateComponents {
 		return DateComponents(year: self)
 	}
+	
 	/// The month `DateComponents` amount.
-	var month: DateComponents {
+	var WASmonth: DateComponents {
 		return DateComponents(month: self)
 	}
+	
 	/// The week `DateComponents` amount.
-	var week: DateComponents {
+	var WASweek: DateComponents {
 		return DateComponents(day: 7 * self)
 	}
+	
 	/// day `DateComponents` amount.
-	var day: DateComponents {
+	var WASday: DateComponents {
 		return DateComponents(day: self)
 	}
+	
 	/// The hour `DateComponents` amount.
-	var hour: DateComponents {
+	var WAShour: DateComponents {
 		return DateComponents(hour: self)
 	}
+	
 	/// The minute `DateComponents` amount.
-	var minute: DateComponents {
+	var WASminute: DateComponents {
 		return DateComponents(minute: self)
 	}
+	
 	/// The second `DateComponents` amount.
-	var second: DateComponents {
+	var WASsecond: DateComponents {
 		return DateComponents(second: self)
 	}
+	
 	/// The nanosecond `DateComponents` amount.
-	var nanosecond: DateComponents {
+	var WASnanosecond: DateComponents {
 		return DateComponents(nanosecond: self)
 	}
 }

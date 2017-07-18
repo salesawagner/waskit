@@ -22,23 +22,28 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
+import Foundation
 
-extension Date {
-	//*************************
-	// MARK: Public static properties
-	//*************************
+public extension Date {
+	
+//*************************
+// MARK: Public static properties
+//*************************
+
 	/// Creates a `Date` representing yesterday.
 	public static var WASyesterday: Date {
-		return Date() - 1.day
+		return Date() - 1.WASday
 	}
+	
 	/// Creates a `Date` representing tomorrow.
 	public static var WAStomorrow: Date {
-		return Date() + 1.day
+		return Date() + 1.WASday
 	}
-	//*************************
-	// MARK: Constructores
-	//*************************
+	
+//*************************
+// MARK: Constructores
+//*************************
+	
 	/// Create a `Date` using an `Int` value for each `DateComponent`.
 	///
 	/// - Example:

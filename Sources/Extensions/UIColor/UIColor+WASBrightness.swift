@@ -24,21 +24,37 @@
 
 import UIKit
 
-//**************************************************************************************************
-//
-// MARK: - Definitions -
-//
-//**************************************************************************************************
-private enum WASBrightnessType: Int {
-	case wasBrightnessLighter
-	case wasBrightnessDarker
-}
+public extension UIColor {
 
-extension UIColor {
-//**************************************************
-// MARK: - Private Methods
-//**************************************************
-	private func brightness(_ brightnessType: WASBrightnessType) -> UIColor {
+//*************************
+// MARK: Public properties
+//*************************
+	
+	/// Returns a lighter `UIColor` using the brightness.
+	///
+	/// - Example:
+	///   - `UIColor.redcolor.WASlighter()`
+	///
+	/// - Returns: A lighter `UIColor`
+	public var WASlighter: UIColor {
+		return self.WASbrightness(.wasBrightnessLighter)
+	}
+	
+	/// Returns a darker `UIColor` using the brightness.
+	///
+	/// - Example:
+	///   - `UIColor.redcolor.WASdarkened()`
+	///
+	/// - Returns: A Darker `UIColor`.
+	public var WASdarkened: UIColor {
+		return self.WASbrightness(.wasBrightnessDarker)
+	}
+	
+//*************************
+// MARK: Private methods
+//*************************
+
+	private func WASbrightness(_ brightnessType: WASBrightnessType) -> UIColor {
 		var h: CGFloat = 0
 		var s: CGFloat = 0
 		var b: CGFloat = 0
@@ -54,26 +70,5 @@ extension UIColor {
 			finishColor = UIColor(hue: h, saturation: s, brightness: brightness, alpha: a)
 		}
 		return finishColor
-	}
-//**************************************************
-// MARK: - Public Methods
-//**************************************************
-	/// Returns a lighter `UIColor` using the brightness.
-	///
-	/// - Example:
-	///   - `UIColor.redcolor.WASlighter()`
-	///
-	/// - Returns: A lighter `UIColor`
-	public func WASlighter() -> UIColor {
-		return self.brightness(.wasBrightnessLighter)
-	}
-	/// Returns a lighter `UIColor` using the brightness.
-	///
-	/// - Example:
-	///   - `UIColor.redcolor.WASdarkened()`
-	///
-	/// - Returns: A Darker `UIColor`.
-	public func WASdarkened() -> UIColor {
-		return self.brightness(.wasBrightnessDarker)
 	}
 }

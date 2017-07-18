@@ -22,9 +22,14 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
+import Foundation
 
-extension String {
+public extension String {
+	
+//*************************
+// MARK: Public methods
+//*************************
+
 	/// Create a `Date` from the `String` with `format` value.
 	///
 	/// - Note:

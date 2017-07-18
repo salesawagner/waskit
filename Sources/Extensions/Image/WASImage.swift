@@ -24,31 +24,17 @@
 
 import UIKit
 
-extension UIImage {
-//**************************************************
-// MARK: - Properties
-//**************************************************
+public extension UIImage {
 
-//**************************************************
-// MARK: - Constructors
-//**************************************************
+//*************************
+// MARK: Public methods
+//*************************
 
-//**************************************************
-// MARK: - Internal Methods
-//**************************************************
-
-//**************************************************
-// MARK: - Private Methods
-//**************************************************
-
-//**************************************************
-// MARK: - Public Methods
-//**************************************************
 	/// Returns a new version of the image scaled to the specified size.
 	///
 	/// - Parameter size: The size to use when scaling the new image.
 	/// - Returns: Scaled image.
-	public func resize(_ size: CGSize) -> UIImage {
+	public func WASresize(_ size: CGSize) -> UIImage {
 		guard
 			let cgImage = self.cgImage,
 			let colorSpace = cgImage.colorSpace,
@@ -70,20 +56,22 @@ extension UIImage {
 		}
 		return scaled ?? self
 	}
+	
 	/// Returns a new version of the image scaled to the scale.
 	///
 	/// - Parameter scale: The scale to use when scaling the new image.
 	/// - Returns: Scaled image.
-	public func resizeWithScale(_ scale: CGFloat) -> UIImage {
+	public func WASresizeWithScale(_ scale: CGFloat) -> UIImage {
 		let width = self.size.width * scale
 		let height = self.size.height * scale
-		return self.resize(CGSize(width: width, height: height))
+		return self.WASresize(CGSize(width: width, height: height))
 	}
+	
 	/// Returns a new version of the image cropped.
 	///
 	/// - Parameter rect: The rect to use when cropping the new image.
 	/// - Returns: Cropped image.
-	public func crop(_ rect: CGRect) -> UIImage {
+	public func WAScrop(_ rect: CGRect) -> UIImage {
 		guard
 			let cgImage = self.cgImage,
 			let cropped = cgImage.cropping(to: rect) else {
@@ -91,7 +79,4 @@ extension UIImage {
 		}
 		return UIImage(cgImage: cropped)
 	}
-//**************************************************
-// MARK: - Override Public Methods
-//**************************************************
 }

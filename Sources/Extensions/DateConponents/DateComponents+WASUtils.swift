@@ -22,23 +22,28 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
+import Foundation
 
 public extension DateComponents {
-	//*************************
-	// MARK: Public static properties
-	//*************************
-	var fromNow: Date {
+	
+//*************************
+// MARK: Public properties
+//*************************
+	
+	var WASfromNow: Date {
 		let current = Calendar.current
 		return current.date(byAdding: self, to: Date())!
 	}
-	var ago: Date {
+
+	var WASago: Date {
 		let current = Calendar.current
 		return current.date(byAdding: -self, to: Date())!
 	}
-	//*************************
-	// MARK: Public static methods
-	//*************************
+	
+//*************************
+// MARK: Public static methods
+//*************************
+	
 	/// Creates inverse `DateComponents`
 	///
 	/// - parameter components: A `DateComponents`
@@ -69,6 +74,7 @@ public extension DateComponents {
 		}
 		return dateComponents
 	}
+	
 	/// Creates a `DateComponents` calculated by the addition of right `DateComponents`
 	/// and `DateComponents` left
 	///
@@ -101,6 +107,7 @@ public extension DateComponents {
 		}
 		return dateComponents
 	}
+	
 	/// Creates a `DateComponents` calculated by the subtraction of right `DateComponents`
 	/// and `DateComponents` left
 	///

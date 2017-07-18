@@ -34,22 +34,27 @@ import UIKit
 ///   - color5: #06D6A0 - Caribbean green
 ///
 public struct WASStyle {
+	
 	/// Color #1E91D6 - Bright cerulean
 	static public var color1: UIColor {
 		return UIColor(string: "#1E91D6")
 	}
+	
 	/// Color #0072BB - French blue
 	static public var color2: UIColor {
 		return UIColor(string: "#0072BB")
 	}
+	
 	/// Color #EF476F - Infra red
 	static public var color3: UIColor {
 		return UIColor(string: "#EF476F")
 	}
+	
 	/// Color #FFD166 - Orange-yellow
 	static public var color4: UIColor {
 		return UIColor(string: "#FFD166")
 	}
+	
 	/// Color #06D6A0 - Caribbean green
 	static public var color5: UIColor {
 		return UIColor(string: "#06D6A0")

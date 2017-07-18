@@ -24,12 +24,18 @@
 
 import UIKit
 
-extension NSMutableAttributedString {
+public extension NSMutableAttributedString {
+	
+	//*************************
+	// MARK: Public methods
+	//*************************
+	
 	/// Append text with custom font to AttributedString
 	///
 	/// - Example:
-	///   - `let formattedString = NSMutableAttributedString()
-	///      formattedString.appendText(withFont: defaultFont, text: "GRUPO COM ")`
+	///
+	///   `let formattedString = NSMutableAttributedString()
+	///    formattedString.WASappendText(withFont: defaultFont, text: "NEW TEXT")`
 	///
 	/// - Returns: AttributedString + formatted text
 	@discardableResult func WASappendText(withFont font: UIFont, text: String) -> NSMutableAttributedString {

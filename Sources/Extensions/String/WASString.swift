@@ -24,19 +24,45 @@
 
 import Foundation
 
-extension String {
+public extension String {
 	
-	subscript(i: Int) -> Character {
-		return self[index(startIndex, offsetBy: i)]
+//*************************
+// MARK: Public properties
+//*************************
+	
+	public var WASlength: Int {
+		return self.characters.count
 	}
 	
-	subscript(i: Int) -> String {
-		return String(self[i] as Character)
+//*************************
+// MARK: Private methods
+//*************************
+	
+	private func WASsubstring(from: Int) -> String {
+		return self[Range(min(from, self.WASlength) ..< self.WASlength)]
 	}
 	
-	subscript(r: Range<Int>) -> String {
-		let start = index(startIndex, offsetBy: r.lowerBound)
-		let end = index(startIndex, offsetBy: r.upperBound - r.lowerBound)
+	private func substring(to: Int) -> String {
+		return self[Range(0 ..< max(0, to))]
+	}
+	
+//*************************
+// MARK: Public methods
+//*************************
+	
+	public subscript (i: Int) -> String {
+		return self[Range(i ..< i + 1)]
+	}
+	
+	public subscript(r: Range<Int>) -> String {
+		
+		let lowerBound = max(0, min(self.WASlength, r.lowerBound))
+		let upperBound = min(self.WASlength, max(0, r.upperBound))
+		let range = Range(uncheckedBounds: (lower: lowerBound, upper: upperBound))
+		
+		let start = index(startIndex, offsetBy: range.lowerBound)
+		let end = index(start, offsetBy: range.upperBound - range.lowerBound)
+		
 		return self[Range(start ..< end)]
 	}
 }

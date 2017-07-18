@@ -22,19 +22,23 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
+import Foundation
 
-extension Date {
-	//*************************
-	// MARK: Private methods
-	//*************************
+public extension Date {
+	
+//*************************
+// MARK: Private methods
+//*************************
+	
 	private func components(from date: Date) -> DateComponents {
 		let current = Calendar.current
 		return current.dateComponents(kComponentFlags, from: date, to: self)
 	}
-	//*************************
-	// MARK: Public methods
-	//*************************
+	
+//*************************
+// MARK: Public methods
+//*************************
+	
 	/// The second(s) offset from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.
@@ -42,6 +46,7 @@ extension Date {
 	public func WASseconds(from date: Date) -> Int {
 		return self.components(from: date).second!
 	}
+	
 	/// The minute(s) offset from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.
@@ -49,6 +54,7 @@ extension Date {
 	public func WASminutes(from date: Date) -> Int {
 		return self.components(from: date).minute!
 	}
+	
 	/// The hour(s) offset from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.
@@ -56,6 +62,7 @@ extension Date {
 	public func WAShours(from date: Date) -> Int {
 		return self.components(from: date).hour!
 	}
+	
 	/// The day(s) offset from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.
@@ -63,6 +70,7 @@ extension Date {
 	public func WASdays(from date: Date) -> Int {
 		return self.components(from: date).day!
 	}
+	
 	/// The week(s) offset from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.
@@ -70,6 +78,7 @@ extension Date {
 	public func WASweeks(from date: Date) -> Int {
 		return self.components(from: date).weekOfYear!
 	}
+	
 	/// The month(s) offset from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.
@@ -77,6 +86,7 @@ extension Date {
 	public func WASmonths(from date: Date) -> Int {
 		return self.components(from: date).month!
 	}
+	
 	/// The year(s) offset from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.
@@ -84,6 +94,7 @@ extension Date {
 	public func WASyears(from date: Date) -> Int {
 		return self.components(from: date).year!
 	}
+	
 	/// Human offset `String` from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.

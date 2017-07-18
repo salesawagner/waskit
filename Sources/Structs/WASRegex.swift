@@ -33,14 +33,17 @@ import Foundation
 ///   - startWith: Always starts with a character defined on string paramenter.
 ///
 public struct WASRegex {
+	
 	/// Regex for @mentions matches.
 	static public var mentions: String {
 		return WASRegex.startWith(string: "@")
 	}
+	
 	/// Regex for hexa decimal strings.
 	static public var colors: String {
 		return "#(?:[0-9A-Fa-f]{2}){3}"
 	}
+	
 	/// Regex for url matches.
 	static public var url: String {
 		var regex = "((?:http|https)://)?"
@@ -51,6 +54,7 @@ public struct WASRegex {
 		regex += "(?:[\\w\\d\\-./_]+)?)?"
 		return regex
 	}
+	
 	/// Regex for start with string matches
 	///
 	/// - Parameter string: An `String` that will start the word.

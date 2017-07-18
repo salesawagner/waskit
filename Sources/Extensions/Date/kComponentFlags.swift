@@ -22,17 +22,19 @@
 //  THE SOFTWARE.
 //
 
-import XCTest
-import WASKit
+import Foundation
 
-class WASBrightnessTests: XCTestCase {
-	let color = UIColor(string: "3498db")
-	func testLighter() {
-		let brightness = self.color.WASlighter.WAStoString
-		XCTAssertEqual(brightness, "#3cb0ff")
-	}
-	func testDarkened() {
-		let brightness = self.color.WASdarkened.WAStoString
-		XCTAssertEqual(brightness, "#2771a4")
-	}
-}
+internal let kComponentFlags = Set<Calendar.Component>([
+	.era,
+	.timeZone,
+	.year,
+	.month,
+	.day,
+	.hour,
+	.minute,
+	.second,
+	.nanosecond,
+	.weekday,
+	.weekdayOrdinal,
+	.weekOfYear
+])

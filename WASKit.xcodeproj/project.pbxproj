@@ -38,6 +38,8 @@
 		A782CA751E261F25001AC933 /* String+WASDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA401E261744001AC933 /* String+WASDate.swift */; };
 		A78755D21EFD8ABB00433B4F /* NSMutableAttributedString+WASApend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78755D11EFD8ABB00433B4F /* NSMutableAttributedString+WASApend.swift */; };
 		A7AF2CD01DF8474B003031D4 /* WASKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AFDB0E1CD0390800178425 /* WASKit.framework */; };
+		A7D252121F1E9DEF007CD8C5 /* kComponentFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D252111F1E9DEF007CD8C5 /* kComponentFlags.swift */; };
+		A7D252141F1EA029007CD8C5 /* WASBrightnessType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D252131F1EA029007CD8C5 /* WASBrightnessType.swift */; };
 		A7F77EED1EF08A200074724E /* Date+WASComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F77EEC1EF08A200074724E /* Date+WASComponents.swift */; };
 		A7F77EEF1EF08DED0074724E /* Date+WASFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F77EEE1EF08DED0074724E /* Date+WASFormats.swift */; };
 /* End PBXBuildFile section */
@@ -87,6 +89,8 @@
 		A7AF2CCB1DF8474B003031D4 /* WASKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WASKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AFDB0E1CD0390800178425 /* WASKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WASKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AFDB1B1CD03A5900178425 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D252111F1E9DEF007CD8C5 /* kComponentFlags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kComponentFlags.swift; sourceTree = "<group>"; };
+		A7D252131F1EA029007CD8C5 /* WASBrightnessType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASBrightnessType.swift; sourceTree = "<group>"; };
 		A7F77EEC1EF08A200074724E /* Date+WASComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WASComponents.swift"; sourceTree = "<group>"; };
 		A7F77EEE1EF08DED0074724E /* Date+WASFormats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WASFormats.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +139,7 @@
 		A782CA311E261744001AC933 /* Date */ = {
 			isa = PBXGroup;
 			children = (
+				A7D252111F1E9DEF007CD8C5 /* kComponentFlags.swift */,
 				A782CA321E261744001AC933 /* Date+WASComparations.swift */,
 				A782CA331E261744001AC933 /* Date+WASComponents.swift */,
 				A782CA341E261744001AC933 /* Date+WASFormats.swift */,
@@ -189,6 +194,7 @@
 				A782CA451E261744001AC933 /* UIColor+WASBrightness.swift */,
 				A782CA461E261744001AC933 /* UIColor+WASUtils.swift */,
 				A782CA471E261744001AC933 /* WASColor.swift */,
+				A7D252131F1EA029007CD8C5 /* WASBrightnessType.swift */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -474,6 +480,7 @@
 				A782CA531E261744001AC933 /* DateComponents+WASUtils.swift in Sources */,
 				A782CA521E261744001AC933 /* WASDate.swift in Sources */,
 				A782CA4B1E261744001AC933 /* Array+WASUtils.swift in Sources */,
+				A7D252121F1E9DEF007CD8C5 /* kComponentFlags.swift in Sources */,
 				A782CA4F1E261744001AC933 /* Date+WASOffset.swift in Sources */,
 				A782CA4D1E261744001AC933 /* Date+WASComponents.swift in Sources */,
 				A782CA571E261744001AC933 /* String+WASMatches.swift in Sources */,
@@ -482,6 +489,7 @@
 				A782CA5E1E261744001AC933 /* WASStyles.swift in Sources */,
 				A782CA4C1E261744001AC933 /* Date+WASComparations.swift in Sources */,
 				A71CCEA41F057A64000338A9 /* WASString.swift in Sources */,
+				A7D252141F1EA029007CD8C5 /* WASBrightnessType.swift in Sources */,
 				A782CA5C1E261744001AC933 /* WASColor.swift in Sources */,
 				A782CA751E261F25001AC933 /* String+WASDate.swift in Sources */,
 				A782CA581E261744001AC933 /* String+WASRegex.swift in Sources */,

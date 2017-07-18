@@ -22,68 +22,58 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
+import Foundation
 
-//**************************************************************************************************
-//
-// MARK: - Constants -
-//
-//**************************************************************************************************
+public extension Date {
 
-let kComponentFlags = Set<Calendar.Component>([
-	.era,
-	.timeZone,
-	.year,
-	.month,
-	.day,
-	.hour,
-	.minute,
-	.second,
-	.nanosecond,
-	.weekday,
-	.weekdayOrdinal,
-	.weekOfYear
-])
+//*************************
+// MARK: Private methods
+//*************************
 
-//**************************************************************************************************
-//
-// MARK: - Extension - Date
-//
-//**************************************************************************************************
-
-extension Date {
 	/// The `DateComponents`
 	private var WASdateComponents: DateComponents {
 		return Calendar.current.dateComponents(kComponentFlags, from: self)
 	}
+	
+//*************************
+// MARK: Public methods
+//*************************
+
 	/// The era value.
 	public var WASera: Int {
 		return self.WASdateComponents.era!
 	}
+	
 	/// The year value.
 	public var WASyear: Int {
 		return self.WASdateComponents.year!
 	}
+	
 	/// The day value.
 	public var WASday: Int {
 		return self.WASdateComponents.day!
 	}
+	
 	/// The month value.
 	public var WASmonth: Int {
 		return self.WASdateComponents.month!
 	}
+	
 	/// The hour value.
 	public var WAShour: Int {
 		return self.WASdateComponents.hour!
 	}
+	
 	/// The minute value.
 	public var WASminute: Int {
 		return self.WASdateComponents.minute!
 	}
+	
 	/// The second value.
 	public var WASsecond: Int {
 		return self.WASdateComponents.second!
 	}
+	
 	/// The nanosecond value.
 	public var WASnanosecond: Int {
 		return self.WASdateComponents.nanosecond!

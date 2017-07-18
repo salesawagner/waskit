@@ -24,7 +24,11 @@
 
 import Foundation
 
-extension String {
+public extension String {
+
+//*************************
+// MARK: Public properties
+//*************************
 	
 	public var WASisPalindrome: Bool {
 		

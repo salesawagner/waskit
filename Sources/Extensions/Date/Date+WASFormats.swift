@@ -22,9 +22,14 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
+import Foundation
 
-extension Date {
+public extension Date {
+	
+//*************************
+// MARK: Public methods
+//*************************
+	
 	/// Create a date `String` using the receiver formatted date style and/or time style.
 	///
 	/// - Example:
@@ -62,6 +67,7 @@ extension Date {
 		dateFormatter.timeZone = timeZone
 		return dateFormatter.string(from: self)
 	}
+	
 	/// Create a date `String` using the `format` value.
 	///
 	/// - Example:

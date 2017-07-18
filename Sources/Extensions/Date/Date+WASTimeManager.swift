@@ -22,9 +22,14 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
+import Foundation
 
-extension Date {
+public extension Date {
+	
+//*************************
+// MARK: Public methods
+//*************************
+	
 	/// Creates a `Date` with the `DateComponents` added
 	///
 	/// - Note:
@@ -41,6 +46,7 @@ extension Date {
 		}
 		return date
 	}
+	
 	/// Creates a `Date` with the `DateComponents` subtracted.
 	///
 	/// - Note:

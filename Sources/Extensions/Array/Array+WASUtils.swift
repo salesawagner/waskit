@@ -22,13 +22,18 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
+import Foundation
 
-extension Array where Element: Hashable {
+public extension Array where Element: Hashable {
+
+//*************************
+// MARK: Public properties
+//*************************
+	
 	/// Remove duplicate elements.
 	///
 	/// - Returns: `Array` with unique elements.
-	public func WASRemoveDuplicates() -> [Element] {
+	public var WASremoveDuplicates: [Element] {
 		var result: [Element] = []
 		for value in self {
 			if !result.contains(value) {
@@ -37,15 +42,25 @@ extension Array where Element: Hashable {
 		}
 		return result
 	}
+	
+//*************************
+// MARK: Public mutating methods
+//*************************
+
 	/// Remove duplicate elements.
-	public mutating func WASRemoveDuplicatesInPlace() {
-		self = self.WASRemoveDuplicates()
+	public mutating func WASremoveDuplicatesInPlace() {
+		self = self.WASremoveDuplicates
 	}
+	
+//*************************
+// MARK: Public methods
+//*************************
+	
 	/// Convert `Array` to `String`
 	///
 	/// - Parameter separator: `String` to separate `Array` elements.
 	/// - Returns: The `String` formatted.
-	public func WASToString(separator: String? = nil) -> String {
+	public func WAStoString(separator: String? = nil) -> String {
 		var filter = ""
 		for element in self {
 			if filter.isEmpty {
@@ -56,8 +71,9 @@ extension Array where Element: Hashable {
 		}
 		return filter
 	}
+	
 	/// Print each `Array`'s objects.
-	public func WASPrint() {
+	public func WASprint() {
 		for element in self {
 			print(element)
 		}

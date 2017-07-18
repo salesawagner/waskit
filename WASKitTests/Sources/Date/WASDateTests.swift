@@ -70,7 +70,7 @@ class WASDate: DateTests {
 	func testYesterdayInitialization() {
 		let yesterday = Date.WASyesterday
 		let yesterdayComponents = self.calendar.dateComponents(flags, from: yesterday)
-		let components = self.calendar.dateComponents(flags, from: (Date() - 1.day))
+		let components = self.calendar.dateComponents(flags, from: (Date() - 1.WASday))
 		XCTAssertEqual(yesterdayComponents.year, components.year)
 		XCTAssertEqual(yesterdayComponents.month, components.month)
 		XCTAssertEqual(yesterdayComponents.day, components.day)
@@ -81,7 +81,7 @@ class WASDate: DateTests {
 	func testTomorrowInitialization() {
 		let tomorrow = Date.WAStomorrow
 		let tomorrowComponents = self.calendar.dateComponents(flags, from: tomorrow)
-		let components = self.calendar.dateComponents(flags, from: (Date() + 1.day))
+		let components = self.calendar.dateComponents(flags, from: (Date() + 1.WASday))
 		XCTAssertEqual(tomorrowComponents.year, components.year)
 		XCTAssertEqual(tomorrowComponents.month, components.month)
 		XCTAssertEqual(tomorrowComponents.day, components.day)

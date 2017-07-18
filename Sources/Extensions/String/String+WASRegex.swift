@@ -22,15 +22,20 @@
 //  THE SOFTWARE.
 //
 
-import UIKit
+import Foundation
 
-extension String {
+public extension String {
+	
+//*************************
+// MARK: Public methods
+//*************************
+	
 	/// Matche in `String` by regex.
 	///
 	/// - Parameter regex: regex `String`
 	/// - Returns: An `Array` of `String` matched.
 	public func WASMatchesForRegex(regex: String) -> [String] {
-		var strings = [""]
+		var strings: [String] = []
 		if let regex = try? NSRegularExpression(pattern: regex, options: []) {
 			let range = NSMakeRange(0, self.characters.count) // swiftlint:disable:this legacy_constructor
 			let ranges = regex.matches(in: self, options: .reportCompletion, range: range)

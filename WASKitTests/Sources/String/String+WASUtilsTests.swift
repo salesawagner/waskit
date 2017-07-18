@@ -33,15 +33,15 @@ class WASStringUtilsTests: XCTestCase {
 		var endSpace = self.string + " "
 		var spaces = " " + self.string + " "
 		var empty = self.emptyString
-		XCTAssertEqual(self.emptyString.trim(), self.emptyString)
-		XCTAssertEqual(startSpace.trim(), self.string)
-		XCTAssertEqual(endSpace.trim(), self.string)
-		XCTAssertEqual(spaces.trim(), self.string)
+		XCTAssertEqual(self.emptyString.WAStrimmed, self.emptyString)
+		XCTAssertEqual(startSpace.WAStrimmed, self.string)
+		XCTAssertEqual(endSpace.WAStrimmed, self.string)
+		XCTAssertEqual(spaces.WAStrimmed, self.string)
 		// In place
-		empty.trimInPlace()
-		startSpace.trimInPlace()
-		endSpace.trimInPlace()
-		spaces.trimInPlace()
+		empty.WAStrimmedInPlace()
+		startSpace.WAStrimmedInPlace()
+		endSpace.WAStrimmedInPlace()
+		spaces.WAStrimmedInPlace()
 		XCTAssertEqual(empty, self.emptyString)
 		XCTAssertEqual(startSpace, self.string)
 		XCTAssertEqual(endSpace, self.string)
@@ -51,11 +51,11 @@ class WASStringUtilsTests: XCTestCase {
 		let toRemove = "@"
 		var empty = self.emptyString
 		var string = toRemove + self.string
-		XCTAssertEqual(empty.remove(toRemove), empty)
-		XCTAssertEqual(string.remove(toRemove), self.string)
+		XCTAssertEqual(empty.WASremove(toRemove), empty)
+		XCTAssertEqual(string.WASremove(toRemove), self.string)
 		// In place
-		empty.removeInPlace(toRemove)
-		string.removeInPlace(toRemove)
+		empty.WASremoveInPlace(toRemove)
+		string.WASremoveInPlace(toRemove)
 		XCTAssertEqual(empty, self.emptyString)
 		XCTAssertEqual(string, self.string)
 	}
@@ -63,8 +63,8 @@ class WASStringUtilsTests: XCTestCase {
 		let characteres = self.string.characters.count
 		let expected = self.string + " ..."
 		var string = self.string + "sales"
-		XCTAssertEqual(self.emptyString.abbreviation(characteres), self.emptyString)
-		XCTAssertEqual(string.abbreviation(characteres), expected)
+		XCTAssertEqual(self.emptyString.WASabbreviation(characteres), self.emptyString)
+		XCTAssertEqual(string.WASabbreviation(characteres), expected)
 		// In place
 		string.abbreviationInPlace(characteres)
 		XCTAssertEqual(string, expected)
@@ -72,26 +72,26 @@ class WASStringUtilsTests: XCTestCase {
 	func testCapitalizeFirst() {
 		var string = self.string
 		let expected = "Wagner"
-		XCTAssertEqual(self.emptyString.capitalizeFirst(), self.emptyString)
-		XCTAssertEqual(string.capitalizeFirst(), expected)
+		XCTAssertEqual(self.emptyString.WAScapitalizeFirst, self.emptyString)
+		XCTAssertEqual(string.WAScapitalizeFirst, expected)
 		// In place
 		string.capitalizeFirstInPlace()
 		XCTAssertEqual(string, expected)
 	}
 	func testIsHexaDecimal() {
-		XCTAssertTrue("#FFFFFF".isHexaDecimal())
-		XCTAssertTrue("#ffffff".isHexaDecimal())
-		XCTAssertTrue("FFFFFF".isHexaDecimal())
-		XCTAssertTrue("ffffff".isHexaDecimal())
-		XCTAssertTrue("000000".isHexaDecimal())
-		XCTAssertFalse("HHHHHH".isHexaDecimal())
-		XCTAssertFalse("#HHHHHH".isHexaDecimal())
-		XCTAssertFalse(self.emptyString.isHexaDecimal())
+		XCTAssertTrue("#FFFFFF".WASisHexaDecimal)
+		XCTAssertTrue("#ffffff".WASisHexaDecimal)
+		XCTAssertTrue("FFFFFF".WASisHexaDecimal)
+		XCTAssertTrue("ffffff".WASisHexaDecimal)
+		XCTAssertTrue("000000".WASisHexaDecimal)
+		XCTAssertFalse("HHHHHH".WASisHexaDecimal)
+		XCTAssertFalse("#HHHHHH".WASisHexaDecimal)
+		XCTAssertFalse(self.emptyString.WASisHexaDecimal)
 	}
 	func testConvertToColor() {
-		XCTAssertEqual("#FFFFFF".toColor().WAStoUInt(), UIColor.white.WAStoUInt())
-		XCTAssertEqual("invalid".toColor().WAStoUInt(), UIColor.black.WAStoUInt())
-		XCTAssertEqual("3498db".toColor().WAStoUInt(), UIColor(52, 152, 219).WAStoUInt())
-		XCTAssertEqual("#EBEBEB".toColor().WAStoUInt(), UIColor(grayScale: 235).WAStoUInt())
+		XCTAssertEqual("#FFFFFF".WAStoColor.WAStoUInt, UIColor.white.WAStoUInt)
+		XCTAssertEqual("invalid".WAStoColor.WAStoUInt, UIColor.black.WAStoUInt)
+		XCTAssertEqual("3498db".WAStoColor.WAStoUInt, UIColor(52, 152, 219).WAStoUInt)
+		XCTAssertEqual("#EBEBEB".WAStoColor.WAStoUInt, UIColor(grayScale: 235).WAStoUInt)
 	}
 }

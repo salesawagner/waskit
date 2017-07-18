@@ -24,40 +24,53 @@
 
 import Foundation
 
-extension String {
+public extension String {
+	
+//*************************
+// MARK: Public properties
+//*************************
+	
 	/// Get all mentions.
 	///
 	/// - Note:
 	/// Always starts with an '@' and ends when hitting a non-word character.
 	///
 	/// - Example:
-	/// "@wagner you around?" return `["@wagner"]`
+	/// "@wagner you around?".WASmentions return `["@wagner"]`
 	///
 	/// - Returns: An `Array` of `String` with all mentions.
-	public func WASmentions() -> [String] {
+	public var WASmentions: [String] {
 		return self.WASMatchesForRegex(regex: WASRegex.mentions)
 	}
+	
 	/// Get all hexa decimal colors.
 	///
 	/// - Note:
 	/// Always starts with an '#' and there are 6 characters.
 	///
 	/// - Example:
-	/// "#FF00FF is a nice color" return `["#FF00FF"]`
+	/// "#FF00FF is a nice color".WAScolors return `["#FF00FF"]`
 	///
 	/// - Returns: An `Array` of `String` with all hexa decimal colors.
-	public func WAScolors() -> [String] {
+	public var WAScolors: [String] {
 		return self.WASMatchesForRegex(regex: WASRegex.colors)
 	}
+	
 	/// Get all urls colors `String`.
 	///
 	/// - Example:
-	/// "Did you see http://www.wagnersales.com.br ?" return `["http://www.wagnersales.com.br"]`
+	/// "Did you see http://www.wagnersales.com.br ?".WASurls
+	/// return `["http://www.wagnersales.com.br"]`
 	///
 	/// - Returns: An `Array` of `String` with all urls.
-	public func WASurls() -> [String] {
+	public var WASurls: [String] {
 		return self.WASMatchesForRegex(regex: WASRegex.url)
 	}
+	
+//*************************
+// MARK: Public methods
+//*************************
+	
 	/// Always starts with a character defined on string paramenter.
 	///
 	/// - Note:
