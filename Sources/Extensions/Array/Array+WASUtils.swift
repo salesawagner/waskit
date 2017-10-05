@@ -29,10 +29,14 @@ public extension Array where Element: Hashable {
 //*************************
 // MARK: Public properties
 //*************************
-	
+
 	/// Remove duplicate elements.
 	///
-	/// - Returns: `Array` with unique elements.
+	/// ### Usage Example: ###
+	/// ```
+	/// let array = [1, 1, 2, 2, 3, 4]
+	/// let newArray = array.WASremoveDuplicates // [1, 2, 3, 4]
+	/// ```
 	public var WASremoveDuplicates: [Element] {
 		var result: [Element] = []
 		for value in self {
@@ -47,7 +51,13 @@ public extension Array where Element: Hashable {
 // MARK: Public mutating methods
 //*************************
 
-	/// Remove duplicate elements.
+	/// Mutating remove duplicate elements.
+	///
+	/// ### Usage Example: ###
+	/// ```
+	/// var array = [1, 1, 2, 2, 3, 4]
+	/// array.WASremoveDuplicates // [1, 2, 3, 4]
+	/// ```
 	public mutating func WASremoveDuplicatesInPlace() {
 		self = self.WASremoveDuplicates
 	}
@@ -58,9 +68,17 @@ public extension Array where Element: Hashable {
 	
 	/// Convert `Array` to `String`
 	///
+	/// ### Usage Example: ###
+	/// ```
+	/// var array = [1, 2, 3, 4]
+	/// array.WAStoString() // "1234"
+	/// array..WAStoString(withSeparator: ",") // "1,2,3,4"
+	/// ```
+	///
 	/// - Parameter separator: `String` to separate `Array` elements.
+	///
 	/// - Returns: The `String` formatted.
-	public func WAStoString(separator: String? = nil) -> String {
+	public func WAStoString(withSeparator separator: String? = nil) -> String {
 		var filter = ""
 		for element in self {
 			if filter.isEmpty {
@@ -70,12 +88,5 @@ public extension Array where Element: Hashable {
 			}
 		}
 		return filter
-	}
-	
-	/// Print each `Array`'s objects.
-	public func WASprint() {
-		for element in self {
-			print(element)
-		}
 	}
 }

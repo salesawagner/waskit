@@ -38,6 +38,7 @@ public extension Date {
 	/// - Parameters:
 	///   - left: The `Date` value.
 	///   - right: The `DateComponents` value.
+	///
 	/// - Returns: The `Date` added or left `Date` if a date could not be calculated with the given 
 	/// input.
 	public static func + (left: Date, right: DateComponents) -> Date {
@@ -55,8 +56,8 @@ public extension Date {
 	/// - Parameters:
 	///   - left: The `Date` value.
 	///   - right: The `DateComponents` value.
-	/// - Returns: The `Date` subtracted or left `Date` if a date could not be calculated with the 
-	/// given input.
+	///
+	/// - Returns: The `Date` subtracted or left `Date` if a date could not be calculated with the given input.
 	public static func - (left: Date, right: DateComponents) -> Date {
 		guard let date = Calendar.current.date(byAdding: right, to: left) else {
 			return left

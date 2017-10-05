@@ -46,8 +46,10 @@ public extension Date {
 	
 	/// Create a `Date` using an `Int` value for each `DateComponent`.
 	///
-	/// - Example:
-	///   - `Date(year: 1984, month: 10, day: 08)`
+	/// ### Usage Example: ###
+	/// ```
+	///   Date(year: 1984, month: 10, day: 08)
+	/// ```
 	///
 	/// - Parameters:
 	///   - year: year `Int` value.

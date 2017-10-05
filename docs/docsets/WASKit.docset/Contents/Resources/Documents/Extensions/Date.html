@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Date Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/Date" class="dashAnchor"></a>
+    <a title="Date Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">WASKit Docs</a> (84% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">WASKit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Date Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/WASBrightnessType.html">WASBrightnessType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DateComponents.html">DateComponents</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSMutableAttributedString.html">NSMutableAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/WASCountable.html">WASCountable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/WASRegex.html">WASRegex</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WASStyle.html">WASStyle</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Date</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Date</span> <span class="p">:</span> <span class="kt">ReferenceConvertible</span><span class="p">,</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20methods"></a>
+                <a name="//apple_ref/swift/Section/Public methods" class="dashAnchor"></a>
+                <a href="#/Public%20methods">
+                  <h3 class="section-name">Public methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitV10Foundation4Date11WAStoStringFT9dateStyleGSqOCSo13DateFormatter5Style_9timeStyleGSqS3__6localeVS0_6Locale8timeZoneVS0_8TimeZone_SS"></a>
+                    <a name="//apple_ref/swift/Method/WAStoString(dateStyle:timeStyle:locale:timeZone:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitV10Foundation4Date11WAStoStringFT9dateStyleGSqOCSo13DateFormatter5Style_9timeStyleGSqS3__6localeVS0_6Locale8timeZoneVS0_8TimeZone_SS">WAStoString(dateStyle:timeStyle:locale:timeZone:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a date <code>String</code> using the receiver formatted date style and/or time style.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <code>NoStyle</code>      = &ldquo;&rdquo;
+<code>ShortStyle</code>   = 1/27/10, 1:00 PM
+<code>MediumStyle</code>  = Jan 27, 2010, 1:00:00 PM
+<code>LongStyle</code>    = January 27, 2010 at 1:00:00 PM EST
+<code>FullStyle</code>    = Wednesday, January 27, 2010 at 1:00:00 PM Eastern Standard Time
+
+</div>
+<h2 id='usage-example' class='heading'>Usage Example:</h2>
+<pre class="highlight plaintext"><code>  Date().WAStoString(dateStyle: .short, timeStyle: .short)
+  Date().WAStoString(dateStyle: .short)
+  Date().WAStoString(timeStyle: .short)
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WAStoString</span><span class="p">(</span>
+		<span class="nv">dateStyle</span><span class="p">:</span> <span class="kt">DateFormatter</span><span class="o">.</span><span class="kt">Style</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+		<span class="nv">timeStyle</span><span class="p">:</span> <span class="kt">DateFormatter</span><span class="o">.</span><span class="kt">Style</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+		<span class="nv">locale</span><span class="p">:</span> <span class="kt">Locale</span> <span class="o">=</span> <span class="kt">Locale</span><span class="o">.</span><span class="n">current</span><span class="p">,</span>
+		<span class="nv">timeZone</span><span class="p">:</span> <span class="kt">TimeZone</span> <span class="o">=</span> <span class="kt">TimeZone</span><span class="o">.</span><span class="n">current</span>
+	<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dateStyle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>DateFormatter.Style</code> value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeStyle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>DateFormatter.Style</code> value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>locale</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Locale</code> value. By default is <code>Locale.current</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeZone</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>TimeZone</code> value. By default is <code>TimeZone.current</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A date <code>String</code> formatted.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitV10Foundation4Date11WAStoStringFT6formatSS6localeVS0_6Locale8timeZoneVS0_8TimeZone_GSqSS_"></a>
+                    <a name="//apple_ref/swift/Method/WAStoString(format:locale:timeZone:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitV10Foundation4Date11WAStoStringFT6formatSS6localeVS0_6Locale8timeZoneVS0_8TimeZone_GSqSS_">WAStoString(format:locale:timeZone:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a date <code>String</code> using the <code>format</code> value.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <ul>
+<li>Year: &lsquo;y&rsquo; Month: &lsquo;M&rsquo; Day: &lsquo;d&rsquo;        = Year: 2007 Month: 1 Day: 9</li>
+<li>MM/dd/yy                             = 01/09/07</li>
+<li>MMM dd, yyyy                         = Jan 09, 2007</li>
+<li>E MMM dd, yyyy                       = Tue Jan 09, 2007</li>
+<li>EEEE, MMMM dd, yyyy&rsquo; at &lsquo;h:mm a.     = Tuesday, January 09, 2007 at 10:00 AM.</li>
+</ul>
+
+</div>
+<h2 id='usage-example' class='heading'>Usage Example:</h2>
+<pre class="highlight plaintext"><code>WAStoString(format: "dd/MM/YYYY HH:mm a")
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WAStoString</span><span class="p">(</span>
+		<span class="nv">format</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+		<span class="nv">locale</span><span class="p">:</span> <span class="kt">Locale</span> <span class="o">=</span> <span class="kt">Locale</span><span class="o">.</span><span class="n">current</span><span class="p">,</span>
+		<span class="nv">timeZone</span><span class="p">:</span> <span class="kt">TimeZone</span> <span class="o">=</span> <span class="kt">TimeZone</span><span class="o">.</span><span class="n">current</span>
+	<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>format</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>String</code> format value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>locale</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Locale</code> value. By default is <code>Locale.current</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeZone</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>TimeZone</code> value. By default is <code>TimeZone.current</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A date <code>String</code> formatted.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20static%20properties"></a>
+                <a name="//apple_ref/swift/Section/Public static properties" class="dashAnchor"></a>
+                <a href="#/Public%20static%20properties">
+                  <h3 class="section-name">Public static properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvE6WASKitV10Foundation4Date12WASyesterdayS1_"></a>
+                    <a name="//apple_ref/swift/Variable/WASyesterday" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvE6WASKitV10Foundation4Date12WASyesterdayS1_">WASyesterday</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Date</code> representing yesterday.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">WASyesterday</span><span class="p">:</span> <span class="kt">Date</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvE6WASKitV10Foundation4Date11WAStomorrowS1_"></a>
+                    <a name="//apple_ref/swift/Variable/WAStomorrow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvE6WASKitV10Foundation4Date11WAStomorrowS1_">WAStomorrow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Date</code> representing tomorrow.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">WAStomorrow</span><span class="p">:</span> <span class="kt">Date</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Constructores"></a>
+                <a name="//apple_ref/swift/Section/Constructores" class="dashAnchor"></a>
+                <a href="#/Constructores">
+                  <h3 class="section-name">Constructores</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitV10Foundation4DatecFT3eraGSqSi_4yearSi5monthSi3daySi4hourGSqSi_6minuteGSqSi_6secondGSqSi_10nanosecondGSqSi_8timeZoneGSqVS0_8TimeZone_8calendarVS0_8Calendar_S1_"></a>
+                    <a name="//apple_ref/swift/Method/init(era:year:month:day:hour:minute:second:nanosecond:timeZone:calendar:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitV10Foundation4DatecFT3eraGSqSi_4yearSi5monthSi3daySi4hourGSqSi_6minuteGSqSi_6secondGSqSi_10nanosecondGSqSi_8timeZoneGSqVS0_8TimeZone_8calendarVS0_8Calendar_S1_">init(era:year:month:day:hour:minute:second:nanosecond:timeZone:calendar:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>Date</code> using an <code>Int</code> value for each <code>DateComponent</code>.</p>
+
+<ul>
+<li><p>Example:</p>
+
+<ul>
+<li><code>Date(year: 1984, month: 10, day: 08)</code></li>
+</ul></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+		<span class="nv">era</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+		<span class="nv">year</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+		<span class="nv">month</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+		<span class="nv">day</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+		<span class="nv">hour</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+		<span class="nv">minute</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+		<span class="nv">second</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+		<span class="nv">nanosecond</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+		<span class="nv">timeZone</span><span class="p">:</span> <span class="kt">TimeZone</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+		<span class="nv">calendar</span><span class="p">:</span> <span class="kt">Calendar</span> <span class="o">=</span> <span class="kt">Calendar</span><span class="o">.</span><span class="n">current</span>
+	<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>year</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>year <code>Int</code> value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>month</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>month <code>Int</code> value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>day</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>day <code>Int</code> value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hour</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>hour <code>Int</code> value. By default actual hour</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>minute</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>minute <code>Int</code> value. By default actual minute</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>second</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>second <code>Int</code> value. By default actual second</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nanosecond</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>nanosecond <code>Int</code> value. By default actual nanosecond</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>era</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Era <code>Int</code> value. By default actual era</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeZone</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>TimeZone</code> value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>calendar</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Calendar</code> value. By default <code>Calendar.current</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20methods2"></a>
+                <a name="//apple_ref/swift/Section/Public methods" class="dashAnchor"></a>
+                <a href="#/Public%20methods2">
+                  <h3 class="section-name">Public methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitV10Foundation4Date10WASsecondsFT4fromS1__Si"></a>
+                    <a name="//apple_ref/swift/Method/WASseconds(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitV10Foundation4Date10WASsecondsFT4fromS1__Si">WASseconds(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The second(s) offset from <code>Date</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WASseconds</span><span class="p">(</span><span class="n">from</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Date</code> from be calculated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The second(s) offset.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitV10Foundation4Date10WASminutesFT4fromS1__Si"></a>
+                    <a name="//apple_ref/swift/Method/WASminutes(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitV10Foundation4Date10WASminutesFT4fromS1__Si">WASminutes(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The minute(s) offset from <code>Date</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WASminutes</span><span class="p">(</span><span class="n">from</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Date</code> from be calculated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The minute(s) offset.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitV10Foundation4Date8WAShoursFT4fromS1__Si"></a>
+                    <a name="//apple_ref/swift/Method/WAShours(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitV10Foundation4Date8WAShoursFT4fromS1__Si">WAShours(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The hour(s) offset from <code>Date</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WAShours</span><span class="p">(</span><span class="n">from</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Date</code> from be calculated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The hour(s) offset.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitV10Foundation4Date7WASdaysFT4fromS1__Si"></a>
+                    <a name="//apple_ref/swift/Method/WASdays(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitV10Foundation4Date7WASdaysFT4fromS1__Si">WASdays(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The day(s) offset from <code>Date</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WASdays</span><span class="p">(</span><span class="n">from</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Date</code> from be calculated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The day(s) offset.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitV10Foundation4Date8WASweeksFT4fromS1__Si"></a>
+                    <a name="//apple_ref/swift/Method/WASweeks(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitV10Foundation4Date8WASweeksFT4fromS1__Si">WASweeks(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The week(s) offset from <code>Date</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WASweeks</span><span class="p">(</span><span class="n">from</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Date</code> from be calculated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The week(s) offset.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitV10Foundation4Date9WASmonthsFT4fromS1__Si"></a>
+                    <a name="//apple_ref/swift/Method/WASmonths(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitV10Foundation4Date9WASmonthsFT4fromS1__Si">WASmonths(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The month(s) offset from <code>Date</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WASmonths</span><span class="p">(</span><span class="n">from</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Date</code> from be calculated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The month(s) offset.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitV10Foundation4Date8WASyearsFT4fromS1__Si"></a>
+                    <a name="//apple_ref/swift/Method/WASyears(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitV10Foundation4Date8WASyearsFT4fromS1__Si">WASyears(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The year(s) offset from <code>Date</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WASyears</span><span class="p">(</span><span class="n">from</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Date</code> from be calculated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The year(s) offset.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitV10Foundation4Date14WAStoStringAgoFS1_SS"></a>
+                    <a name="//apple_ref/swift/Method/WAStoStringAgo(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitV10Foundation4Date14WAStoStringAgoFS1_SS">WAStoStringAgo(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Human offset <code>String</code> from <code>Date</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WAStoStringAgo</span><span class="p">(</span><span class="n">_</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Date</code> from be calculated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Human <code>String</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Internal%20methods"></a>
+                <a name="//apple_ref/swift/Section/Internal methods" class="dashAnchor"></a>
+                <a href="#/Internal%20methods">
+                  <h3 class="section-name">Internal methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitV10Foundation4Date17WASdateComponentsFT4fromS1__VS0_14DateComponents"></a>
+                    <a name="//apple_ref/swift/Method/WASdateComponents(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitV10Foundation4Date17WASdateComponentsFT4fromS1__VS0_14DateComponents">WASdateComponents(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>DateComponents</code> from date</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">internal</span> <span class="kd">func</span> <span class="kt">WASdateComponents</span><span class="p">(</span><span class="n">from</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DateComponents</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20prorpeties"></a>
+                <a name="//apple_ref/swift/Section/Public prorpeties" class="dashAnchor"></a>
+                <a href="#/Public%20prorpeties">
+                  <h3 class="section-name">Public prorpeties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitV10Foundation4Date6WASeraSi"></a>
+                    <a name="//apple_ref/swift/Property/WASera" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitV10Foundation4Date6WASeraSi">WASera</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The era value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WASera</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitV10Foundation4Date7WASyearSi"></a>
+                    <a name="//apple_ref/swift/Property/WASyear" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitV10Foundation4Date7WASyearSi">WASyear</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The year value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WASyear</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitV10Foundation4Date6WASdaySi"></a>
+                    <a name="//apple_ref/swift/Property/WASday" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitV10Foundation4Date6WASdaySi">WASday</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The day value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WASday</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitV10Foundation4Date8WASmonthSi"></a>
+                    <a name="//apple_ref/swift/Property/WASmonth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitV10Foundation4Date8WASmonthSi">WASmonth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The month value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WASmonth</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitV10Foundation4Date7WAShourSi"></a>
+                    <a name="//apple_ref/swift/Property/WAShour" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitV10Foundation4Date7WAShourSi">WAShour</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The hour value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WAShour</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitV10Foundation4Date9WASminuteSi"></a>
+                    <a name="//apple_ref/swift/Property/WASminute" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitV10Foundation4Date9WASminuteSi">WASminute</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The minute value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WASminute</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitV10Foundation4Date9WASsecondSi"></a>
+                    <a name="//apple_ref/swift/Property/WASsecond" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitV10Foundation4Date9WASsecondSi">WASsecond</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The second value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WASsecond</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitV10Foundation4Date13WASnanosecondSi"></a>
+                    <a name="//apple_ref/swift/Property/WASnanosecond" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitV10Foundation4Date13WASnanosecondSi">WASnanosecond</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The nanosecond value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WASnanosecond</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20methods3"></a>
+                <a name="//apple_ref/swift/Section/Public methods" class="dashAnchor"></a>
+                <a href="#/Public%20methods3">
+                  <h3 class="section-name">Public methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFE6WASKitV10Foundation4Dateoi1pFTS1_VS0_14DateComponents_S1_"></a>
+                    <a name="//apple_ref/swift/Method/+(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFE6WASKitV10Foundation4Dateoi1pFTS1_VS0_14DateComponents_S1_">+(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Date</code> with the <code>DateComponents</code> added</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>If a date could not be calculated with the given input will return the left <code>Date</code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+</span> <span class="p">(</span><span class="nv">left</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">right</span><span class="p">:</span> <span class="kt">DateComponents</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>left</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Date</code> value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>right</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>DateComponents</code> value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>Date</code> added or left <code>Date</code> if a date could not be calculated with the given 
+input.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFE6WASKitV10Foundation4Dateoi1sFTS1_VS0_14DateComponents_S1_"></a>
+                    <a name="//apple_ref/swift/Method/-(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFE6WASKitV10Foundation4Dateoi1sFTS1_VS0_14DateComponents_S1_">-(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Date</code> with the <code>DateComponents</code> subtracted.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>If a date could not be calculated with the given input will return the left <code>Date</code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">-</span> <span class="p">(</span><span class="nv">left</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">right</span><span class="p">:</span> <span class="kt">DateComponents</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>left</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Date</code> value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>right</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>DateComponents</code> value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>Date</code> subtracted or left <code>Date</code> if a date could not be calculated with the given input.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20prorpeties2"></a>
+                <a name="//apple_ref/swift/Section/Public prorpeties" class="dashAnchor"></a>
+                <a href="#/Public%20prorpeties2">
+                  <h3 class="section-name">Public prorpeties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitV10Foundation4Date14WASisYestardaySb"></a>
+                    <a name="//apple_ref/swift/Property/WASisYestarday" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitV10Foundation4Date14WASisYestardaySb">WASisYestarday</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if yesterday or <code>false</code> if not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WASisYestarday</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitV10Foundation4Date10WASisTodaySb"></a>
+                    <a name="//apple_ref/swift/Property/WASisToday" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitV10Foundation4Date10WASisTodaySb">WASisToday</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if today or <code>false</code> if not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WASisToday</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitV10Foundation4Date13WASisTomorrowSb"></a>
+                    <a name="//apple_ref/swift/Property/WASisTomorrow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitV10Foundation4Date13WASisTomorrowSb">WASisTomorrow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>true</code> if tomorrow or <code>false</code> if not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WASisTomorrow</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/salesawagner/waskit" target="_blank" rel="external">Wagner Sales</a>. All rights reserved. (Last updated: 2017-07-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

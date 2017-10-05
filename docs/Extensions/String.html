@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>String Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/String" class="dashAnchor"></a>
+    <a title="String Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">WASKit Docs</a> (84% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">WASKit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        String Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/WASBrightnessType.html">WASBrightnessType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DateComponents.html">DateComponents</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSMutableAttributedString.html">NSMutableAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/WASCountable.html">WASCountable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/WASRegex.html">WASRegex</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WASStyle.html">WASStyle</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>String</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">String</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20properties"></a>
+                <a name="//apple_ref/swift/Section/Public properties" class="dashAnchor"></a>
+                <a href="#/Public%20properties">
+                  <h3 class="section-name">Public properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitSS11WASmentionsGSaSS_"></a>
+                    <a name="//apple_ref/swift/Property/WASmentions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitSS11WASmentionsGSaSS_">WASmentions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get all mentions.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Always starts with an &lsquo;@&rsquo; and ends when hitting a non-word character.</p>
+
+</div>
+<li><p>Example:
+<q>@wagner you around?</q>.WASmentions return <code>[&quot;@wagner&quot;]</code></p></li>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WASmentions</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>Array</code> of <code>String</code> with all mentions.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitSS9WAScolorsGSaSS_"></a>
+                    <a name="//apple_ref/swift/Property/WAScolors" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitSS9WAScolorsGSaSS_">WAScolors</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get all hexa decimal colors.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Always starts with an &lsquo;#&rsquo; and there are 6 characters.</p>
+
+</div>
+<li><p>Example:
+<q>#FF00FF is a nice color</q>.WAScolors return <code>[&quot;#FF00FF&quot;]</code></p></li>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WAScolors</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>Array</code> of <code>String</code> with all hexa decimal colors.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitSS7WASurlsGSaSS_"></a>
+                    <a name="//apple_ref/swift/Property/WASurls" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitSS7WASurlsGSaSS_">WASurls</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get all urls colors <code>String</code>.</p>
+
+<ul>
+<li><p>Example:
+<q>Did you see http://www.wagnersales.com.br ?</q>.WASurls
+return <code>[&quot;http://www.wagnersales.com.br&quot;]</code></p></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WASurls</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>Array</code> of <code>String</code> with all urls.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20methods"></a>
+                <a name="//apple_ref/swift/Section/Public methods" class="dashAnchor"></a>
+                <a href="#/Public%20methods">
+                  <h3 class="section-name">Public methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitSS8WASstartFT4withSS_GSaSS_"></a>
+                    <a name="//apple_ref/swift/Method/WASstart(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitSS8WASstartFT4withSS_GSaSS_">WASstart(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Always starts with a character defined on string paramenter.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Always starts with an <code>parameter</code> and ends when hitting a non-word character.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WASstart</span><span class="p">(</span><span class="n">with</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>string</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An <code>Array</code> of <code>String</code> with all <code>String</code> that start with paramenter.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20properties2"></a>
+                <a name="//apple_ref/swift/Section/Public properties" class="dashAnchor"></a>
+                <a href="#/Public%20properties2">
+                  <h3 class="section-name">Public properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitSS9WASlengthSi"></a>
+                    <a name="//apple_ref/swift/Property/WASlength" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitSS9WASlengthSi">WASlength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20methods2"></a>
+                <a name="//apple_ref/swift/Section/Public methods" class="dashAnchor"></a>
+                <a href="#/Public%20methods2">
+                  <h3 class="section-name">Public methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitSS9WAStoDateFT6formatSS_GSqV10Foundation4Date_"></a>
+                    <a name="//apple_ref/swift/Method/WAStoDate(format:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitSS9WAStoDateFT6formatSS_GSqV10Foundation4Date_">WAStoDate(format:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a <code>Date</code> from the <code>String</code> with <code>format</code> value.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>If the <code>String</code> is invalid date the method will return nil.</p>
+
+</div>
+<li><p>Example:
+<code>&quot;1984-10-08T16:00:44.078Z&quot;.WAStoDate()</code></p></li>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WAStoDate</span><span class="p">(</span><span class="nv">format</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"yyyy-MM-dd'T'HH:mm:ss.SSSZ"</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>format</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>String</code> format that date should be created.
+By default yyyy-MM-dd&rsquo;T&#39;HH:mm:ss.SSSZ</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>Date</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20methods3"></a>
+                <a name="//apple_ref/swift/Section/Public methods" class="dashAnchor"></a>
+                <a href="#/Public%20methods3">
+                  <h3 class="section-name">Public methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitSS18WASMatchesForRegexFT5regexSS_GSaSS_"></a>
+                    <a name="//apple_ref/swift/Method/WASMatchesForRegex(regex:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitSS18WASMatchesForRegexFT5regexSS_GSaSS_">WASMatchesForRegex(regex:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Matche in <code>String</code> by regex.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WASMatchesForRegex</span><span class="p">(</span><span class="nv">regex</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>regex</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>regex <code>String</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>Array</code> of <code>String</code> matched.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20properties3"></a>
+                <a name="//apple_ref/swift/Section/Public properties" class="dashAnchor"></a>
+                <a href="#/Public%20properties3">
+                  <h3 class="section-name">Public properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitSS15WASisPalindromeSb"></a>
+                    <a name="//apple_ref/swift/Property/WASisPalindrome" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitSS15WASisPalindromeSb">WASisPalindrome</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20properties4"></a>
+                <a name="//apple_ref/swift/Section/Public properties" class="dashAnchor"></a>
+                <a href="#/Public%20properties4">
+                  <h3 class="section-name">Public properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitSS10WAStrimmedSS"></a>
+                    <a name="//apple_ref/swift/Property/WAStrimmed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitSS10WAStrimmedSS">WAStrimmed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Trimming white spaces and new lines.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WAStrimmed</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>String</code> Trimmed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitSS18WAScapitalizeFirstSS"></a>
+                    <a name="//apple_ref/swift/Property/WAScapitalizeFirst" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitSS18WAScapitalizeFirstSS">WAScapitalizeFirst</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Capitalize the first charactere.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WAScapitalizeFirst</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>String</code> with the first letter capitalized.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitSS16WASisHexaDecimalSb"></a>
+                    <a name="//apple_ref/swift/Property/WASisHexaDecimal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitSS16WASisHexaDecimalSb">WASisHexaDecimal</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Validate with the <code>String</code> is an hexa decimal number.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WASisHexaDecimal</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>If hexa decima <code>true</code>, if not <code>false</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE6WASKitSS10WAStoColorCSo7UIColor"></a>
+                    <a name="//apple_ref/swift/Property/WAStoColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE6WASKitSS10WAStoColorCSo7UIColor">WAStoColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convert hexa decilma to <code>UIColor</code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>If the given hexa decimal <code>String</code> is invalid the initialiser will create a black color.</p>
+
+</div>
+<li><p>Example:</p>
+
+<ul>
+<li><code>UIColor(string: &quot;#3498db&quot;)</code></li>
+<li><code>UIColor(string: &quot;3498db&quot;)</code></li>
+</ul></li>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">WAStoColor</span><span class="p">:</span> <span class="kt">UIColor</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>UIColor</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20methods4"></a>
+                <a name="//apple_ref/swift/Section/Public methods" class="dashAnchor"></a>
+                <a href="#/Public%20methods4">
+                  <h3 class="section-name">Public methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitSS9WASremoveFSSSS"></a>
+                    <a name="//apple_ref/swift/Method/WASremove(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitSS9WASremoveFSSSS">WASremove(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove the <code>String</code> parameter.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WASremove</span><span class="p">(</span><span class="n">_</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>string</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>String</code> that will be removed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>String</code> without the <code>String</code> parameter.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitSS15WASabbreviationFSiSS"></a>
+                    <a name="//apple_ref/swift/Method/WASabbreviation(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitSS15WASabbreviationFSiSS">WASabbreviation(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Abrevite the <code>String</code> with the characters count.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">WASabbreviation</span><span class="p">(</span><span class="n">_</span> <span class="nv">characteres</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>characteres</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Number of characters the <code>String</code> needs to have.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>String</code> abreviated.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20mutating%20methods"></a>
+                <a name="//apple_ref/swift/Section/Public mutating methods" class="dashAnchor"></a>
+                <a href="#/Public%20mutating%20methods">
+                  <h3 class="section-name">Public mutating methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitSS17WAStrimmedInPlaceFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/WAStrimmedInPlace()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitSS17WAStrimmedInPlaceFT_T_">WAStrimmedInPlace()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mutating trimming white spaces and new lines.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="kt">WAStrimmedInPlace</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitSS16WASremoveInPlaceFSST_"></a>
+                    <a name="//apple_ref/swift/Method/WASremoveInPlace(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitSS16WASremoveInPlaceFSST_">WASremoveInPlace(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mutating remove the <code>String</code> parameter.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="kt">WASremoveInPlace</span><span class="p">(</span><span class="n">_</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>string</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>String</code> that will be removed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitSS19abbreviationInPlaceFSiT_"></a>
+                    <a name="//apple_ref/swift/Method/abbreviationInPlace(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitSS19abbreviationInPlaceFSiT_">abbreviationInPlace(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mutating abrevite the <code>String</code> with the characters count.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">abbreviationInPlace</span><span class="p">(</span><span class="n">_</span> <span class="nv">characteres</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>characteres</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Number of characters the <code>String</code> needs to have.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FE6WASKitSS22capitalizeFirstInPlaceFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/capitalizeFirstInPlace()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6WASKitSS22capitalizeFirstInPlaceFT_T_">capitalizeFirstInPlace()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mutating capitalize the first character.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">capitalizeFirstInPlace</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/salesawagner/waskit" target="_blank" rel="external">Wagner Sales</a>. All rights reserved. (Last updated: 2017-07-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
