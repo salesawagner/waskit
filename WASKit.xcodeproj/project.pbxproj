@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A71CCEA41F057A64000338A9 /* WASString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71CCEA31F057A64000338A9 /* WASString.swift */; };
 		A71CCEA61F057ACF000338A9 /* String+WASPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71CCEA51F057ACF000338A9 /* String+WASPalindromeTests.swift */; };
+		A766655B1FABB1D8002981E1 /* Countable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A766655A1FABB1D8002981E1 /* Countable.swift */; };
 		A77BCBA51F0574270057826C /* String+WASPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77BCBA41F0574270057826C /* String+WASPalindrome.swift */; };
 		A782CA4B1E261744001AC933 /* Array+WASUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA301E261744001AC933 /* Array+WASUtils.swift */; };
 		A782CA4C1E261744001AC933 /* Date+WASComparations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A782CA321E261744001AC933 /* Date+WASComparations.swift */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		A71CCEA31F057A64000338A9 /* WASString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASString.swift; sourceTree = "<group>"; };
 		A71CCEA51F057ACF000338A9 /* String+WASPalindromeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASPalindromeTests.swift"; sourceTree = "<group>"; };
+		A766655A1FABB1D8002981E1 /* Countable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countable.swift; sourceTree = "<group>"; };
 		A77BCBA41F0574270057826C /* String+WASPalindrome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WASPalindrome.swift"; sourceTree = "<group>"; };
 		A782CA301E261744001AC933 /* Array+WASUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+WASUtils.swift"; sourceTree = "<group>"; };
 		A782CA321E261744001AC933 /* Date+WASComparations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WASComparations.swift"; sourceTree = "<group>"; };
@@ -114,9 +116,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A76665591FABB1C7002981E1 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				A766655A1FABB1D8002981E1 /* Countable.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		A782CA2E1E261744001AC933 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A76665591FABB1C7002981E1 /* Enum */,
 				A782CA2F1E261744001AC933 /* Array */,
 				A782CA311E261744001AC933 /* Date */,
 				A782CA391E261744001AC933 /* DateConponents */,
@@ -298,8 +309,8 @@
 				A7AFDB191CD03A5900178425 /* Resources */,
 				A7AFDB1C1CD03A5900178425 /* Sources */,
 			);
-			path = WASKit;
-			sourceTree = "<group>";
+			name = WASKit;
+			sourceTree = SOURCE_ROOT;
 		};
 		A7AFDB191CD03A5900178425 /* Resources */ = {
 			isa = PBXGroup;
@@ -480,6 +491,7 @@
 				A782CA531E261744001AC933 /* DateComponents+WASUtils.swift in Sources */,
 				A782CA521E261744001AC933 /* WASDate.swift in Sources */,
 				A782CA4B1E261744001AC933 /* Array+WASUtils.swift in Sources */,
+				A766655B1FABB1D8002981E1 /* Countable.swift in Sources */,
 				A7D252121F1E9DEF007CD8C5 /* kComponentFlags.swift in Sources */,
 				A782CA4F1E261744001AC933 /* Date+WASOffset.swift in Sources */,
 				A782CA4D1E261744001AC933 /* Date+WASComponents.swift in Sources */,
