@@ -32,23 +32,26 @@ public extension Date {
 	
 	/// Create a date `String` using the receiver formatted date style and/or time style.
 	///
-	/// - Example:
-	///   - `Date().WAStoString(dateStyle: .short, timeStyle: .short)`
-	///   - `Date().WAStoString(dateStyle: .short)`
-	///   - `Date().WAStoString(timeStyle: .short)`
-	///
 	/// - Note:
-	///  - `NoStyle`
-	///  - `ShortStyle`		1/27/10, 1:00 PM
-	///  - `MediumStyle`	Jan 27, 2010, 1:00:00 PM
-	///  - `LongStyle`		January 27, 2010 at 1:00:00 PM EST
-	///  - `FullStyle`		Wednesday, January 27, 2010 at 1:00:00 PM Eastern Standard Time
+	///  - `NoStyle`		= ""
+	///  - `ShortStyle`		= 1/27/10, 1:00 PM
+	///  - `MediumStyle`	= Jan 27, 2010, 1:00:00 PM
+	///  - `LongStyle`		= January 27, 2010 at 1:00:00 PM EST
+	///  - `FullStyle`		= Wednesday, January 27, 2010 at 1:00:00 PM Eastern Standard Time
+	///
+	/// ### Usage Example: ###
+	/// ```
+	///   Date().WAStoString(dateStyle: .short, timeStyle: .short)
+	///   Date().WAStoString(dateStyle: .short)
+	///   Date().WAStoString(timeStyle: .short)
+	/// ```
 	///
 	/// - Parameters:
 	///   - dateStyle: The `DateFormatter.Style` value.
 	///   - timeStyle: The `DateFormatter.Style` value.
 	///   - locale: The `Locale` value. By default is `Locale.current`
 	///   - timeZone: The `TimeZone` value. By default is `TimeZone.current`
+	///
 	/// - Returns: A date `String` formatted.
 	public func WAStoString(
 		dateStyle: DateFormatter.Style? = nil,
@@ -70,20 +73,23 @@ public extension Date {
 	
 	/// Create a date `String` using the `format` value.
 	///
-	/// - Example:
-	///   - `WAStoString(format: "dd/MM/YYYY HH:mm a")`
-	///
 	/// - Note:
-	///	 - 'Year: 'y' Month: 'M' Day: 'd	Year: 2007 Month: 1 Day: 9
-	///	 - MM/dd/yy							01/09/07
-	///	 - MMM dd, yyyy						Jan 09, 2007
-	///	 - E MMM dd, yyyy					Tue Jan 09, 2007
-	///	 - EEEE, MMMM dd, yyyy' at 'h:mm a.	Tuesday, January 09, 2007 at 10:00 AM.
+	///	 - Year: 'y' Month: 'M' Day: 'd'		= Year: 2007 Month: 1 Day: 9
+	///	 - MM/dd/yy								= 01/09/07
+	///	 - MMM dd, yyyy							= Jan 09, 2007
+	///	 - E MMM dd, yyyy						= Tue Jan 09, 2007
+	///	 - EEEE, MMMM dd, yyyy' at 'h:mm a.		= Tuesday, January 09, 2007 at 10:00 AM.
+	///
+	/// ### Usage Example: ###
+	/// ```
+	/// WAStoString(format: "dd/MM/YYYY HH:mm a")
+	/// ```
 	///
 	/// - Parameters:
 	///   - format: The `String` format value.
 	///   - locale: The `Locale` value. By default is `Locale.current`
 	///   - timeZone: The `TimeZone` value. By default is `TimeZone.current`
+	///
 	/// - Returns: A date `String` formatted.
 	public func WAStoString(
 		format: String,

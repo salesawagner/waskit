@@ -27,14 +27,40 @@ import Foundation
 public extension Date {
 
 //*************************
-// MARK: Private methods
+// MARK: Private prorpeties
 //*************************
-
-	/// The `DateComponents`
-	private var WASdateComponents: DateComponents {
-		return Calendar.current.dateComponents(kComponentFlags, from: self)
+	
+	private var flags: Set<Calendar.Component> {
+		return Set<Calendar.Component>([
+			.era,
+			.timeZone,
+			.year,
+			.month,
+			.day,
+			.hour,
+			.minute,
+			.second,
+			.nanosecond,
+			.weekday,
+			.weekdayOrdinal,
+			.weekOfYear
+		])
 	}
 	
+//*************************
+// MARK: Private methods
+//*************************
+	
+	/// The `DateComponents`
+	private var WASdateComponents: DateComponents {
+		return Calendar.current.dateComponents(self.flags, from: self)
+	}
+	
+	/// The `DateComponents` from date
+	internal func WASdateComponents(from date: Date) -> DateComponents {
+		return Calendar.current.dateComponents(self.flags, from: date, to: self)
+	}
+
 //*************************
 // MARK: Public methods
 //*************************

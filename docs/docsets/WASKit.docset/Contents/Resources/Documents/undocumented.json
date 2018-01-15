@@ -1,0 +1,131 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/DateConponents/DateComponents+WASUtils.swift",
+      "line": 33,
+      "symbol": "DateComponents.WASfromNow",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/DateConponents/DateComponents+WASUtils.swift",
+      "line": 38,
+      "symbol": "DateComponents.WASago",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/Enum/WASCountable.swift",
+      "line": null,
+      "symbol": "WASCountable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/Enum/WASCountable.swift",
+      "line": 27,
+      "symbol": "WASCountable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/Enum/WASCountable.swift",
+      "line": 28,
+      "symbol": "WASCountable.WAScountCases()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/Enum/WASCountable.swift",
+      "line": 29,
+      "symbol": "WASCountable.WAScount",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/String/String+WASPalindrome.swift",
+      "line": 33,
+      "symbol": "String.WASisPalindrome",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/String/WASString.swift",
+      "line": 33,
+      "symbol": "String.WASlength",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/UIColor/UIColor+WASUtils.swift",
+      "line": 33,
+      "symbol": "UIColor.WASdescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/UIColor/UIColor+WASUtils.swift",
+      "line": 38,
+      "symbol": "UIColor.WASred",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/UIColor/UIColor+WASUtils.swift",
+      "line": 42,
+      "symbol": "UIColor.WASgreen",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/UIColor/UIColor+WASUtils.swift",
+      "line": 46,
+      "symbol": "UIColor.WASblue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/UIColor/UIColor+WASUtils.swift",
+      "line": 50,
+      "symbol": "UIColor.WASalpha",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/UIColor/UIColor+WASUtils.swift",
+      "line": 58,
+      "symbol": "UIColor.WAStoRGBA",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/UIColor/WASBrightnessType.swift",
+      "line": 27,
+      "symbol": "WASBrightnessType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/UIColor/WASBrightnessType.swift",
+      "line": 28,
+      "symbol": "WASBrightnessType.wasBrightnessLighter",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/UIColor/WASBrightnessType.swift",
+      "line": 29,
+      "symbol": "WASBrightnessType.wasBrightnessDarker",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/salesawagner/Documents/Projects/WAS/waskit/Sources/Extensions/UIColor/WASColor.swift",
+      "line": 45,
+      "symbol": "UIColor.init(_:_:_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/salesawagner/Documents/Projects/WAS/waskit"
+}

@@ -24,17 +24,31 @@
 
 import Foundation
 
-internal let kComponentFlags = Set<Calendar.Component>([
-	.era,
-	.timeZone,
-	.year,
-	.month,
-	.day,
-	.hour,
-	.minute,
-	.second,
-	.nanosecond,
-	.weekday,
-	.weekdayOrdinal,
-	.weekOfYear
-])
+/// Protocol to use with enum to provide a count of its cases
+public protocol WASCountable {
+	static func WAScountCases() -> Int
+	static var WAScount: Int { get }
+}
+
+public extension WASCountable where Self : RawRepresentable, Self.RawValue == Int {
+
+	/// Count the number of cases in the enum with WASCountable protocol.
+	///
+	/// ### Usage Example: ###
+	/// ```
+	///	enum Test: Int, WASCountable {
+	///		case number1
+	///		case number2
+	///		case number3
+	///		case number4
+	///		static let WAScount: Int = Test.WAScountCases()
+	///	}
+	/// ```
+	///
+	/// - Returns: The value `Int` of cases in the enum.
+	public static func WAScountCases() -> Int {
+		var count = 0
+		while let _ = Self(rawValue: count) { count+=1 }
+		return count
+	}
+}

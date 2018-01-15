@@ -27,77 +27,78 @@ import Foundation
 public extension Date {
 	
 //*************************
-// MARK: Private methods
-//*************************
-	
-	private func components(from date: Date) -> DateComponents {
-		let current = Calendar.current
-		return current.dateComponents(kComponentFlags, from: date, to: self)
-	}
-	
-//*************************
 // MARK: Public methods
 //*************************
 	
 	/// The second(s) offset from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.
+	///
 	/// - Returns: The second(s) offset.
 	public func WASseconds(from date: Date) -> Int {
-		return self.components(from: date).second!
+		return self.WASdateComponents(from: date).second!
 	}
 	
 	/// The minute(s) offset from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.
+	///
 	/// - Returns: The minute(s) offset.
 	public func WASminutes(from date: Date) -> Int {
-		return self.components(from: date).minute!
+		return self.WASdateComponents(from: date).minute!
 	}
 	
 	/// The hour(s) offset from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.
+	///
 	/// - Returns: The hour(s) offset.
 	public func WAShours(from date: Date) -> Int {
-		return self.components(from: date).hour!
+		return self.WASdateComponents(from: date).hour!
 	}
 	
 	/// The day(s) offset from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.
+	///
 	/// - Returns: The day(s) offset.
 	public func WASdays(from date: Date) -> Int {
-		return self.components(from: date).day!
+		return self.WASdateComponents(from: date).day!
 	}
 	
 	/// The week(s) offset from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.
+	///
 	/// - Returns: The week(s) offset.
 	public func WASweeks(from date: Date) -> Int {
-		return self.components(from: date).weekOfYear!
+		return self.WASdateComponents(from: date).weekOfYear!
 	}
 	
 	/// The month(s) offset from `Date`.
 	///
-	/// - Parameter date: The `Date` from be calculated.
+	/// - Parameters:
+	///		- date: The `Date` from be calculated.
+	///
 	/// - Returns: The month(s) offset.
 	public func WASmonths(from date: Date) -> Int {
-		return self.components(from: date).month!
+		return self.WASdateComponents(from: date).month!
 	}
 	
 	/// The year(s) offset from `Date`.
 	///
-	/// - Parameter date: The `Date` from be calculated.
+	/// - Parameters:
+	///		- date: The `Date` from be calculated.
+	///
 	/// - Returns: The year(s) offset.
 	public func WASyears(from date: Date) -> Int {
-		return self.components(from: date).year!
+		return self.WASdateComponents(from: date).year!
 	}
 	
 	/// Human offset `String` from `Date`.
 	///
 	/// - Parameter date: The `Date` from be calculated.
+	///
 	/// - Returns: Human `String`.
 	public func WAStoStringAgo(_ date: Date) -> String {
 		var string = ""
