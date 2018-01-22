@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,7 @@ import Foundation
 
 public extension Date {
 	
-//*************************
-// MARK: Public static properties
-//*************************
+// MARK: - Public static properties
 
 	/// Creates a `Date` representing yesterday.
 	public static var WASyesterday: Date {
@@ -40,9 +38,7 @@ public extension Date {
 		return Date() + 1.WASday
 	}
 	
-//*************************
-// MARK: Constructores
-//*************************
+// MARK: - Constructors
 	
 	/// Create a `Date` using an `Int` value for each `DateComponent`.
 	///

@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,7 @@ import Foundation
 
 public extension DateComponents {
 	
-//*************************
-// MARK: Public properties
-//*************************
+// MARK: - Public properties
 	
 	var WASfromNow: Date {
 		let current = Calendar.current
@@ -40,9 +38,7 @@ public extension DateComponents {
 		return current.date(byAdding: -self, to: Date())!
 	}
 	
-//*************************
-// MARK: Public static methods
-//*************************
+// MARK: - Public static methods
 	
 	/// Creates inverse `DateComponents`
 	///

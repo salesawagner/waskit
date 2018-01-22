@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,23 +26,21 @@ import Foundation
 
 public extension String {
 
-//*************************
-// MARK: Public properties
-//*************************
+// MARK: - Public properties
 	
 	public var WASisPalindrome: Bool {
 		
-		guard self.characters.count > 1 else {
+		guard self.count > 1 else {
 			return true
 		}
 		
-		for i in 0..<(self.characters.count / 2) {
+		for i in 0..<(self.count / 2) {
 			
 			let startOffset = i
 			let startIndex = self.index(self.startIndex, offsetBy: startOffset)
 			let start = self[startIndex]
 			
-			let endOffset = (self.characters.count - 1) - i
+			let endOffset = (self.count - 1) - i
 			let endIndex = self.index(self.startIndex, offsetBy: endOffset)
 			let end = self[endIndex]
 			

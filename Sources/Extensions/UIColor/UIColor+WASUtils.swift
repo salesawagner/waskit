@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,7 @@ import UIKit
 
 public extension UIColor {
 	
-//*************************
-// MARK: Public properties
-//*************************
+// MARK: - Public properties
 	
 	public var WASdescription: String {
 		let RGBA = self.WAStoRGBA
@@ -96,6 +94,6 @@ public extension UIColor {
 	///
 	/// - Returns: `String` value.
 	public var WAStoString: String {
-		return String(format:"#%06x", self.WAStoHexaDecimal)
+		return String(format: "#%06x", self.WAStoHexaDecimal)
 	}
 }

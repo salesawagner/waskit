@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,7 @@ import UIKit
 
 public extension UIColor {
 
-//*************************
-// MARK: Constructors
-//*************************
+// MARK: - Constructors
 	
 	/// Create a `UIColor` using an `UInt8` value RGB formatted and an alpha `CGFloat` value.
 	/// 
@@ -89,17 +87,17 @@ public extension UIColor {
 	///
 	/// - Parameter hexaDecimal: A hexa decimal color `String` value.
 	public convenience init(string: String) {
-		var string = string.trimmingCharacters(in: .whitespacesAndNewlines)
+		var string: String = string.trimmingCharacters(in: .whitespacesAndNewlines)
 		string = string.WASremove("#")
-		guard string.characters.count == 6, string.WASisHexaDecimal else {
+		guard string.count == 6, string.WASisHexaDecimal else {
 			self.init(0, 0, 0, 1)
 			return
 		}
 		var rgb: UInt32 = 0
 		Scanner(string: string).scanHexInt32(&rgb)
-		let r = UInt8((rgb & 0xFF0000) >> 16)
-		let g = UInt8((rgb & 0x00FF00) >> 8)
-		let b = UInt8(rgb & 0x0000FF)
+		let r: UInt8 = UInt8((rgb & 0xFF0000) >> 16)
+		let g: UInt8 = UInt8((rgb & 0x00FF00) >> 8)
+		let b: UInt8 = UInt8(rgb & 0x0000FF)
 		self.init(r, g, b)
 	}
 }

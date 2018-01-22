@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,7 @@ import Foundation
 
 public extension String {
 	
-//*************************
-// MARK: Public methods
-//*************************
+// MARK: - Public methods
 	
 	/// Matche in `String` by regex.
 	///
@@ -37,7 +35,7 @@ public extension String {
 	public func WASMatchesForRegex(regex: String) -> [String] {
 		var strings: [String] = []
 		if let regex = try? NSRegularExpression(pattern: regex, options: []) {
-			let range = NSMakeRange(0, self.characters.count) // swiftlint:disable:this legacy_constructor
+			let range = NSMakeRange(0, self.count) // swiftlint:disable:this legacy_constructor
 			let ranges = regex.matches(in: self, options: .reportCompletion, range: range)
 			strings = ranges.map {
 				let nSString = self as NSString

@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,7 @@ import Foundation
 
 public extension Date {
 	
-//*************************
-// MARK: Public methods
-//*************************
+// MARK: - Public methods
 	
 	/// The second(s) offset from `Date`.
 	///

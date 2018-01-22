@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,7 @@ import UIKit
 
 public extension String {
 	
-//*************************
-// MARK: Public properties
-//*************************
+// MARK: - Public properties
 	
 	/// Trimming white spaces and new lines.
 	///
@@ -44,8 +42,8 @@ public extension String {
 		if self.isEmpty {
 			return self
 		}
-		let first = String(self.characters.prefix(1)).capitalized
-		let other = String(self.characters.dropFirst())
+		let first: String = String(self.prefix(1)).capitalized
+		let other: String = String(self.dropFirst())
 		return first + other
 	}
 	
@@ -56,8 +54,8 @@ public extension String {
 		if self.isEmpty {
 			return false
 		}
-		let string = self.uppercased().WASremove("#")
-		let chars = NSCharacterSet(charactersIn: "0123456789ABCDEF").inverted
+		let string: String = self.uppercased().WASremove("#")
+		let chars: CharacterSet = NSCharacterSet(charactersIn: "0123456789ABCDEF").inverted
 		return string.rangeOfCharacter(from: chars) == nil
 	}
 	
@@ -75,9 +73,7 @@ public extension String {
 		return UIColor(string: self)
 	}
 
-//*************************
-// MARK: Public methods
-//*************************
+// MARK: - Public methods
 	
 	/// Remove the `String` parameter.
 	///
@@ -92,16 +88,15 @@ public extension String {
 	/// - Parameter characteres: The Number of characters the `String` needs to have.
 	/// - Returns: The `String` abreviated.
 	public func WASabbreviation(_ characteres: Int) -> String {
-		if self.isEmpty && self.characters.count <= characteres {
+		if self.isEmpty && self.count <= characteres {
 			return self
 		}
-		let index = self.index(self.startIndex, offsetBy: characteres)
-		return self.substring(to: index).WAStrimmed + " ..."
+		let index: String.Index = self.index(self.startIndex, offsetBy: characteres)
+		let substring: String = String(self[..<index])
+		return substring.WAStrimmed + " ..."
 	}
 	
-//*************************
-// MARK: Public mutating methods
-//*************************
+// MARK: - Public mutating methods
 	
 	/// Mutating trimming white spaces and new lines.
 	public mutating func WAStrimmedInPlace() {

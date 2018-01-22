@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,17 +26,13 @@ import Foundation
 
 public extension String {
 	
-//*************************
-// MARK: Public properties
-//*************************
+// MARK: - Public properties
 	
 	public var WASlength: Int {
-		return self.characters.count
+		return self.count
 	}
 	
-//*************************
-// MARK: Private methods
-//*************************
+// MARK: - Private methods
 	
 	private func WASsubstring(from: Int) -> String {
 		return self[Range(min(from, self.WASlength) ..< self.WASlength)]
@@ -46,9 +42,7 @@ public extension String {
 		return self[Range(0 ..< max(0, to))]
 	}
 	
-//*************************
-// MARK: Public methods
-//*************************
+// MARK: - Public methods
 	
 	public subscript (i: Int) -> String {
 		return self[Range(i ..< i + 1)]
@@ -63,6 +57,6 @@ public extension String {
 		let start = index(startIndex, offsetBy: range.lowerBound)
 		let end = index(start, offsetBy: range.upperBound - range.lowerBound)
 		
-		return self[Range(start ..< end)]
+		return String(self[Range(start ..< end)])
 	}
 }

@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,7 @@ import UIKit
 
 public extension UIColor {
 
-//*************************
-// MARK: Public properties
-//*************************
+// MARK: - Public properties
 	
 	/// Returns a lighter `UIColor` using the brightness.
 	///
@@ -50,9 +48,7 @@ public extension UIColor {
 		return self.WASbrightness(.wasBrightnessDarker)
 	}
 	
-//*************************
-// MARK: Private methods
-//*************************
+// MARK: - Private methods
 
 	private func WASbrightness(_ brightnessType: WASBrightnessType) -> UIColor {
 		var h: CGFloat = 0

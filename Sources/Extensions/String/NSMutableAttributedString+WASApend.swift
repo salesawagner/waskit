@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,7 @@ import UIKit
 
 public extension NSMutableAttributedString {
 	
-	//*************************
-	// MARK: Public methods
-	//*************************
+// MARK: - Public methods
 	
 	/// Append text with custom font to AttributedString
 	///
@@ -39,7 +37,7 @@ public extension NSMutableAttributedString {
 	///
 	/// - Returns: AttributedString + formatted text
 	@discardableResult func WASappendText(withFont font: UIFont, text: String) -> NSMutableAttributedString {
-		let attributes: [String: Any] = [NSFontAttributeName: font]
+		let attributes: [NSAttributedStringKey: Any] = [NSAttributedStringKey.font: font]
 		let attributedString = NSMutableAttributedString(string: text, attributes: attributes)
 		self.append(attributedString)
 		return self

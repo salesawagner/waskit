@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,7 @@ import Foundation
 
 public extension Array where Element: Hashable {
 
-//*************************
-// MARK: Public properties
-//*************************
+// MARK: - Public properties
 
 	/// Remove duplicate elements.
 	///
@@ -47,9 +45,7 @@ public extension Array where Element: Hashable {
 		return result
 	}
 	
-//*************************
-// MARK: Public mutating methods
-//*************************
+// MARK: - Public mutating methods
 
 	/// Mutating remove duplicate elements.
 	///
@@ -62,9 +58,7 @@ public extension Array where Element: Hashable {
 		self = self.WASremoveDuplicates
 	}
 	
-//*************************
-// MARK: Public methods
-//*************************
+// MARK: - Public methods
 	
 	/// Convert `Array` to `String`
 	///

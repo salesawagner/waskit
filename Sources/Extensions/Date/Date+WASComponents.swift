@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,7 @@ import Foundation
 
 public extension Date {
 
-//*************************
-// MARK: Private prorpeties
-//*************************
+// MARK: - Private prorpeties
 	
 	private var flags: Set<Calendar.Component> {
 		return Set<Calendar.Component>([
@@ -47,9 +45,7 @@ public extension Date {
 		])
 	}
 	
-//*************************
-// MARK: Private methods
-//*************************
+// MARK: - Private methods
 	
 	/// The `DateComponents`
 	private var WASdateComponents: DateComponents {
@@ -61,9 +57,7 @@ public extension Date {
 		return Calendar.current.dateComponents(self.flags, from: date, to: self)
 	}
 
-//*************************
-// MARK: Public methods
-//*************************
+// MARK: - Public methods
 
 	/// The era value.
 	public var WASera: Int {

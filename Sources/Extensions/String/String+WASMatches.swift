@@ -1,7 +1,7 @@
 //
 //  WASKit
 //
-//  Copyright (c) Wagner Sales (http://salesawagner.com/)
+//  Copyright (c) Wagner Sales (http://wagnersales.com.br/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,9 +26,7 @@ import Foundation
 
 public extension String {
 	
-//*************************
-// MARK: Public properties
-//*************************
+// MARK: - Public properties
 	
 	/// Get all mentions.
 	///
@@ -67,9 +65,7 @@ public extension String {
 		return self.WASMatchesForRegex(regex: WASRegex.url)
 	}
 	
-//*************************
-// MARK: Public methods
-//*************************
+// MARK: - Public methods
 	
 	/// Always starts with a character defined on string paramenter.
 	///
