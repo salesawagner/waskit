@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "WASKit"
   s.module_name      = "WASKit"
-  s.version          = "0.2.2"
+  s.version          = "0.2.0"
   s.summary          = "WASKit Swift is a collection of useful classes, structs and extensions to develop Apps faster."
   s.homepage         = "https://github.com/salesawagner/waskit"
   s.license          = {
