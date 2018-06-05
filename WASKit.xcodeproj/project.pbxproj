@@ -18,7 +18,6 @@
 		A770764320157E0F000B92C2 /* WASDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770762120157E0F000B92C2 /* WASDate.swift */; };
 		A770764420157E0F000B92C2 /* Date+WASComparations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770762220157E0F000B92C2 /* Date+WASComparations.swift */; };
 		A770764520157E0F000B92C2 /* Date+WASOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770762320157E0F000B92C2 /* Date+WASOffset.swift */; };
-		A770764620157E0F000B92C2 /* Countable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770762520157E0F000B92C2 /* Countable.swift */; };
 		A770764720157E0F000B92C2 /* WASCountable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770762620157E0F000B92C2 /* WASCountable.swift */; };
 		A770764820157E0F000B92C2 /* WASImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770762820157E0F000B92C2 /* WASImage.swift */; };
 		A770764920157E0F000B92C2 /* DateComponents+WASUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A770762A20157E0F000B92C2 /* DateComponents+WASUtils.swift */; };
@@ -47,7 +46,6 @@
 		A770762120157E0F000B92C2 /* WASDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASDate.swift; sourceTree = "<group>"; };
 		A770762220157E0F000B92C2 /* Date+WASComparations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WASComparations.swift"; sourceTree = "<group>"; };
 		A770762320157E0F000B92C2 /* Date+WASOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+WASOffset.swift"; sourceTree = "<group>"; };
-		A770762520157E0F000B92C2 /* Countable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countable.swift; sourceTree = "<group>"; };
 		A770762620157E0F000B92C2 /* WASCountable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASCountable.swift; sourceTree = "<group>"; };
 		A770762820157E0F000B92C2 /* WASImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WASImage.swift; sourceTree = "<group>"; };
 		A770762A20157E0F000B92C2 /* DateComponents+WASUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateComponents+WASUtils.swift"; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 		A770762420157E0F000B92C2 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				A770762520157E0F000B92C2 /* Countable.swift */,
 				A770762620157E0F000B92C2 /* WASCountable.swift */,
 			);
 			path = Enum;
@@ -303,7 +300,6 @@
 				A770763D20157E0F000B92C2 /* UIColor+WASBrightness.swift in Sources */,
 				A770763F20157E0F000B92C2 /* Array+WASUtils.swift in Sources */,
 				A770764220157E0F000B92C2 /* Date+WASTimeManager.swift in Sources */,
-				A770764620157E0F000B92C2 /* Countable.swift in Sources */,
 				A770764120157E0F000B92C2 /* Date+WASComponents.swift in Sources */,
 				A770763E20157E0F000B92C2 /* UIColor+WASUtils.swift in Sources */,
 				A770763C20157E0F000B92C2 /* WASBrightnessType.swift in Sources */,

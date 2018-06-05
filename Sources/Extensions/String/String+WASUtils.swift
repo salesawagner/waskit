@@ -113,12 +113,12 @@ public extension String {
 	/// Mutating abrevite the `String` with the characters count.
 	///
 	/// - Parameter characteres: The Number of characters the `String` needs to have.
-	public mutating func abbreviationInPlace(_ characteres: Int) {
+	public mutating func WASabbreviationInPlace(_ characteres: Int) {
 		self = self.WASabbreviation(characteres)
 	}
 	
 	/// Mutating capitalize the first character.
-	public mutating func capitalizeFirstInPlace() {
+	public mutating func WAScapitalizeFirstInPlace() {
 		self = self.WAScapitalizeFirst
 	}
 }

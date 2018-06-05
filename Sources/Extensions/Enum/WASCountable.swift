@@ -25,30 +25,30 @@
 import Foundation
 
 /// Protocol to use with enum to provide a count of its cases
-public protocol WASCountable {
-	static func WAScountCases() -> Int
-	static var WAScount: Int { get }
-}
+public protocol WASCountable: Hashable { }
 
-public extension WASCountable where Self : RawRepresentable, Self.RawValue == Int {
+public extension WASCountable {
 
-	/// Count the number of cases in the enum with WASCountable protocol.
-	///
-	/// ### Usage Example: ###
-	/// ```
-	///	enum Test: Int, WASCountable {
-	///		case number1
-	///		case number2
-	///		case number3
-	///		case number4
-	///		static let WAScount: Int = Test.WAScountCases()
-	///	}
-	/// ```
-	///
-	/// - Returns: The value `Int` of cases in the enum.
-	public static func WAScountCases() -> Int {
-		var count = 0
-		while let _ = Self(rawValue: count) { count+=1 }
-		return count
+	/// Get array with all cases
+	static var WASall: [Self] {
+		let sequence = AnySequence { () -> AnyIterator<Self> in
+			var raw = 0
+			return AnyIterator {
+				let current: Self = withUnsafePointer(to: &raw) {
+					$0.withMemoryRebound(to: Self.self, capacity: 1) {
+						$0.pointee
+					}
+				}
+				guard current.hashValue == raw else { return nil }
+				raw += 1
+				return current
+			}
+		}
+		return Array(sequence)
+	}
+	
+	/// Count the number of cases in the enum.
+	static var WAScount: Int {
+		return self.WASall.count
 	}
 }
