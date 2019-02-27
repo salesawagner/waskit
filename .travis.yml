@@ -1,26 +1,68 @@
-os: osx
-language: generic
-sudo: required
-dist: trusty
-osx_image: xcode8.2
+env:
+  global:
+    - IOS_SCHEME="WASKit"
+
+matrix:
+  include:
+    - os: osx
+      language: objective-c
+      osx_image: xcode10.1
+      env: SPM="YES"
+    - os: osx
+      language: objective-c
+      osx_image: xcode10.1
+      env: PROJ="WASKit.xcodeproj"                DESTINATION="OS=12.0,name=iPhone X"                     SCHEME="$IOS_SCHEME"     RUN_TESTS="NO"  LINT="NO"  COVERAGE="YES"  EXAMPLE="NO"
+    - os: osx
+      language: objective-c
+      osx_image: xcode10.1
+      env: PROJ="WASKit.xcodeproj"                DESTINATION="OS=12.0,name=iPhone 7 Plus"                SCHEME="$IOS_SCHEME"     RUN_TESTS="YES" LINT="YES" COVERAGE="NO" EXAMPLE="NO"
+    - os: osx
+      language: objective-c
+      osx_image: xcode10.1
+      env: PROJ="WASKit.xcodeproj"                DESTINATION="OS=12.0,name=iPhone 6"                     SCHEME="$IOS_SCHEME"     RUN_TESTS="NO"  LINT="NO"  COVERAGE="NO"  EXAMPLE="NO"
 
 before_install:
-- gem install xcpretty -N --no-ri --no-rdoc;
-- gem install cocoapods --pre --no-rdoc --no-ri --no-document;
-- brew update;
+  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then
+      gem install xcpretty -N --no-ri --no-rdoc;
+      gem install cocoapods --pre --no-rdoc --no-ri --no-document;
+      brew update;
+      gem install slather;
+    fi
 
 install:
-- ./install_swiftlint.sh;
+  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then
+      ./install_swiftlint.sh;
+    fi
 
 script:
-- swift -version;
-- xcodebuild -version;
-- xcodebuild -showsdks;
-- swiftlint;
-- sleep 5;
-- xcodebuild clean test -project WASKit.xcodeproj -scheme WASKit -destination "platform=iOS Simulator,OS=10.0,name=iPhone 7" -enableCodeCoverage YES | xcpretty;
-- pod lib lint --verbose | xcpretty;
+  - set -o pipefail
+
+  - swift -version
+
+  - if [ "$SPM" == "YES" ]; then
+      swift build;
+      swift test;
+    fi
+
+  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then
+      xcodebuild -version;
+      xcodebuild -showsdks;
+    fi
+
+  - if [ "$RUN_TESTS" == "YES" ]; then
+      xcodebuild clean test -project "$PROJ" -scheme "$SCHEME" -destination "$DESTINATION" -enableCodeCoverage YES | xcpretty;
+    fi
+  - if [ "$RUN_TESTS" == "NO" ]; then
+      xcodebuild clean build -project "$PROJ" -scheme "$SCHEME" -destination "$DESTINATION" -configuration Release | xcpretty;
+    fi
+
+  - if [ "$LINT" == "YES" ]; then
+      swiftlint;
+      pod lib lint --verbose;
+      carthage build --no-skip-current;
+    fi
 
 after_success:
-- bash <(curl -s https://codecov.io/bash);
-- sleep 5;
+  - if [ "$COVERAGE" == "YES" ]; then
+      slather;
+    fi
