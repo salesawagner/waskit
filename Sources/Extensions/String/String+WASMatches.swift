@@ -26,7 +26,7 @@ import Foundation
 
 public extension String {
 	
-// MARK: - Public properties
+	// MARK: - Public properties
 	
 	/// Get all mentions.
 	///
@@ -65,7 +65,7 @@ public extension String {
 		return self.WASMatchesForRegex(regex: WASRegex.url)
 	}
 	
-// MARK: - Public methods
+	// MARK: - Public methods
 	
 	/// Always starts with a character defined on string paramenter.
 	///
@@ -74,6 +74,17 @@ public extension String {
 	///
 	/// - Parameter string: An `Array` of `String` with all `String` that start with paramenter.
 	public func WASstart(with string: String) -> [String] {
+		let regex = WASRegex.startWith(string: string)
+		return self.WASMatchesForRegex(regex: regex)
+	}
+	
+	/// Get all instagram users.
+	///
+	/// - Note:
+	/// Always starts with an `parameter` and ends when hitting a non-word character.
+	///
+	/// - Parameter string: An `Array` of `String` with all `String` that start with paramenter.
+	public func WASInatgramUsers(with string: String) -> [String] {
 		let regex = WASRegex.startWith(string: string)
 		return self.WASMatchesForRegex(regex: regex)
 	}

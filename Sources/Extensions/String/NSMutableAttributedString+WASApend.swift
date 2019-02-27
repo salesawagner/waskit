@@ -37,7 +37,7 @@ public extension NSMutableAttributedString {
 	///
 	/// - Returns: AttributedString + formatted text
 	@discardableResult func WASappendText(withFont font: UIFont, text: String) -> NSMutableAttributedString {
-		let attributes: [NSAttributedStringKey: Any] = [NSAttributedStringKey.font: font]
+		let attributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: font]
 		let attributedString = NSMutableAttributedString(string: text, attributes: attributes)
 		self.append(attributedString)
 		return self

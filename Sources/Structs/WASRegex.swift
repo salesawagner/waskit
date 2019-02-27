@@ -31,9 +31,10 @@ import Foundation
 ///   - colors: Always starts with an '#' and there are 6 characters.
 ///   - url: Any URLs.
 ///   - startWith: Always starts with a character defined on string paramenter.
+///   - instagramUser: Always starts with a character (`@` is default) defined on string paramenter.
 ///
 public struct WASRegex {
-	
+
 	/// Regex for @mentions matches.
 	static public var mentions: String {
 		return WASRegex.startWith(string: "@")
@@ -55,11 +56,19 @@ public struct WASRegex {
 		return regex
 	}
 	
-	/// Regex for start with string matches
+	/// Regex for start with string matches.
 	///
 	/// - Parameter string: An `String` that will start the word.
 	/// - Returns: A regex formated.
 	static public func startWith(string: String) -> String {
 		return "(?<=\\W|^)(\(string))(\\w+)"
+	}
+
+	/// Regex for instagram user.
+	///
+	/// - Parameter string: An `String` that will start the user. Default is `@`
+	/// - Returns: A regex formated.
+	static func instagramUser(startWith string: String = "@") -> String {
+		return "(?:\(string))([A-Za-z0-9_](?:(?:[A-Za-z0-9_]|(?:\\.(?!\\.))){0,28}(?:[A-Za-z0-9_]))?)"
 	}
 }
