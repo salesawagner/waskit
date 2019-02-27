@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A7AFDB0D1CD0390800178425"
+               BlueprintIdentifier = "A770760820157D6B000B92C2"
                BuildableName = "WASKit.framework"
                BlueprintName = "WASKit"
                ReferencedContainer = "container:WASKit.xcodeproj">
@@ -26,14 +26,14 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      codeCoverageEnabled = "YES"
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A7AF2CCA1DF8474B003031D4"
+               BlueprintIdentifier = "A786ECDA22272599002E53C3"
                BuildableName = "WASKitTests.xctest"
                BlueprintName = "WASKitTests"
                ReferencedContainer = "container:WASKit.xcodeproj">
@@ -43,7 +43,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A7AFDB0D1CD0390800178425"
+            BlueprintIdentifier = "A770760820157D6B000B92C2"
             BuildableName = "WASKit.framework"
             BlueprintName = "WASKit"
             ReferencedContainer = "container:WASKit.xcodeproj">
@@ -65,7 +65,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A7AFDB0D1CD0390800178425"
+            BlueprintIdentifier = "A770760820157D6B000B92C2"
             BuildableName = "WASKit.framework"
             BlueprintName = "WASKit"
             ReferencedContainer = "container:WASKit.xcodeproj">
@@ -83,7 +83,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A7AFDB0D1CD0390800178425"
+            BlueprintIdentifier = "A770760820157D6B000B92C2"
             BuildableName = "WASKit.framework"
             BlueprintName = "WASKit"
             ReferencedContainer = "container:WASKit.xcodeproj">
